@@ -11,10 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-.header_section {
-  background-image: url(https://desktime.com/static/web/_common/intro-background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 160px 0px 160px 0px;
-}
