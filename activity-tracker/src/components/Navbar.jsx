@@ -59,7 +59,7 @@ function Navbar() {
         </Link>
 
         <Flex justifyContent="center" alignItems="center" gap="20px" zIndex="100">
-          <Link className="un" _hover={{ textDecoration: "none" }}>
+          <Link  as={RouterLink} to="/demo" className="un" _hover={{ textDecoration: "none" }}>
             Demo
           </Link>
 
