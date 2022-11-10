@@ -8,7 +8,7 @@ function BottomMost(props) {
       <Flex
         w="60%"
         m="auto"
-        border={"1px solid red"}
+        // border={"1px solid red"}
         flexDirection={"column"}
         justifyContent={"center"}
       >
@@ -18,7 +18,11 @@ function BottomMost(props) {
         >
           Join 400,000+ users already managing their time with the DeskTime app
         </Text>
-        <Flex border="1px solid red" justify={"center"} gap={"20px"}>
+        <Flex
+          // border="1px solid red"
+          justify={"center"}
+          gap={"20px"}
+        >
           <input
             // w="50px"
             style={{

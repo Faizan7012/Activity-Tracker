@@ -1,51 +1,44 @@
-::placeholder{
-    width: 200%;
-    color: #999DA1;
-    padding-left: 5px;
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 13px;
-    
-   
-    
+/* ::placeholder {
+  width: 200%;
+  color: #999da1;
+  padding-left: 5px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 13px;
 }
-input{
-    width: 200px;
-    height: 30px;
-    border: 1px solid #999DA1;
+input {
+  width: 200px;
+  height: 30px;
+  border: 1px solid #999da1;
 }
-button{
-    width: 200px;
-    height: 37px;  
-    border: none;
+button {
+  width: 200px;
+  height: 37px;
+  border: none;
 }
-button:hover{
-    background-color: #43762B;
-    cursor: pointer;
+button:hover {
+  background-color: #43762b;
+  cursor: pointer;
 }
-#trial{
-    margin-top: 20px;
-    color: white;
-    margin-left: 484px;
+#trial {
+  margin-top: 20px;
+  color: white;
+  margin-left: 484px;
 }
-#build{
-    font-size: 18px;
-    
+#build {
+  font-size: 18px;
 }
-#first-image>Img{
-    width: 60%;
-    margin-top: 80px;
-    margin-left: 150px;
-    
+#first-image > Img {
+  width: 60%;
+  margin-top: 80px;
+  margin-left: 150px;
 }
-#build{
-    font-weight: 700;
-    font-size: 36px;
+#build {
+  font-weight: 700;
+  font-size: 36px;
 }
-#para{
-
- color: #475056;
-    
+#para {
+  color: #475056;
 }
-#para2{
-    color: #475056;
-}
+#para2 {
+  color: #475056;
+} */

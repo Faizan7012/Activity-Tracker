@@ -2,13 +2,17 @@ import React from "react";
 import { Box, Flex, Button, Text, Heading, VStack } from "@chakra-ui/react";
 function Header_Section(props) {
   return (
-    <Box className="header_section">
-      {/* <Box w={"90%"} m={"auto"}> */}
+    <Box
+      // border="1px solid black"
+      backgroundImage="url(
+        https://desktime.com/static/web/_common/intro-background.png
+      )"
+      backgroundRepeat={"no-repeat"}
+      backgroundSize="cover"
+      padding={"160px 0px 160px 0px"}
+    >
       <Flex
-        // w="100%"
         mx={"10%"}
-        // pb={"30px"}
-        // background={{ md: "black", lg: "red" }}
         flexDirection={[
           "column-reverse",
           "column-reverse",
@@ -21,12 +25,11 @@ function Header_Section(props) {
           justify="center"
           px="25px"
           alignItems={"center"}
-          // flexDirection={{ md: "column", lg: "row" }}
-          border="2px solid brown"
+          // border="2px solid brown"
         >
           <Flex
             flexDirection={"column"}
-            border="1px solid red"
+            // border="1px solid red"
             alignItems="center"
             justify="center"
             gap={"20px"}
@@ -44,7 +47,6 @@ function Header_Section(props) {
             </Text>
             <Text
               w={["90%", "100%", "90%", "100%"]}
-              // mt={"-50px"}
               textAlign={"left"}
               fontSize={["0.8rem", "0.9rem", "0.99rem", "1rem"]}
               color={"#475056"}
@@ -53,12 +55,7 @@ function Header_Section(props) {
               yourself! We’ll give you a personalized 1:1 DeskTime demo and
               answer any questions you might have.
             </Text>
-            <Flex
-              // border="1px solid blue"
-              marginTop={"20px"}
-              gap={["5", "5", "8", "10"]}
-              w="80%"
-            >
+            <Flex marginTop={"20px"} gap={["4", "5", "8", "10"]} w="80%">
               <Button
                 fontSize={["0.8rem", "0.8rem", "1.115rem", "1.115rem"]}
                 border="none"
@@ -69,8 +66,9 @@ function Header_Section(props) {
                   "0.5125rem  1.4rem",
                   "0.5125rem  1.4rem",
                   "0.8125rem 1.8rem",
-                  "1.125rem 2rem",
+                  "1.5rem 2rem",
                 ]}
+                _hover={{ bg: "#43762b", color: "white" }}
                 fontWeight={"600"}
               >
                 {" "}
@@ -87,7 +85,7 @@ function Header_Section(props) {
                   "0.5125rem  1.4rem",
                   "0.5125rem 1.4rem",
                   "0.8125rem 1.8rem",
-                  "0.8125rem 1.8rem",
+                  "1.5rem 2rem",
                 ]}
               >
                 START A FREE TRIAL
@@ -107,7 +105,6 @@ function Header_Section(props) {
           />
         </Flex>
       </Flex>
-      {/* </Box> */}
     </Box>
   );
 }
