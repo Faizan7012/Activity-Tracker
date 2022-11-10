@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
 import DemoPage from "../pages/DemoPage";
 import AboutDeskTime from "../pages/AboutDeskTime";
+import Blog from "../pages/Blog";
 
 
 function AllRoutes(){
@@ -13,7 +14,7 @@ function AllRoutes(){
             <Route path="/features" element={<div>Features</div>}></Route>
             <Route path="/aboutus" element={<AboutDeskTime />}></Route>
             <Route path="/faq" element={<div>FAQ</div>}></Route>
-            <Route path="/blog" element={<div>Blog</div>}></Route>
+            <Route path="/blog" element={<Blog />}></Route>
             <Route path="/login" element={<div>LOGIN</div>}></Route>
             <Route path="/signup" element={<div>SIGN UP</div>}></Route>
         </Routes>
