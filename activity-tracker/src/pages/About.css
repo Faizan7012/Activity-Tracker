@@ -1,4 +1,4 @@
-::placeholder{
+#inputSec>::placeholder{
     width: 200%;
     color: #999DA1;
     padding-left: 5px;
@@ -8,19 +8,57 @@
    
     
 }
-input{
-    width: 200px;
-    height: 30px;
-    border: 1px solid #999DA1;
+#sen1{
+    margin-left: 440px;
 }
-button{
+#sen2{
+    margin-left: 440px;
+}
+
+#inputSec>input{
+    
+    width: 240px;
+    height: 37px;
+    border: 1px solid #999DA1;
+    border-radius: 5px;
+}
+#inputSec>button{
+    margin-left: 10px;
     width: 200px;
     height: 37px;  
-    border: none;
+   border-radius: 3px;
 }
-button:hover{
+#inputSec>button:hover{
     background-color: #43762B;
     cursor: pointer;
+}
+#inputSec2>input{
+    
+    width: 240px;
+    height: 37px;
+    border: 1px solid #999DA1;
+    border-radius: 5px;
+}
+#inputSec2>button{
+    margin-left: 10px;
+    width: 200px;
+    height: 37px;  
+   border-radius: 3px;
+   border: 1px solid white;
+}
+#inputSec2>button:hover{
+    background-color: #43762B;
+    cursor: pointer;
+}
+#inputSec2>::placeholder{
+    width: 200%;
+    color: #898a8b;
+    padding-left: 10px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 13px;
+    
+   
+    
 }
 #trial{
     margin-top: 20px;
@@ -31,11 +69,64 @@ button:hover{
     font-size: 18px;
     
 }
+#para3{
+    font-weight: 700;
+    font-size: 36px;
+}
+#para4{
+    font-weight: 700;
+    font-size: 20px;
+}
 #first-image>Img{
     width: 60%;
     margin-top: 80px;
     margin-left: 150px;
     
+}
+#fourth-image>Img{
+    width: 50%;
+    margin-top: 80px;
+    margin-left: 150px;
+}
+#second-image>Img{
+    width: 50%;
+    margin-top: 80px;
+    margin-left: 200px;
+    
+}
+
+#third-image>Img{
+    width: 55%;
+    margin-right: 30px;
+}
+#fifth-image>img{
+    width: 50%;
+    margin-left: 220px;
+}
+#sixth-image>img{
+    width: 50%;
+    margin-left: 70px;
+
+}
+#seventh-image>img{
+    width: 44%;
+    margin-left: 70px;
+
+}
+#eighth-image>img{
+    width:44%;
+    margin-left: 130px;
+}
+#ninth-image>img{
+    width: 37%;
+    margin-left: 180px;
+}
+#tenth-image>img{
+    width: 36%;
+    margin-left: 180px;
+}
+#box1{
+    margin-left: 170px;
 }
 #build{
     font-weight: 700;
@@ -48,4 +139,12 @@ button:hover{
 }
 #para2{
     color: #475056;
+}
+#yt{
+    margin-left: 170px;
+    margin-top: 55px;
+}
+#sen3{
+ text-align: center;
+ margin-left: 300px;
 }
