@@ -19,6 +19,7 @@ import {
   Link,
   Input,
   Button,
+  Grid
 } from "@chakra-ui/react";
 import {
   GrFacebook,
@@ -33,10 +34,10 @@ import { ImWhatsapp } from "react-icons/im";
 
 function Footer() {
   return (
-    <Box pt='40px'>
-      <Flex gap="30px" w="100%" justifyContent="center">
-        <VStack>
-          <List textAlign="left">
+    <Box pt="40px">
+      <Grid rowGap='20px' p='10px 30px' templateColumns={["repeat(1, auto)","repeat(2, 1fr)","repeat(3, 1fr)","repeat(5, 1fr)"]}>
+        {/* <Flex w="100%" justifyContent="flex-start"> */}
+          <List textAlign={["center","left","left","left"]}>
             <ListItem className="footerItems firsti">Company</ListItem>
             <ListItem className="footerItems">Home</ListItem>
             <ListItem className="footerItems">Terms</ListItem>
@@ -51,9 +52,9 @@ function Footer() {
               DeskTime in your language
             </ListItem>
           </List>
-        </VStack>
-        <VStack>
-          <List textAlign="left">
+        {/* </Flex> */}
+        {/* <Flex justifyContent="flex-start"> */}
+          <List textAlign={["center","left","left","left"]}>
             <ListItem className="footerItems firsti">Learn more</ListItem>
             <ListItem className="footerItems">All resources</ListItem>
             <ListItem className="footerItems">
@@ -71,9 +72,9 @@ function Footer() {
             <ListItem className="footerItems">Webinars</ListItem>
             <ListItem className="footerItems">Blog</ListItem>
           </List>
-        </VStack>
-        <VStack></VStack>
-        <List textAlign="left">
+        {/* </Flex> */}
+        {/* <Flex justifyContent="flex-start"> */}
+        <List textAlign={["center","left","left","left"]}>
           <ListItem className="footerItems firsti">Integrations</ListItem>
           <ListItem className="footerItems">All integrations</ListItem>
           <ListItem className="footerItems">Trello</ListItem>
@@ -83,8 +84,9 @@ function Footer() {
           <ListItem className="footerItems">Outlook Calendar</ListItem>
           <ListItem className="footerItems">Google Calendar</ListItem>
         </List>
-        <VStack>
-          <List textAlign="left">
+        {/* </Flex> */}
+        {/* <Flex justifyContent="flex-start"> */}
+          <List textAlign={["center","left","left","left"]}>
             <ListItem className="footerItems firsti">Features</ListItem>
             <ListItem className="footerItems">All features</ListItem>
             <ListItem className="footerItems">Automatic time tracking</ListItem>
@@ -97,9 +99,9 @@ function Footer() {
             <ListItem className="footerItems">Mobile app</ListItem>
             <ListItem className="footerItems">Feature request</ListItem>
           </List>
-        </VStack>
-        <VStack>
-          <List textAlign="left">
+        {/* </Flex> */}
+        {/* <Flex justifyContent="flex-start"> */}
+          <List textAlign={["center","left","left","left"]}>
             <ListItem className="footerItems firsti">Help center</ListItem>
             <ListItem className="footerItems">Contact us</ListItem>
             <ListItem className="footerItems">Schedule a call</ListItem>
@@ -112,52 +114,77 @@ function Footer() {
             <ListItem className="footerItems">+1 (315) 6365354</ListItem>
             <ListItem className="footerItems">MON-FRI 9:00-22:00 EET</ListItem>
           </List>
-        </VStack>
-      </Flex>
+        {/* </Flex> */}
+      </Grid>
 
-      <Box mt='40px' bg='#EBECEC' p='20px 0'>
-        <Box w='79%' m='auto'>
-        <Flex justifyContent='space-between' mb='20px'>
-          <Image src="../assets/logo.jpg" alt="AT Logo" />
-          <Flex>
-            <Image src="https://desktime.com/assets/design/dist/assets/Google-Play.svg"></Image>
-            <Image src="https://desktime.com/assets/design/dist/assets/App-Store.svg"></Image>
+      <Box mt="40px" bg="#EBECEC" p="20px 0">
+        <Box w="79%" m="auto">
+          <Flex justifyContent="space-between" alignItems="center" mb="20px">
+            <Image
+              w="70px"
+              h="50px"
+              mixBlendMode="multiply"
+              src={require("../assets/logo.png")}
+              alt="AT Logo"
+            />
+            <Flex>
+              <Image
+                w="121px"
+                h="36px"
+                src="https://desktime.com/assets/design/dist/assets/Google-Play.svg"
+              ></Image>
+              <Image
+                w="121px"
+                h="36px"
+                src="https://desktime.com/assets/design/dist/assets/App-Store.svg"
+              ></Image>
+            </Flex>
           </Flex>
-        </Flex>
 
-        <Flex justifyContent='space-between'>
-          <Flex justifyContent='center' alignItems='center' gap="20px">
-            <GrFacebook className="ficons" />
-            <GrTwitter className="ficons" />
-            <GrYoutube className="ficons" />
-            <GrLinkedin className="ficons" />
-            <GrSkype className="ficons" />
-            <ImWhatsapp className="ficons" />
+          <Flex gap={['20px','20px','20px','10px']} justifyContent="space-between" flexDirection={["column","column","column","row"]}>
+            <Flex justifyContent={["flex-end","flex-end","flex-end","center"]} alignItems="center" gap="20px">
+              <GrFacebook className="ficons" />
+              <GrTwitter className="ficons" />
+              <GrYoutube className="ficons" />
+              <GrLinkedin className="ficons" />
+              <GrSkype className="ficons" />
+              <ImWhatsapp className="ficons" />
+            </Flex>
+            <Flex justifyContent={["flex-start","flex-start","flex-start","center"]} alignItems="center" gap="20px">
+              <Text>Subscribe to our newsletter</Text>
+              <Input
+                borderRadius="2px"
+                outline="1px solid grey"
+                w="200px"
+                type="text"
+                placeholder="Type in your email"
+              />
+              <Button
+                fontSize="13px"
+                p="20px 30px"
+                borderRadius="3px"
+                bg="#4ea819"
+                color="white"
+                size="md"
+                _hover={{ bg: "#327c04" }}
+              >
+                {" "}
+                SUBSCRIBE
+              </Button>
+            </Flex>
           </Flex>
-          <Flex justifyContent='center' alignItems='center'gap="20px">
-            <Text>Subscribe to our newsletter</Text>
-            <Input borderRadius='2px' outline='1px solid grey' w='200px' type="text" placeholder="Type in your email" />
-            <Button
-              fontSize="13px"
-              p="20px 30px"
-              borderRadius="3px"
-              bg="#4ea819"
-              color="white"
-              size="md"
-              _hover={{ bg: "#327c04" }}
-            >
-              {" "}
-              SUBSCRIBE
-            </Button>
-          </Flex>
-        </Flex>
         </Box>
       </Box>
-      <Box bg='#D6D8D9' p='20px 0'>
-      <Flex w='79%' m='auto' justifyContent='space-between' alignItems='center'>
-        <Text fontSize='12px'>© 2011 - 2022 Activity Tracker</Text>
-        <Image src='https://desktime.com/assets/design/dist/assets/dg-logo-group.svg' />
-      </Flex>
+      <Box bg="#D6D8D9" p="20px 0">
+        <Flex
+          w="79%"
+          m="auto"
+          justifyContent="space-between"
+          alignItems="center"
+        >
+          <Text fontSize="12px">© 2011 - 2022 Activity Tracker</Text>
+          <Image src="https://desktime.com/assets/design/dist/assets/dg-logo-group.svg" />
+        </Flex>
       </Box>
     </Box>
   );
