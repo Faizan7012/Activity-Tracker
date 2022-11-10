@@ -1,118 +1,155 @@
 import React from "react";
-import { Box, Container, Flex, Text, Button } from "@chakra-ui/react";
+import { Box, Flex, Text, Button, Stack } from "@chakra-ui/react";
 function YoutubePlayer3(props) {
   return (
-    <Box boxShadow={"0 0 .75rem rgba(0,0,0,.12)"}>
-      <Flex w="80%" border={"1px solid green"} m="auto">
-        <Flex w="50%" border="1px solid red">
-          <Flex px={25} flexDirection={"column"}>
-            <Text
-              fontSize={"2.25rem"}
-              textAlign={"left"}
-              fontWeight={"700"}
-              color={"333c43"}
-              lineHeight={"2.875rem"}
-              marginBottom="-5px"
-            >
-              DeskTime for Freelancers
-            </Text>
-            <Text
-              color={"#475056"}
-              fontWeight={"400"}
-              fontSize={"17px"}
-              lineHeight={"28px"}
-              textAlign={"left"}
-              marginBottom="-5px"
-            >
-              This guide explores the main features of DeskTime for freelancers
-              and shows how to manage projects, create reports, and change the
-              settings specific to you.
-            </Text>
-            <Text
-              color={"#475056"}
-              fontWeight={"400"}
-              fontSize={"17px"}
-              lineHeight={"28px"}
-              // lineHeight={"1.75rem"}
-              textAlign={"left"}
-              marginBottom="-5px"
-            >
-              Using DeskTime is a great way to never again get underpaid for the
-              time invested in your clients' projects.
-            </Text>
-            <Flex border={"1px solid brown"} gap={8} alignItems={"center"}>
-              <img
-                width="5%"
-                height="40%"
-                src="https://i.ibb.co/s9kPpwq/svgcheck.png"
-                alt=""
-              />
+    <Flex boxShadow={"0 0 .75rem rgba(0,0,0,.12)"} w="100%">
+      <Flex
+        py="50px"
+        w="80%"
+        flexDirection={[
+          "column-reverse",
+          "column-reverse",
+          "column-reverse",
+          "row",
+        ]}
+        // border={"1px solid green"}
+        m="auto"
+        alignItems={"center"}
+      >
+        <Flex
+          w={["100%", "100%", "100%", "50%"]}
+
+          // border="1px solid red"
+        >
+          <Flex
+            px={["25", "25", "20", "25"]}
+            justifyContent="space-between"
+            flexDirection={"column"}
+          >
+            <Stack spacing="16px">
+              <Text
+                fontSize={["24", "24", "36", "36"]}
+                textAlign={"left"}
+                fontWeight={"700"}
+                color={"333c43"}
+                lineHeight={"2.875rem"}
+                marginBottom="-5px"
+              >
+                DeskTime for Freelancers
+              </Text>
               <Text
                 color={"#475056"}
                 fontWeight={"400"}
-                fontSize={"17px"}
-                // lineHeight={"1.75rem"}
+                // fontSize={["17px", "17px", "17px", "17px"]}
+                lineHeight={"28px"}
                 textAlign={"left"}
+                marginBottom="-5px"
               >
-                Track time spent on specific projects.
+                This guide explores the main features of DeskTime for
+                freelancers and shows how to manage projects, create reports,
+                and change the settings specific to you.
               </Text>
-            </Flex>
-            <Flex border={"1px solid brown"} gap={8} alignItems={"center"}>
-              <img
-                width="5%"
-                height="40%"
-                src="https://i.ibb.co/s9kPpwq/svgcheck.png"
-                alt=""
-              />
               <Text
                 color={"#475056"}
                 fontWeight={"400"}
-                fontSize={"17px"}
-                // lineHeight={"1.75rem"}
+                // fontSize={["17px", "17px", "17px", "17px"]}
+                lineHeight={"28px"}
                 textAlign={"left"}
+                marginBottom="-5px"
               >
-                Use the Cost calculation feature.
+                Using DeskTime is a great way to never again get underpaid for
+                the time invested in your clients' projects.
               </Text>
-            </Flex>
-            <Flex border={"1px solid brown"} gap={8} alignItems={"center"}>
-              <img
-                width="5%"
-                height="40%"
-                src="https://i.ibb.co/s9kPpwq/svgcheck.png"
-                alt=""
-              />
-              <Text
-                color={"#475056"}
-                fontWeight={"400"}
-                fontSize={"17px"}
-                // lineHeight={"1.75rem"}
-                textAlign={"left"}
-              >
-                Boost productivity to raise your income.
-              </Text>
-            </Flex>
+              <Stack spacing={"10px"}>
+                <Flex
+                  // border={"1px solid brown"}
+
+                  gap={3}
+                  alignItems={"center"}
+                >
+                  <img
+                    width="5%"
+                    height="40%"
+                    src="https://i.ibb.co/s9kPpwq/svgcheck.png"
+                    alt=""
+                  />
+                  <Text
+                    // border="1px solid brown"
+                    color={"#475056"}
+                    fontWeight={"400"}
+                    // fontSize={["17px", "17px", "17px", "17px"]}
+                    textAlign={"left"}
+                  >
+                    Track time spent on specific projects.
+                  </Text>
+                </Flex>
+                <Flex
+                  // border={"1px solid brown"}
+
+                  gap={3}
+                  alignItems={"center"}
+                >
+                  <img
+                    width="5%"
+                    height="40%"
+                    src="https://i.ibb.co/s9kPpwq/svgcheck.png"
+                    alt=""
+                  />
+                  <Text
+                    color={"#475056"}
+                    fontWeight={"400"}
+                    // fontSize={["17px", "17px", "17px", "17px"]}
+                    textAlign={"left"}
+                  >
+                    Use the Cost calculation feature.
+                  </Text>
+                </Flex>
+                <Flex
+                  // border={"1px solid brown"}
+
+                  gap={3}
+                  alignItems={"center"}
+                >
+                  <img
+                    width="5%"
+                    height="40%"
+                    src="https://i.ibb.co/s9kPpwq/svgcheck.png"
+                    alt=""
+                  />
+                  <Text
+                    color={"#475056"}
+                    fontWeight={"400"}
+                    fontSize={["17px", "17px", "17px", "17px"]}
+                    textAlign={"left"}
+                  >
+                    Boost productivity to raise your income.
+                  </Text>
+                </Flex>
+              </Stack>
+            </Stack>
             <Flex
-              // border="1px solid blue"
-              gap={20}
+              flexDirection={["column", "row", "row", "row"]}
+              marginTop={"20px"}
+              gap={["7", "12", "18", "18"]}
             >
               <Button
                 fontWeight={"600"}
-                fontSize={"1.05rem"}
+                fontSize={["13px", "16px", "16px", "16px"]}
                 borderRadius={5}
                 bg={"#4ea819"}
                 color={"#fff"}
                 border="none"
-                padding={"13px 32px"}
+                padding={["8px 24px", "8px 24px", "13px 32px", "13px 32px"]}
               >
                 START A FREE TRIAL
               </Button>
               <Button
-                fontSize={"1.115rem"}
+                fontSize={["13px", "16px", "16px", "16px"]}
                 border="0.5px solid grey"
                 borderRadius={5}
                 bg={"white"}
                 color={"#475056"}
-                padding={"0.8125rem 1.8rem"}
+                padding={["8px 24px", "8px 24px", "13px 32px", "13px 32px"]}
                 fontWeight={"600"}
               >
                 {" "}
@@ -121,19 +158,26 @@ function YoutubePlayer3(props) {
             </Flex>
           </Flex>
         </Flex>
-        <Flex w="50%" alignItems={"center"} justifyContent={"center"}>
-          <iframe
-            width="520"
-            height="315"
+        <Flex
+          w={["100%", "100%", "100%", "50%"]}
+          py="60px"
+          alignItems={"center"}
+          justifyContent={"center"}
+          // border={"1px solid red"}
+        >
+          <Box
+            as="iframe"
+            // margin="auto"
+            width={["90%", "90%", "80%", "90%"]}
+            // width={["350px", "470px", "470px", "520px"]}
+            height={["315px", "315px", "315px", "315px"]}
             allowFullScreen="true"
-            allowTransparency="true"
-            allow-aria-modal="true"
             border="none"
             src="https://www.youtube.com/embed/uFl2-NstWtc?autoplay=1"
-          ></iframe>
+          ></Box>
         </Flex>
       </Flex>
-    </Box>
+    </Flex>
   );
 }
 

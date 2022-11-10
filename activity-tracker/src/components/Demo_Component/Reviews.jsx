@@ -1,63 +1,87 @@
-import { Flex, VStack, Span, Text, Container } from "@chakra-ui/react";
+import {
+  Flex,
+  VStack,
+  Span,
+  Text,
+  Container,
+  Box,
+  Center,
+} from "@chakra-ui/react";
 import React from "react";
+import { Divider } from "@chakra-ui/react";
 import { StarIcon } from "@chakra-ui/icons";
 function Reviews(props) {
   return (
     <Flex bg="#262c30" py={"5%"} marginTop={"80px"}>
       <Flex
+        width={"100%"}
+        margin="auto"
+        px="12%"
         // border="1px solid red"
-        m="auto"
-        justifyContent={"space-between"}
-        w="70%"
+        justify={"space-between"}
+        // justifyContent={"space-around"}
+        gap={["8", "10", "10", "0"]}
+        alignItems="center"
+        flexDirection={["column", "column", "column", "row"]}
       >
         <Flex
-          w="33%"
-          alignItems={"center"}
           justifyContent={"center"}
           flexDirection={"column"}
-          px={20}
-          borderRight="2px solid #5c6369"
+          alignItems="center"
+          gap={4}
+          width={["100%", "100%", "100%", "32%"]}
+          // paddingRight="60px"
+          // border="2px solid red"
         >
           <img
-            width="50%"
             src="https://desktime.com/static/web/_common/ratings/capterra-white-logo.svg"
             alt=""
           />
 
-          <Text fontSize={"16px"} letterSpacing={-0.5} color={"white"}>
-            4.5 out of 5 stars from{" "}
-            <span style={{ fontWeight: "600" }}>320 reviews</span>
-          </Text>
+          <Flex>
+            <span style={{ color: "white", fontSize: "16px" }}>
+              4.5 out of 5 stars from
+            </span>
+            <h1 style={{ color: "white", fontSize: "16px" }}>320 reviews</h1>
+          </Flex>
 
-          <Flex gap={5}>
+          <Flex
+            gap={3}
+            // gap={["5", "5", "3", "5"]}
+          >
             <StarIcon color={"white"} />
             <StarIcon color={"white"} />
             <StarIcon color={"white"} />
             <StarIcon color={"white"} />
             <StarIcon color={"white"} />
           </Flex>
-        </Flex>
-
+        </Flex>{" "}
+        {/* <Center height="100px" >
+          <Divider orientation="vertical" />
+        </Center> */}
         <Flex
-          w="33%"
-          alignItems={"center"}
+          width={["100%", "100%", "100%", "32%"]}
           justifyContent={"center"}
           flexDirection={"column"}
-          px={20}
-          borderRight="2px solid #5c6369"
+          alignItems="center"
+          gap={4}
         >
           <img
-            width="50%"
             src="https://desktime.com/static/web/_common/ratings/g2-crowd-white-logo.svg"
             alt=""
           />
 
-          <Text fontSize={"16px"} letterSpacing={-0.5} color={"white"}>
-            4.5 out of 5 stars from{" "}
-            <span style={{ fontWeight: "600" }}>146 reviews</span>
-          </Text>
+          <Flex>
+            <span style={{ color: "white", fontSize: "16px" }}>
+              4.5 out of 5 stars from
+            </span>
+            <h1 style={{ color: "white", fontSize: "16px" }}>320 reviews</h1>
+          </Flex>
 
-          <Flex gap={5}>
+          <Flex
+            gap={3}
+            // gap={["5", "5", "3", "5"]}
+          >
             <StarIcon color={"white"} />
             <StarIcon color={"white"} />
             <StarIcon color={"white"} />
@@ -65,26 +89,29 @@ function Reviews(props) {
             <StarIcon color={"white"} />
           </Flex>
         </Flex>
+        {/* <Center height="100px">
+          <Divider orientation="vertical" />
+        </Center> */}
         <Flex
-          w="33%"
-          alignItems={"center"}
+          width={["100%", "100%", "100%", "32%"]}
           justifyContent={"center"}
           flexDirection={"column"}
-          px={20}
-          //   border="2px solid #5c6369"
+          alignItems="center"
+          gap={4}
         >
           <img
-            width="100%"
             src="https://desktime.com/static/web/_common/ratings/software-advice-white-logo.svg"
             alt=""
           />
 
-          <Text fontSize={"16px"} letterSpacing={-0.5} color={"white"}>
-            4.5 out of 5 stars from{" "}
-            <span style={{ fontWeight: "600" }}>320 reviews</span>
-          </Text>
+          <Flex>
+            <span style={{ color: "white", fontSize: "16px" }}>
+              4.5 out of 5 stars from
+            </span>
+            <h1 style={{ color: "white", fontSize: "16px" }}>320 reviews</h1>
+          </Flex>
 
-          <Flex gap={5}>
+          <Flex gap={3} marginTop="-8px">
             <StarIcon color={"white"} />
             <StarIcon color={"white"} />
             <StarIcon color={"white"} />

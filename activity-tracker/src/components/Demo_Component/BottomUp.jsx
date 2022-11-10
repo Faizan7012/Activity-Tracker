@@ -3,19 +3,28 @@ import { Container, Flex, Button } from "@chakra-ui/react";
 function BottomUp(props) {
   return (
     <Flex my={70}>
-      <Flex w="80%" m="auto" border={"1px solid black"}>
+      <Flex
+        w="80%"
+        flexDirection={["column", "column", "column", "row"]}
+        m="auto"
+        // border={"1px solid black"}
+      >
         <Flex
-          w="50%"
+          width={["100%", "100%", "100%", "50%"]}
           justify={"center"}
           alignItems={"center"}
-          border="1px solid red"
+          // border="1px solid red"
         >
           <img src="https://desktime.com/static/web/demo/notebook.png" alt="" />
         </Flex>
-        <Flex w="50%" border="1px solid red" alignItems={"center"}>
+        <Flex
+          width={["100%", "100%", "100%", "50%"]}
+          // border="1px solid red"
+          alignItems={"center"}
+        >
           <Flex flexDirection={"column"}>
             <Container
-              fontSize={"36px"}
+              fontSize={["26px", "30px", "33px", "36px"]}
               fontWeight={"700"}
               color={"#333c43"}
               textAlign={"left"}
@@ -23,7 +32,7 @@ function BottomUp(props) {
               Not convinced yet?
             </Container>{" "}
             <Container
-              fontSize={"36px"}
+              fontSize={["26px", "30px", "33px", "36px"]}
               fontWeight={"700"}
               color={"#333c43"}
               textAlign={"left"}
@@ -33,7 +42,7 @@ function BottomUp(props) {
             <Container
               marginBottom={"16px"}
               marginTop={"15px"}
-              fontSize={"18px"}
+              fontSize={["17px", "18px", "18px", "18px"]}
               color={"#475054"}
               textAlign={"left"}
             >
@@ -43,12 +52,13 @@ function BottomUp(props) {
             </Container>
             <Flex>
               <Button
-                fontSize={"1.115rem"}
+                fontSize={["15px", "16px", "16px", "18px"]}
                 border="0.8PX SOLID GREY"
                 borderRadius={5}
                 bg={"#4ea819"}
                 color={"#fff"}
-                padding={"16px 22px"}
+                marginLeft={"10px"}
+                padding={["12px 18px", "14px 20px", "14px 20px", "16px 22px"]}
                 fontWeight={"600"}
               >
                 {" "}
