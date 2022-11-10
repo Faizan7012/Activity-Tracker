@@ -1,4 +1,7 @@
 import React from "react";
+
+// import styles from "../css/About.module.css";
+
 import  "./About.css";
 import  Navbar from "../components/Navbar";
 import Footer from "../components/Footer"

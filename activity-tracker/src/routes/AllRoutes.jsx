@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
-import { ChakraProvider } from "@chakra-ui/react";
 import DemoPage from "../pages/DemoPage";
 import AboutDeskTime from "../pages/AboutDeskTime";
 import Blog from "../pages/Blog";

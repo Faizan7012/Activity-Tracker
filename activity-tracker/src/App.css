@@ -63,17 +63,71 @@
   height: 28px;
 }
 
+.burger{
+  width: 32px;
+  height: 32px;
+}
+
 .homeicon{
   color: #4EA819;
   width: 24px;
   height: 25px;
 }
+
+
+.content{
+  width: 90%;
+  margin: auto;
+  /* border: 1px solid; */
+  /* padding-left: 40px; */
+}
+
+.slick-list{
+  padding-left: 20px !important;
+}
+
+.controls{
+  width: 100%;
+  position: relative;
+  top: 250px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 8;
+  /* right: 14px; */
+  /* border: 1px solid; */
+}
+
+.ctrbtn{
+  width: 32px;
+  height: 32px;
+  color: #4EA819;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.ctrbtn:hover{
+  color: #255c06;
+}
+
+/* .lbtn{
+  position: relative;
+  bottom: 270px;
+  right: 25px;
+}
+
+.rbtn{
+  position: relative;
+  bottom: -258px;
+} */
+
+
 .blog_page_skeleton{
   width: 80%;
   margin: auto;
   display: flex;
   gap:20px;
 }
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
