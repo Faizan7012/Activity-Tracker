@@ -68,7 +68,12 @@
   width: 24px;
   height: 25px;
 }
-
+.blog_page_skeleton{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  gap:20px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
