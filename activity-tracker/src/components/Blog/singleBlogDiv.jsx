@@ -4,11 +4,11 @@ import AuthorDiv from './AuthorDiv';
 function SingleBlogDiv({data}){
 const {img,authImg,title,author,desc,date} = data;
 
-return<Flex  borderRadius='10px' fontFamily= '"Source Sans Pro",sans-serif' flexDirection={['column','column','column','row']} alignItems='center' gap='30px' mb='50px'>
-<Box w={['100%','100%',,'100%','70%']}>
+return<Flex w={['100%','100%','90%','80%']} m='auto' borderRadius='10px' fontFamily= '"Source Sans Pro",sans-serif' flexDirection={['column','column','column','row']} alignItems='center' gap='30px' mb='50px'>
+<Box w={['90%','90%','90%','70%']}>
     <Image w='100%' h={['190px','250xp','350px']} src={img} />
 </Box>
-<Box w={['100%','100%','100%','30%']}>
+<Box w={['90%','90%','90%','30%']}>
 <Box>
     <Heading fontSize='20px' mt='10px' lineHeight='1.6rem' ml='10px' mb='30px' textAlign='left'>
         {title}

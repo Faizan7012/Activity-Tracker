@@ -74,6 +74,7 @@
   height: 25px;
 }
 
+
 .content{
   width: 90%;
   margin: auto;
@@ -118,6 +119,14 @@
   position: relative;
   bottom: -258px;
 } */
+
+
+.blog_page_skeleton{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  gap:20px;
+}
 
 @keyframes App-logo-spin {
   from {

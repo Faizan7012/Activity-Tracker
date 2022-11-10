@@ -91,12 +91,17 @@ function Navbar() {
           >
             FAQ
           </Link>
+
           <Link
             as={RouterLink}
             to="/blog"
             className="un"
             _hover={{ textDecoration: "none" }}
           >
+          </Link>
+
+          <Link as={RouterLink} to='/blog' className="un" _hover={{ textDecoration: "none" }}>
+
             Blog
           </Link>
 
