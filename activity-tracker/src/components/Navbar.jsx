@@ -83,12 +83,16 @@ function Navbar() {
           >
             About us
           </Link>
+
+          
+
           <Link
             as={RouterLink}
             to="/faq"
             className="un"
             _hover={{ textDecoration: "none" }}
           >
+
             FAQ
           </Link>
 

@@ -1,9 +1,15 @@
+
+ 
+   
+    
+
 #inputSec > ::placeholder {
   width: 200%;
   color: #999da1;
   padding-left: 5px;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 13px;
+
 }
 #sen1 {
   margin-left: 440px;
@@ -145,3 +151,8 @@
   text-align: center;
   margin-left: 300px;
 }
+
+#para2{
+    color: #475056;
+} 
+
