@@ -1,86 +1,106 @@
-import React, { Component } from "react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import CCard from "./CarouselCard";
-import {useState} from 'react';
-import {FaChevronLeft, FaChevronRight} from 'react-icons/fa';
+import { useState } from "react";
+import { AiFillRightSquare, AiFillLeftSquare } from "react-icons/ai";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+// function SampleNextArrow({ className, style, onClick, sliderRef }) {
+//   return <AiFillLeftSquare onClick={sliderRef?.slickPrev} className="ctrbtn lbtn" />
+// }
+
+// function SamplePrevArrow({ className, style, onClick, sliderRef }) {
+//   return <AiFillRightSquare onClick={sliderRef?.slickNext} className="ctrbtn rbtn" />
+// }
 
 const Carousel = () => {
-  const [sliderRef, setSliderRef] = useState(null)
+  const [sliderRef, setSliderRef] = useState(null);
 
   const sliderSettings = {
     slidesToShow: 3,
     slidesToScroll: 1,
-    infinite: false,
-  }
-  const hotelCards = [
+    infinite: true,
+    dots: true,
+    initialSlide: 0,
+    // nextArrow: <SampleNextArrow sliderRef={sliderRef} />,
+    // prevArrow: <SamplePrevArrow sliderRef={sliderRef} />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 924,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+  const Cards = [
     {
-      imageSrc:
-        'https://images.unsplash.com/photo-1559508551-44bff1de756b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80',
-      title: 'Studio Room',
-      description: 'Lorem ipsum dolor sit amet, consectur dolori',
-      pricingText: 'USD 50/Day',
-      features: ['Free Wifi', 'Free breakfast'],
+      name: "Barrett Kuethen",
+      role: "Operations Manager at Amtec",
+      company: "Amtec",
+      img: "https://desktime.com/static/web/testimonial-images/amtec.png",
+      desc: "DeskTime has been an invaluable tool not only for managing our growingteam across the globe but also for raising employees awareness and increasing their engagement",
     },
     {
-      imageSrc:
-        'https://images.unsplash.com/photo-1616940844649-535215ae4eb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-      title: 'Deluxe Room',
-      description: 'Lorem ipsum dolor sit amet, consectur dolori',
-      pricingText: 'USD 80/Day',
-      features: ['Free Wifi', 'Free breakfast'],
+      name: "Barrett Kuethen",
+      role: "Operations Manager at Amtec",
+      company: "Amtec",
+      img: "https://desktime.com/static/web/testimonial-images/amtec.png",
+      desc: "DeskTime has been an invaluable tool not only for managing our growingteam across the globe but also for raising employees awareness and increasing their engagement",
     },
     {
-      imageSrc:
-        'https://images.unsplash.com/photo-1599619351208-3e6c839d6828?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80',
-      title: 'King Deluxe Room',
-      description: 'Lorem ipsum dolor sit amet, consectur dolori',
-      pricingText: 'USD 150/Day',
-      features: ['Free Wifi', 'Free breakfast', 'Discounted Meals'],
+      name: "Barrett Kuethen",
+      role: "Operations Manager at Amtec",
+      company: "Amtec",
+      img: "https://desktime.com/static/web/testimonial-images/amtec.png",
+      desc: "DeskTime has been an invaluable tool not only for managing our growingteam across the globe but also for raising employees awareness and increasing their engagement",
     },
     {
-      imageSrc:
-        'https://images.unsplash.com/photo-1461092746677-7b4afb1178f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-      title: 'Royal Suite',
-      description: 'Lorem ipsum dolor sit amet, consectur dolori',
-      pricingText: 'USD 299/Day',
-      features: [
-        'Free Wifi',
-        'Free breakfast',
-        'Discounted Meals',
-        "MacBook for work use (hotel's property)",
-      ],
-    },
-  ]
+      name: "Barrett Kuethen",
+      role: "Operations Manager at Amtec",
+      company: "Amtec",
+      img: "https://desktime.com/static/web/testimonial-images/amtec.png",
+      desc: "DeskTime has been an invaluable tool not only for managing our growingteam across the globe but also for raising employees awareness and increasing their engagement",
+    }
+  ];
 
   return (
-    <div className='content'>
-        <div className='controls'>
-        <button>
-          <FaChevronLeft />
-        </button>
-        <button>
-          <FaChevronRight />
-        </button>
+    <div className="content">
+      <div className="controls">
+          <AiFillLeftSquare onClick={sliderRef?.slickPrev} className="ctrbtn" />
+          <AiFillRightSquare onClick={sliderRef?.slickNext} className="ctrbtn" />
       </div>
-      <Slider {...sliderSettings}>
-        {hotelCards.map((card, index) => (
-          <div key={index}>
-            <h2>{card.title}</h2>
-            <img alt={card.title} src={card.imageSrc} width="100" height="100" />
-            <p>{card.description}</p>
-            <ul>
-              {card.features.map((feature, index) => (
-                <li key={index}>{feature}</li>
-              ))}
-            </ul>
-            <button className='btn'>Buy Now</button>
-          </div>
-        ))}
+      <Slider className="slidercomp" ref={setSliderRef} {...sliderSettings}>
+        { Cards.map(el => <CCard
+          key={Date.now()}
+          name={el.name}
+          role={el.role}
+          company={el.company}
+          img={el.img}
+          desc={el.desc}
+        />)}
       </Slider>
     </div>
-  )
+  );
 };
 
 export default Carousel;

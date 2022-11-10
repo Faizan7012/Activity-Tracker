@@ -1,5 +1,5 @@
 import React from "react";
-import About from "./About.css";
+// import styles from "../css/About.module.css";
 
 import { HStack , Container ,Image, Box,Text ,Input,Button ,Link} from '@chakra-ui/react';
 export default function Box1(){

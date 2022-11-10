@@ -3,31 +3,17 @@ import {
   Box,
   Link,
   Button,
-  useDisclosure,
-  MenuItem,
   Menu,
   MenuButton,
   MenuList,
-  Drawer,
-  DrawerBody,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerOverlay,
-  DrawerContent,
-  DrawerCloseButton,
-  Input,
-  Text,
-  Divider,
-  Stack,
   Image,
   HStack,
   MenuItemOption,
-  MenuGroup,
   MenuOptionGroup,
-  MenuDivider,
 } from "@chakra-ui/react";
 
 import { IoEarth } from "react-icons/io5";
+
 import {
   ChevronDownIcon,
   ChevronUpIcon,
@@ -35,16 +21,17 @@ import {
 } from "@chakra-ui/icons";
 
 import { Link as RouterLink } from "react-router-dom";
+import BurgerMenu from "./BurgerMenu";
 
 function Navbar() {
   return (
     <Box
-      position='fixed'
+      position="fixed"
       borderTop="4px solid #4ea819"
       boxShadow="0 0 12px rgb(0 0 0 / 12%)"
       w="100%"
       zIndex="10"
-      bgColor='white'
+      bgColor="white"
     >
       <Flex
         h="82.6px"
@@ -54,12 +41,25 @@ function Navbar() {
         fontSize="17px"
         zIndex="100"
       >
-        <Link as={RouterLink} to="/home" _hover={{ textDecoration: "none" }}>
-          <Image w='70px' h="50px" src={require("../assets/logo.png")} />
+        <Link as={RouterLink} to="/" _hover={{ textDecoration: "none" }}>
+          <Image w="70px" h="50px" src={require("../assets/logo.png")} />
         </Link>
 
-        <Flex justifyContent="center" alignItems="center" gap="20px" zIndex="100">
-          <Link  as={RouterLink} to="/demo" className="un" _hover={{ textDecoration: "none" }}>
+        <BurgerMenu />
+
+        <Flex
+          justifyContent="center"
+          alignItems="center"
+          gap={["10px","10px","10px","20px"]}
+          zIndex="100"
+          display={["none", "none", "flex", "flex"]}
+        >
+          <Link
+            as={RouterLink}
+            to="/demo"
+            className="un"
+            _hover={{ textDecoration: "none" }}
+          >
             Demo
           </Link>
 
@@ -75,13 +75,28 @@ function Navbar() {
             Pricing
           </Link>
 
-          <Link className="un" _hover={{ textDecoration: "none" }}>
+          <Link
+            as={RouterLink}
+            to="/aboutus"
+            className="un"
+            _hover={{ textDecoration: "none" }}
+          >
             About us
           </Link>
-          <Link className="un" _hover={{ textDecoration: "none" }}>
+          <Link
+            as={RouterLink}
+            to="/faq"
+            className="un"
+            _hover={{ textDecoration: "none" }}
+          >
             FAQ
           </Link>
-          <Link className="un" _hover={{ textDecoration: "none" }}>
+          <Link
+            as={RouterLink}
+            to="/blog"
+            className="un"
+            _hover={{ textDecoration: "none" }}
+          >
             Blog
           </Link>
 
