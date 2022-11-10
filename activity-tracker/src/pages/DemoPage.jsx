@@ -7,9 +7,13 @@ import YoutubePlayer1 from "../components/Demo_Component/YoutubePlayer1";
 import YoutubePlayer2 from "../components/Demo_Component/YoutubePlayer2";
 import YoutubePlayer3 from "../components/Demo_Component/YoutubePlayer3";
 import BottomMost from "../components/Demo_Component/BottomMost";
+import { ChakraProvider } from "@chakra-ui/react";
+import Navbar from "../components/Navbar";
+
 function DemoPage(props) {
   return (
-    <div>
+    <ChakraProvider>
+      <Navbar />
       <Header_Section />
       <Cards />
       <YoutubePlayer1 />
@@ -18,7 +22,7 @@ function DemoPage(props) {
       <Reviews />
       <BottomUp />
       <BottomMost />
-    </div>
+    </ChakraProvider>
   );
 }
 
