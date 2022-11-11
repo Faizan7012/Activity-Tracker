@@ -173,7 +173,7 @@ function YoutubePlayer1(props) {
             width={["90%", "90%", "80%", "90%"]}
             // width={["350px", "470px", "470px", "520px"]}
             height={["315px", "315px", "315px", "315px"]}
-            allowFullScreen="true"
+            allowFullScreen={true}
             border="none"
             src="https://www.youtube.com/embed/uFl2-NstWtc?autoplay=1"
           ></Box>

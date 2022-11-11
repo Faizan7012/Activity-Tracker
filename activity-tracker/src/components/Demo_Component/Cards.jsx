@@ -58,7 +58,7 @@ function Cards(props) {
           gap={6}
         >
           {Content.map((el, i) => (
-            <GridItem>
+            <GridItem key={i}>
               <SingleCard
                 heading={el.heading}
                 buttonText={el.buttonText}

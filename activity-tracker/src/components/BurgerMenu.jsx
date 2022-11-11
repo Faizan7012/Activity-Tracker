@@ -19,10 +19,7 @@ import {
 } from "@chakra-ui/react";
 
 import { GiHamburgerMenu } from "react-icons/gi";
-import {
-  ChevronDownIcon,
-  ChevronUpIcon,
-} from "@chakra-ui/icons";
+import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
 import { IoEarth } from "react-icons/io5";
 import { Link as RouterLink } from "react-router-dom";
 
@@ -34,7 +31,9 @@ const BurgerMenu = () => {
 
   return (
     <Box display={["flex", "flex", "none", "none"]}>
-      <GiHamburgerMenu onClick={onOpen} ref={btnRef} className="burger" />
+      <Box onClick={onOpen} ref={btnRef}>
+        <GiHamburgerMenu className="burger" />
+      </Box>
       <Drawer
         isOpen={isOpen}
         size="lg"
@@ -55,8 +54,8 @@ const BurgerMenu = () => {
             alignItems="center"
             gap="20px"
             zIndex="100"
-            fontSize='22px'
-            fontWeight='bold'
+            fontSize="22px"
+            fontWeight="bold"
           >
             <Link
               as={RouterLink}
@@ -67,12 +66,12 @@ const BurgerMenu = () => {
               Demo
             </Link>
 
-            <Divider orientation='horizontal' />
+            <Divider orientation="horizontal" />
 
             <Link className="un" _hover={{ textDecoration: "none" }}>
               Feature
             </Link>
-            <Divider orientation='horizontal' />
+            <Divider orientation="horizontal" />
             <Link
               className="un"
               _hover={{ textDecoration: "none" }}
@@ -81,7 +80,7 @@ const BurgerMenu = () => {
             >
               Pricing
             </Link>
-            <Divider orientation='horizontal' />
+            <Divider orientation="horizontal" />
 
             <Link
               as={RouterLink}
@@ -91,7 +90,7 @@ const BurgerMenu = () => {
             >
               About us
             </Link>
-            <Divider orientation='horizontal' />
+            <Divider orientation="horizontal" />
             <Link
               as={RouterLink}
               to="/faq"
@@ -100,7 +99,7 @@ const BurgerMenu = () => {
             >
               FAQ
             </Link>
-            <Divider orientation='horizontal' />
+            <Divider orientation="horizontal" />
             <Link
               as={RouterLink}
               to="/blog"
@@ -110,7 +109,7 @@ const BurgerMenu = () => {
               Blog
             </Link>
 
-            <Divider orientation='horizontal' />
+            <Divider orientation="horizontal" />
             <Button
               borderRadius="3px"
               fontSize="16px"
