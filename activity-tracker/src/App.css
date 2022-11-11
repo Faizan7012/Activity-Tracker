@@ -64,6 +64,11 @@
   height: 28px;
 }
 
+.apple {
+  width: 24px;
+  height: 24px;
+}
+
 .homeicon {
   color: #4ea819;
 }
@@ -129,6 +134,14 @@
   margin: auto;
   display: flex;
   gap: 20px;
+}
+
+.authlinks{
+  width: 60px;
+  height: 40px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  border-radius: 3px;
 }
 
 @keyframes App-logo-spin {

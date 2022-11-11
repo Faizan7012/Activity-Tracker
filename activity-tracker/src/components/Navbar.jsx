@@ -22,8 +22,16 @@ import {
 
 import { Link as RouterLink } from "react-router-dom";
 import BurgerMenu from "./BurgerMenu";
+import { useDispatch, useSelector } from "react-redux";
+
+
+// let authData = JSON.parse(localStorage.getItem("firebaseauth"))||"";
 
 function Navbar() {
+
+  const authData = useSelector(store => store.auth);
+  // const dispatch = useDispatch();
+
   return (
     <Box
       position="fixed"
@@ -64,7 +72,7 @@ function Navbar() {
           </Link>
 
           <Link className="un" _hover={{ textDecoration: "none" }}>
-            Feature
+            Features
           </Link>
           <Link
             className="un"
@@ -109,7 +117,9 @@ function Navbar() {
             Blog
           </Link>
 
-          <Button
+          {authData === "" ? ( 
+           <>
+           <Button
             borderRadius="3px"
             fontSize="13px"
             colorScheme="teal"
@@ -117,7 +127,7 @@ function Navbar() {
             variant="outline"
             _hover={{ bg: "#efefed" }}
           >
-            <Link
+              <Link
               color="black"
               _hover={{ textDecoration: "none" }}
               as={RouterLink}
@@ -142,6 +152,28 @@ function Navbar() {
               SIGN UP
             </Link>
           </Button>
+           </> 
+          ): (
+            <Button
+            fontSize="13px"
+            borderRadius="3px"
+            bg="#4ea819"
+            color="white"
+            size="md"
+            _hover={{ bg: "#327c04" }}
+          >
+            <Link
+              _hover={{ textDecoration: "none" }}
+              as={RouterLink}
+              to="/dashboard"
+            >
+              MY DESKTIME
+            </Link>
+          </Button>
+          )}
+
+
+          
           <HStack>
             <IoEarth />
             <Box color="#555E63" marginLeft="3px !important" as="span">

@@ -34,7 +34,7 @@ import { ImWhatsapp } from "react-icons/im";
 
 function Footer() {
   return (
-    <Box pt="40px">
+    <Box pt="40px" boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px">
       <Grid rowGap='20px' p='10px 30px' templateColumns={["repeat(1, auto)","repeat(2, 1fr)","repeat(3, 1fr)","repeat(5, 1fr)"]}>
         {/* <Flex w="100%" justifyContent="flex-start"> */}
           <List textAlign={["center","left","left","left"]}>
