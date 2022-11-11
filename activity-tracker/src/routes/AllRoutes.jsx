@@ -6,6 +6,8 @@ import AboutDeskTime from "../pages/AboutDeskTime";
 import { Faq } from "../pages/Faq";
 
 import Blog from "../pages/Blog";
+import Login from "../pages/Login";
+import Signup from "../pages/Signup";
 
 function AllRoutes() {
   return (
@@ -20,8 +22,9 @@ function AllRoutes() {
 
       <Route path="/blog" element={<Blog />}></Route>
 
-      <Route path="/login" element={<div>LOGIN</div>}></Route>
-      <Route path="/signup" element={<div>SIGN UP</div>}></Route>
+      <Route path="/login" element={<Login />}></Route>
+      <Route path="/signup" element={<Signup />}></Route>
+      <Route path="/dashboard" element={<div>Dashboard</div>}></Route>
     </Routes>
   );
 }
