@@ -6,7 +6,6 @@ import {
   Flex,
   Icon,
   useColorModeValue,
-  Link,
   Drawer,
   DrawerContent,
   Text,
@@ -15,6 +14,7 @@ import {
   FlexProps,
   Image,
 } from '@chakra-ui/react';
+import { Link  } from "react-router-dom";
 
 import {BiDesktop} from 'react-icons/bi';
 import {FaBriefcase} from 'react-icons/fa'
@@ -37,21 +37,21 @@ import { IconType } from 'react-icons';
 //   icon: IconType;
 // }
 const LinkItems = [
-  { name: 'My DeskTime', icon: BiDesktop ,icon: BiDesktop},
-  { name: 'Projects', icon: FiHardDrive },
-  { name: 'Work Schedules', icon: FaBriefcase},
-  { name: 'Booking', icon: MdDateRange },
-  { name: 'Absense Calender', icon: FaCalendarDay },
-  { name: 'Reports', icon: AiTwotonePieChart},
-  { name: 'Exports', icon: RiFileCopyLine },
-  { name: 'Settings', icon: FiSettings },
+  { name: 'My DeskTime', icon: BiDesktop ,icon: BiDesktop,link:'/dashboard/my'},
+  { name: 'Projects', icon: FiHardDrive ,link:'/dashboard/project'},
+  { name: 'Work Schedules', icon: FaBriefcase ,link:'#'},
+  { name: 'Booking', icon: MdDateRange ,link:'#'},
+  { name: 'Absense Calender', icon: FaCalendarDay,link:'#' },
+  { name: 'Reports', icon: AiTwotonePieChart,link:'#'},
+  { name: 'Exports', icon: RiFileCopyLine,link:'#' },
+  { name: 'Settings', icon: FiSettings ,link:'#'},
 
 ];
 
-export default function SimpleSidebar({ children }) {
+export default function Sidebar({ children }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <Box minH="100vh" bg={useColorModeValue('gray.100', 'gray.900')}>
+    <Box w="15%" minH="100vh" bg={useColorModeValue('gray.100', 'gray.900')}>
       <SidebarContent
         onClose={() => onClose}
         display={{ base: 'none', md: 'block' }}
@@ -99,9 +99,10 @@ const SidebarContent = ({ onClose, ...rest }) => {
         <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
       </Flex>
       {LinkItems.map((link) => (
-        <NavItem color="#F5F5F6" key ={link.name} icon={link.icon}>
+         <NavItem color="#F5F5F6" link={link.link} key ={link.name} icon={link.icon}>
           {link.name}
         </NavItem>
+       
       ))}
     </Box>
   );
@@ -111,9 +112,9 @@ const SidebarContent = ({ onClose, ...rest }) => {
 //   icon: IconType;
 //   children: ReactText;
 // }
-const NavItem = ({ icon, children, ...rest }) => {
+const NavItem = ({ link,icon, children, ...rest }) => {
   return (
-    <Link href="https://desktime.com/app/projects" style={{ textDecoration: 'none' }} _focus={{ boxShadow: 'none' }}>
+    <Link to={link} style={{ textDecoration: 'none' }} _focus={{ boxShadow: 'none' }}>
       <Flex
         align="center"
         p="4"
