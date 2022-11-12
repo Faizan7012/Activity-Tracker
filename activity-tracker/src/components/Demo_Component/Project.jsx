@@ -15,13 +15,14 @@ import { BsTrash } from "react-icons/bs";
 function Project(props) {
   return (
     <ChakraProvider>
-      <VStack>
-        <Flex w="60%" px="12px" justifyContent={"space-between"}>
+      <VStack mb='50px'>
+        <Flex w="90%" px="12px" justifyContent={"space-between"}>
           <Text color="#333c43" fontSize={"26px"}>
             Projects
           </Text>
           <Button
             //
+            // onClick={HandleProject}
             cursor={"pointer"}
             borderRadius={"6px"}
             // border="0.1px solid black"
@@ -37,7 +38,7 @@ function Project(props) {
             NEW PROJECT
           </Button>
         </Flex>
-        <Grid w="60%" gap="20px" templateColumns="repeat(3, 1fr)">
+        <Grid w="90%" gap="20px" templateColumns="repeat(3, 1fr)">
           <GridItem
           //   border="1px solid green"
           >
@@ -124,9 +125,8 @@ function Project(props) {
           </GridItem>
         </Grid>
         <Flex
-          w="60%"
+          w="86%"
           padding="0 10px 0 10px"
-          // border="1px solid blue"
         >
           <Flex
             w="100%"
@@ -142,6 +142,7 @@ function Project(props) {
               <Image
                 w="70px"
                 h="50px"
+                mixBlendMode='multiply'
                 src="https://i.ibb.co/H7DQjXv/a-t-logo-1.png"
               />
             </Flex>
