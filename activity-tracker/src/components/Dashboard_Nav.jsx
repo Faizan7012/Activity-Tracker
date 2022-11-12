@@ -1,0 +1,127 @@
+import { Box, Button, Container, Flex, Input, Text } from "@chakra-ui/react";
+import React from "react";
+import { HiMenu } from "react-icons/hi";
+import { AiOutlineSearch } from "react-icons/ai";
+import { MdNotifications } from "react-icons/md";
+import { CgProfile } from "react-icons/cg";
+function Dashboard_Nav() {
+  return (
+    <Flex border="1px solid red" flexDirection={"column"}>
+      <Flex
+        justify={"center"}
+        // border="1px solid red"
+        alignItems="center"
+        p="14px"
+        bg="#4ea819"
+      >
+        <Flex
+          alignItems="center"
+          gap="20px"
+
+          // border="1px solid red"
+        >
+          <Text fontWeight={"450"} fontSize="15px" color={"#fff"}>
+            Free trial active - 13 days left
+          </Text>
+          <Box
+            px="18px"
+            py="5px"
+            as="a"
+            fontSize={"10px"}
+            fontWeight={"600"}
+            borderRadius="5px"
+            color={"#212529"}
+            border="1px solid green"
+            background={"#fff"}
+          >
+            SUBSCRIBE NOW
+          </Box>
+          <Box
+            px="18px"
+            py="5px"
+            as="a"
+            bg="none"
+            fontSize={"10px"}
+            fontWeight={"600"}
+            borderRadius="5px"
+            color={"#fff"}
+            border="1.5px solid #fff"
+          >
+            BOOK A DEMO
+          </Box>
+        </Flex>
+      </Flex>
+      <Flex
+        justifyContent={"space-between"}
+        alignItems="center"
+        p="6px"
+        bg="#fff"
+      >
+        <Flex
+          w="18%"
+          // border="1px solid black"
+          justifyContent={"space-between"}
+        >
+          <Flex
+            justifyContent={"center"}
+            // border="1px solid black"
+            alignItems="center"
+          >
+            <HiMenu fontWeight={"1000"} color="#475056" fontSize={"20px"} />{" "}
+          </Flex>
+          <Flex
+            //   w="70%"
+            // marginRight="5px"
+            p="6px"
+            justifyContent={"space-between"}
+            alignItems="center"
+            border="1px solid #475056"
+          >
+            <input className="no-outlineDN" placeholder="Search" />
+            <AiOutlineSearch color="#475056" fontSize={"22px"} />
+          </Flex>
+        </Flex>
+        <Flex
+          w="14%"
+          px="8px"
+          my="5px"
+          //   border="1px solid black"
+          justifyContent={"space-between"}
+          alignItems="center"
+        >
+          <Flex>
+            {" "}
+            <MdNotifications color="#475056" fontSize={"23px"} />{" "}
+          </Flex>
+          <Flex
+            justifyContent={"center"}
+            // alignItems="center"
+            flexDirection={"column"}
+          >
+            <Text
+              fontSize={"14px"}
+              textAlign="right"
+              fontWeight={"600"}
+              color={"#3b4248"}
+            >
+              nilesh
+            </Text>
+            <Text
+              textAlign="right"
+              fontSize={"14px"}
+              fontWeight={"400"}
+              color={"#212529"}
+            >
+              nilesh company
+            </Text>
+          </Flex>
+          <Flex>
+            <CgProfile color="#475056" fontSize={"23px"} />
+          </Flex>
+        </Flex>
+      </Flex>
+    </Flex>
+  );
+}
+
+export default Dashboard_Nav;

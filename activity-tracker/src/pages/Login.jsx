@@ -11,7 +11,7 @@ import {
   Flex,
 } from "@chakra-ui/react";
 
-import {authentication} from '../components/AuthConfig';
+import { authentication } from "../components/AuthConfig";
 
 import { BsGithub } from "react-icons/bs";
 
@@ -27,42 +27,40 @@ import {
   TwitterAuthProvider,
 } from "firebase/auth";
 
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { onLogin } from "../redux/auth/authAction";
 import { login } from "../redux/auth/authType";
 import { useEffect } from "react";
 
-
 // let authData = JSON.parse(localStorage.getItem("firebaseauth"))||"";
 
 const Login = () => {
-
-  const authData = useSelector(store => store.auth);
+  const authData = useSelector((store) => store.auth);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-    function signIn(val){
-        const provider = new val();
-         signInWithPopup(authentication,provider)
-         .then((res)=>{
-            console.log(res)
-            dispatch(onLogin(login, res.user));
-         })
-         .catch((err)=>{
-          console.log(err.message);
-         })
-       }
+  function signIn(val) {
+    const provider = new val();
+    signInWithPopup(authentication, provider)
+      .then((res) => {
+        console.log(res);
+        dispatch(onLogin(login, res.user));
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  }
 
-       const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log("hello")
-        dispatch(onLogin(login,true));
-       }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("hello");
+    dispatch(onLogin(login, true));
+  };
 
-       useEffect(() => {
-        if(authData !== "") navigate("/");
-       }, [authData]);
+  useEffect(() => {
+    if (authData !== "") navigate("/");
+  }, [authData]);
 
   return (
     <ChakraProvider>
@@ -89,7 +87,7 @@ const Login = () => {
             placeholder="Type in your password"
           />
           <Input
-           onClick={handleSubmit}
+            onClick={handleSubmit}
             mb="15px"
             fontSize="14px"
             color="white"
@@ -129,18 +127,24 @@ const Login = () => {
               bgColor="#1877f2"
               backgroundImage='url("https://desktime.com/assets/img/bs4/icons/social/logo-facebook-white.svg")'
             ></Link>
-            <Link onClick={() => signIn(TwitterAuthProvider)}
+            <Link
+              onClick={() => signIn(TwitterAuthProvider)}
               className="authlinks"
               bgColor="#1da1f2"
               backgroundImage='url("https://desktime.com/assets/img/bs4/icons/social/logo-twitter-white.svg")'
             ></Link>
-            <Link onClick={() => signIn(GoogleAuthProvider)}
+            <Link
+              onClick={() => signIn(GoogleAuthProvider)}
               className="authlinks"
               bgColor="#f5f5f6"
               border="1px solid #d6d8d9"
               backgroundImage='url("https://desktime.com/assets/img/bs4/icons/social/logo-google-color.svg")'
             ></Link>
-            <Link onClick={() => signIn(GithubAuthProvider)} className="authlinks" bgColor="black">
+            <Link
+              onClick={() => signIn(GithubAuthProvider)}
+              className="authlinks"
+              bgColor="black"
+            >
               <Flex h="100%" justifyContent="center" alignItems="center">
                 <BsGithub className="apple" color="white" />
               </Flex>
