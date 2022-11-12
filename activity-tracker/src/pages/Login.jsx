@@ -9,6 +9,7 @@ import {
   Link,
   Heading,
   Flex,
+  useToast
 } from "@chakra-ui/react";
 
 import {authentication} from '../components/AuthConfig';
@@ -32,11 +33,12 @@ import { useDispatch, useSelector } from "react-redux";
 import { onLogin } from "../redux/auth/authAction";
 import { login } from "../redux/auth/authType";
 import { useEffect } from "react";
-
-
-// let authData = JSON.parse(localStorage.getItem("firebaseauth"))||"";
+import { useState } from "react";
 
 const Login = () => {
+const toast = useToast()
+const [email, setEmail] = useState("");
+const [password, setPassword] = useState("");
 
   const authData = useSelector(store => store.auth);
   const dispatch = useDispatch();
@@ -47,7 +49,14 @@ const Login = () => {
          signInWithPopup(authentication,provider)
          .then((res)=>{
             console.log(res)
-            dispatch(onLogin(login, res.user));
+            dispatch({type: login, payload: res.user});
+            return toast({
+              title: 'Account created.',
+              description: "We've created your account for you.",
+              status: 'success',
+              duration: 9000,
+              isClosable: true,
+    })
          })
          .catch((err)=>{
           console.log(err.message);
@@ -57,12 +66,14 @@ const Login = () => {
        const handleSubmit = (e) => {
         e.preventDefault();
         console.log("hello")
-        dispatch(onLogin(login,true));
+        dispatch({type: login, payload: {email, password}});
        }
 
        useEffect(() => {
         if(authData !== "") navigate("/");
        }, [authData]);
+
+       console.log(email, password)
 
   return (
     <ChakraProvider>
@@ -76,6 +87,8 @@ const Login = () => {
             Email
           </FormLabel>
           <Input
+            onChange={({target}) => setEmail(target.value)}
+            value={email}
             mb="15px"
             type="email"
             placeholder="Type in your email address"
@@ -84,6 +97,8 @@ const Login = () => {
             Password
           </FormLabel>
           <Input
+            onChange={({target}) => setPassword(target.value)}
+            value={password}
             mb="15px"
             type="password"
             placeholder="Type in your password"

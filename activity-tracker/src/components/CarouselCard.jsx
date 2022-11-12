@@ -1,4 +1,4 @@
-import { Flex, Box, Image, Text, Link, Stack } from "@chakra-ui/react";
+import { Flex, Box, Image, Text, Link, Stack, Avatar } from "@chakra-ui/react";
 
 const CCard = ({ name, role, company, img, desc }) => {
   return (
@@ -7,14 +7,14 @@ const CCard = ({ name, role, company, img, desc }) => {
         "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px"
       }
       borderRadius="7px"
-      w="80%"
+      w="90%"
       h="456px"
       padding="16px"
       m='20px'
     >
       <Flex justifyContent="flex-start" alignItems="center" gap="20px">
-        <Image src={img} h="60px" w="60px" />
-        <Stack textAlign="left">
+      <Avatar name={name} src={img} />
+          <Stack textAlign="left">
           <Text color="#333C43" fontSize="20px" fontWeight="bold">
             {name}
           </Text>
