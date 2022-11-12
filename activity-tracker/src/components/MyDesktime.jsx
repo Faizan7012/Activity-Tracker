@@ -8,11 +8,9 @@ import {
   Tooltip,
   Input
 } from "@chakra-ui/react";
-
 import { IoCalendarSharp, IoInformationCircleSharp } from "react-icons/io5";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import { BsFillQuestionCircleFill } from "react-icons/bs";
-
 const MyDesktime = () => {
   const months = [
     "January",
@@ -28,12 +26,10 @@ const MyDesktime = () => {
     "November",
     "December",
   ];
-
   const d = new Date();
-
   return (
     <ChakraProvider>
-    <Box color="#333C43" p="30px" bg="#EBECEC">
+    <Box color="#333C43" w="90%" m="auto" p="30px" bg="#EBECEC" >
       <Flex flexDirection={["column","column","column","row"]} gap="30px" justifyContent="space-between">
         <Heading fontWeight="500">My DeskTime</Heading>
         <Flex justifyContent="center" gap={["5px","5px","10px","15px"]} alignItems="center">
@@ -41,7 +37,6 @@ const MyDesktime = () => {
             {months[d.getMonth()]} {d.getDate()}, {d.getFullYear()}
           </Text>
           <Input cursor="pointer" color="#EBECEC" width='20px' variant='unstyled' _hover={{outline:"none"}} outline="none" border="none" type="date" />
-        
           <FiChevronLeft color="#475056" fontSize="24px" cursor="pointer" />
           <FiChevronRight color="#475056" fontSize="24px" cursor="pointer" />
           <Flex
@@ -68,7 +63,6 @@ const MyDesktime = () => {
           </Box>
         </Flex>
       </Flex>
-
       <SimpleGrid mt="40px" color="#47507C" bg="#EBECEC" columns={["1","2","2","4"]} spacing="40px">
         <Box textAlign="left" p="15px" bg="white" height="167px">
             <Text m="0 !important">ARRIVAL TIME</Text>
@@ -141,5 +135,4 @@ const MyDesktime = () => {
     </ChakraProvider>
   );
 };
-
 export default MyDesktime;

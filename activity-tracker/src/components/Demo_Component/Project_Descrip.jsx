@@ -5,7 +5,7 @@ function Project_Descrip() {
   return (
     <Flex
       padding="20px"
-      width="60%"
+      width="90%"
       margin="auto"
       justifyContent={"space-between"}
       flexDirection={{
@@ -16,13 +16,13 @@ function Project_Descrip() {
       }}
     >
       <Flex
-        // border="1px solid blue"
+      
         gap="20px"
         w={["100%", "100%", "100%", "50%"]}
       >
         <Flex flexDirection={"column"}>
           <Text
-            // border="1px solid blue"
+           
             fontFamily={"Source Sans Pro,sans-serif"}
             color={"#475056"}
             marginBottom="10px"
@@ -81,7 +81,7 @@ function Project_Descrip() {
               fontWeight={"500"}
               borderRadius="5px"
               color={"white"}
-              border="0.5px solid green"
+              
               background={"#4ea819"}
             >
               GOT IT{" "}
@@ -92,7 +92,7 @@ function Project_Descrip() {
               fontWeight={"500"}
               borderRadius="5px"
               color={"#475056"}
-              border="0.5px solid black"
+             
               background={"#fff"}
             >
               READ MORE

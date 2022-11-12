@@ -165,7 +165,7 @@ function Navbar() {
             <Link
               _hover={{ textDecoration: "none" }}
               as={RouterLink}
-              to="/dashboard"
+              to="/dashboard/my"
             >
               MY DESKTIME
             </Link>

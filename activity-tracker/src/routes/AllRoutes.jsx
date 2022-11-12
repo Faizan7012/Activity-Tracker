@@ -8,6 +8,8 @@ import { Faq } from "../pages/Faq";
 import Blog from "../pages/Blog";
 import Login from "../pages/Login";
 import Signup from "../pages/Signup";
+import Projects from "../pages/Projects";
+import DashboardPage from "../pages/DasboardPage";
 
 function AllRoutes() {
   return (
@@ -24,7 +26,9 @@ function AllRoutes() {
 
       <Route path="/login" element={<Login />}></Route>
       <Route path="/signup" element={<Signup />}></Route>
-      <Route path="/dashboard" element={<div>Dashboard</div>}></Route>
+      <Route path='/dashboard/my' element={<DashboardPage/>}></Route>
+     <Route path='/dashboard/project' element={<Projects/>}></Route>
+    
     </Routes>
   );
 }
