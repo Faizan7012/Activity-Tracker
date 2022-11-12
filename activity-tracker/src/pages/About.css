@@ -149,3 +149,43 @@
 #para2 {
   color: #475056;
 }
+
+
+                                     /* FAQ CSS */
+                                     /* FAQ CSS */
+                                     /* FAQ CSS */
+
+#l1{
+font-weight: 700;
+font-size: 26px;
+}
+#l0{
+  font-weight: 700;
+  font-size: 26px;
+  margin-top: 10px;
+  }
+  #faqbtn:hover{
+  background-color: #417b20;  
+  color: white;
+  }
+  
+  #faqone_box{
+    margin-left: 130px;
+
+  }
+  #faqtwo_box{
+    margin-left: 30px;
+    
+  }
+  #inputSec3 > button {
+    margin-left: 60px;
+    margin-top: 24px;
+    width: 240px;
+    height: 50px;
+    border-radius: 3px;
+    border: 1px solid white;
+  }
+  #inputSec3 > button:hover {
+    background-color: #43762b;
+    cursor: pointer;
+  }

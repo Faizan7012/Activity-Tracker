@@ -1,5 +1,6 @@
 import {Box,Heading,Button, SimpleGrid} from '@chakra-ui/react'
 import PlanSingleDiv from './planSingleDiv';
+import  {Link} from 'react-router-dom'
 let data = [
 'Automatic time tracking',
 'URL and app tracking',
@@ -9,7 +10,7 @@ let data = [
 function PriceSign(){
 
 return <Box w={['100%','100%','90%','90%']} m='auto'  p='40px 10px' boxShadow='rgba(0, 0, 0, 0.35) 0px 5px 15px' borderRadius='10px' mt='70px' mb='70px'>
-    <SimpleGrid columns={['1','1','2','3']} alignItems='center'>
+    <SimpleGrid columns={['1','1','2','3']} alignItems='center' spacing='30px'>
     <Box>
         <Heading fontSize='20px'>
         Activity Tracker Lite
@@ -31,7 +32,8 @@ return <Box w={['100%','100%','90%','90%']} m='auto'  p='40px 10px' boxShadow='r
       
 
     <Box>
-    <Button
+      <Link to='/signup'>
+      <Button
       bg='#4ea819' 
       fontSize='17px'
       fontWeight='400' lineHeight='1'
@@ -41,7 +43,7 @@ return <Box w={['100%','100%','90%','90%']} m='auto'  p='40px 10px' boxShadow='r
       p='0.8875rem 1.875rem'
       borderRadius='3px'
       _hover={{bg:'#4ea819'}}
-      >Sign In</Button>
+      >Sign In</Button></Link>
     </Box>
 
     </SimpleGrid>

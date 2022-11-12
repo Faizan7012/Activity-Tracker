@@ -11,31 +11,59 @@ import {
   Flex,
 } from "@chakra-ui/react";
 
-import { BsApple } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
+
+import {authentication} from '../components/AuthConfig';
+import {
+  signInWithPopup,
+  FacebookAuthProvider,
+  GoogleAuthProvider,
+  GithubAuthProvider,
+  TwitterAuthProvider,
+} from "firebase/auth";
+
 import { useDispatch, useSelector } from "react-redux";
 import { login } from "../redux/auth/authType";
-import { onLogin } from "../redux/auth/authAction";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { ChakraProvider } from "@chakra-ui/react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { useState } from "react";
+
 
 const Signup = () => {
   const authData = useSelector((store) => store.auth);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [password, setPassword] = useState("");
+
+  function signIn(val){
+    const provider = new val();
+     signInWithPopup(authentication,provider)
+     .then((res)=>{
+        console.log(res)
+        dispatch({type: login, payload: res.user});
+     })
+     .catch((err)=>{
+      console.log(err.message);
+     })
+   }
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("hello");
-    dispatch(onLogin(login, true));
+    dispatch({type: login, payload: {email,name,password,}});
   };
 
   useEffect(() => {
     if (authData !== "") navigate("/");
   }, [authData]);
+
 
   return (
     <ChakraProvider>
@@ -52,14 +80,18 @@ const Signup = () => {
             First and last name
           </FormLabel>
           <Input
+          onChange={({target}) => setName(target.value)}
+          value={name}
             mb="15px"
-            type="email"
+            type="text"
             placeholder="Type in your first and last name"
           />
           <FormLabel color="blackAlpha.800" fontSize="14px">
             Email
           </FormLabel>
           <Input
+          onChange={({target}) => setEmail(target.value)}
+          value={email}
             mb="15px"
             type="email"
             placeholder="Type in your email address"
@@ -68,6 +100,8 @@ const Signup = () => {
             Password
           </FormLabel>
           <Input
+          onChange={({target}) => setPassword(target.value)}
+          value={password}
             mb="15px"
             type="password"
             placeholder="Type in your password"
@@ -102,29 +136,25 @@ const Signup = () => {
           </Text>
           <Flex gap="10px">
             <Link
+              onClick={() => signIn(FacebookAuthProvider)}
               className="authlinks"
               bgColor="#1877f2"
               backgroundImage='url("https://desktime.com/assets/img/bs4/icons/social/logo-facebook-white.svg")'
             ></Link>
-            <Link
+            <Link onClick={() => signIn(TwitterAuthProvider)}
               className="authlinks"
               bgColor="#1da1f2"
               backgroundImage='url("https://desktime.com/assets/img/bs4/icons/social/logo-twitter-white.svg")'
             ></Link>
-            <Link
-              className="authlinks"
-              bgColor="#0a66c2"
-              backgroundImage='url("https://desktime.com/assets/img/bs4/icons/social/logo-linkedin-white.svg")'
-            ></Link>
-            <Link
+            <Link onClick={() => signIn(GoogleAuthProvider)}
               className="authlinks"
               bgColor="#f5f5f6"
               border="1px solid #d6d8d9"
               backgroundImage='url("https://desktime.com/assets/img/bs4/icons/social/logo-google-color.svg")'
             ></Link>
-            <Link className="authlinks" bgColor="black">
+            <Link onClick={() => signIn(GithubAuthProvider)} className="authlinks" bgColor="black">
               <Flex h="100%" justifyContent="center" alignItems="center">
-                <BsApple className="apple" color="white" />
+                <BsGithub className="apple" color="white" />
               </Flex>
             </Link>
           </Flex>

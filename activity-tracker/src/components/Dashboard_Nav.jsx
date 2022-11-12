@@ -1,24 +1,25 @@
-import { Box, Button, Container, Flex, Input, Text } from "@chakra-ui/react";
+import { Avatar, Box, Button, Container, Flex, Input, Text } from "@chakra-ui/react";
 import React from "react";
 import { HiMenu } from "react-icons/hi";
 import { AiOutlineSearch } from "react-icons/ai";
 import { MdNotifications } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
+const InfoData = JSON.parse(localStorage.getItem('firebaseauth'))||'';
 function Dashboard_Nav() {
+
   return (
-    <Flex border="1px solid red" flexDirection={"column"}>
+    <Flex m='auto' flexDirection={"column"}>
       <Flex
         justify={"center"}
-        // border="1px solid red"
+        
         alignItems="center"
         p="14px"
-        bg="#4ea819"
+        bg="#4EA819"
       >
         <Flex
           alignItems="center"
           gap="20px"
-
-          // border="1px solid red"
+          
         >
           <Text fontWeight={"450"} fontSize="15px" color={"#fff"}>
             Free trial active - 13 days left
@@ -51,23 +52,26 @@ function Dashboard_Nav() {
           </Box>
         </Flex>
       </Flex>
+      <Box  bg="#fff">
       <Flex
         justifyContent={"space-between"}
         alignItems="center"
         p="6px"
-        bg="#fff"
+        w="90%"
+        m="auto"
       >
         <Flex
           w="18%"
           // border="1px solid black"
           justifyContent={"space-between"}
+          gap='20px'
         >
           <Flex
             justifyContent={"center"}
             // border="1px solid black"
             alignItems="center"
           >
-            <HiMenu fontWeight={"1000"} color="#475056" fontSize={"20px"} />{" "}
+            <HiMenu  fontWeight={"1000"} color="#475056" fontSize={"40px"} />{" "}
           </Flex>
           <Flex
             //   w="70%"
@@ -82,10 +86,9 @@ function Dashboard_Nav() {
           </Flex>
         </Flex>
         <Flex
-          w="14%"
+        gap='30px'
           px="8px"
           my="5px"
-          //   border="1px solid black"
           justifyContent={"space-between"}
           alignItems="center"
         >
@@ -102,7 +105,7 @@ function Dashboard_Nav() {
               fontSize={"14px"}
               textAlign="right"
               fontWeight={"600"}
-              color={"#3b4248"}
+              color={"#3B4248"}
             >
               nilesh
             </Text>
@@ -112,16 +115,19 @@ function Dashboard_Nav() {
               fontWeight={"400"}
               color={"#212529"}
             >
-              nilesh company
+            {
+
+            }
             </Text>
           </Flex>
           <Flex>
-            <CgProfile color="#475056" fontSize={"23px"} />
+             {/* <Avatar src={InfoData}  /> */}
           </Flex>
         </Flex>
       </Flex>
+      </Box>
+      
     </Flex>
   );
 }
-
 export default Dashboard_Nav;

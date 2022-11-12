@@ -1,14 +1,15 @@
-.box {
+/* .box {
     width: 100%;
     background-color: #4ea819;
-    color: white;
+    color: white; */
     /* padding:2% 15% 2% 15%; */
-    text-align: center;
+    /* text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 
 .boxh1 {
     color: white;
@@ -34,9 +35,9 @@
     border: none;
 
     padding: 10px;
-    border-radius: 3px;
+    border-radius: 3px; */
     /* border: white; */
-    border: 1px solid white;
+    /* border: 1px solid white;
 
     color: white;
     background-color: #4ea819;
@@ -50,9 +51,9 @@
 
 .maindiv {
     display: grid;
-    grid-template-columns: repeat(2, 600px);
+    grid-template-columns: repeat(2, 600px); */
     /* border: 1px solid red; */
-    padding: 20px;
+    /* padding: 20px;
     row-gap: 50px;
     justify-content: space-around;
 
@@ -75,10 +76,10 @@
     text-decoration: underline;
 }
 
-.mainbutton {
+.mainbutton { */
     /* width:90%; */
 
-    width: 200px;
+    /* width: 200px;
     height: 37px;
     border: none;
 
@@ -93,4 +94,9 @@
     background-color: #f5f5f6;
     padding-top: 5%;
     padding-bottom: 3%;
+} */
+
+#general{
+    font-weight: 700;
+    font-size: medium;
 }
