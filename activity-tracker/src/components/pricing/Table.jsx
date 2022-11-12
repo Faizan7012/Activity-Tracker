@@ -1,72 +1,48 @@
-import {Image,Flex,Box, Heading} from '@chakra-ui/react';
+import {GridItem,Box,Heading, Grid, Center} from '@chakra-ui/react';
+import Img from './img';
 
-function TablePrice({p1,p2,p3,p4,p5}){
+function TablePrice({cl,p1,p2,p3,p4,p5}){
 
-return  <Box w='100%'>
+return  <Box bg={cl?'#c2c5c7 !important':'white'} borderRadius='6px' w='100%' p='20px' color='#475056' mb='10px'>
 
-
-        <Flex justifyContent='space-between'>
-
-         <Box w='30%'>
  
-            <Heading textAlign='left' fontSize={['12px','15px','15px']}>{p1}</Heading>
+          <Grid templateColumns='repeat(5, 1fr)' alignItems='center' justifyContent='center'>
+             <GridItem textAlign='center'>
+              <Heading fontSize='16px' textAlign='left'>
+              <Img p={p1}/>
+             </Heading>
+             </GridItem>
+             <GridItem>
+            <Center> <Heading fontSize='16px'>
+             <Img p={p2}/>
+             </Heading></Center>
+             </GridItem>
+          <GridItem>
+        <Center>
+        <Heading fontSize='16px'>
+             <Img p={p3}/>
+             
+             </Heading>
+        </Center>
+            </GridItem>  
+         <GridItem>
+       <Center>
+       <Heading fontSize='16px'>
+             <Img p={p4}/>
 
-          </Box>
-
-
-          <Box w='60%' mb='20px'>
-
-            <Flex w='95%' justifyContent='space-between' alignItems='center'>
-<Flex w='100px' justifyContent='center'>      
-<Heading fontSize={['10px','12px','15px']}>
-{
- p2=='ok'?<Image src='https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg' />:
- p2=='no'?<Image src='https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--false.svg' />:p2
-}
-</Heading>
-</Flex>
-
-<Flex w='100px' justifyContent='center'>        
-<Heading fontSize={['10px','12px','15px']}>
-
-{
- p3=='ok'?<Image src='https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg' />:
- p3=='no'?<Image src='https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--false.svg' />:p3
-}
-</Heading>
-</Flex>
-
-
-<Flex w='100px' justifyContent='center'>        
-<Heading fontSize={['10px','12px','15px']}>
-
-{
- p4=='ok'?<Image src='https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg' />:
- p4=='no'?<Image src='https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--false.svg' />:p4
-}
-</Heading>
-</Flex>
-
-
-<Flex w='100px' justifyContent='center'>        
-<Heading fontSize={['10px','12px','15px']}>
-
-{
- p5=='ok'?<Image src='https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--true.svg' />:
- p5=='no'?<Image src='https://about.codecov.io/wp-content/themes/codecov/assets/icons/pricing-icons/value--false.svg' />:p5
-}
-</Heading>
-</Flex>
-
-
-
-
-
-            </Flex>
-           
-          </Box>
-
-        </Flex>
+             </Heading>
+        </Center>    
+       
+         </GridItem>
+          <GridItem>
+           <Center>
+           <Heading fontSize='16px'>
+             <Img p={p5}/>
+             
+             </Heading>
+           </Center>
+          </GridItem>
+          </Grid>
          
 
         </Box>
