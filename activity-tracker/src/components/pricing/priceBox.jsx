@@ -1,13 +1,15 @@
 import { Box, Heading, Text,Button } from "@chakra-ui/react";
+import { useState } from "react";
 import PlanSingleDiv from "./planSingleDiv";
-function PriceBox({type,rs,tx,data}){
-return <Box  border={type=='Premium'?'2px solid #4ea819':'none'} p='15px' boxShadow='rgba(0, 0, 0, 0.35) 0px 5px 15px' borderRadius='10px' key={Date.now()}>
+function PriceBox({type,state,handleState,rs,tx,data}){
+return <Box onClick={()=>handleState(type)}  border={type==state?'2px solid #4ea819':'none'} boxShadow='rgba(0, 0, 0, 0.35) 0px 5px 15px' borderRadius='10px' key={Date.now()}>
    {
-    type=='Premium'?<Box w='100%' borderRadius='10px' mb='20px' bg='#4ea819'>
+    type=='Premium'?<Box w='100%' borderRadius='7px 7px 0px 0px' mb='20px' bg='#4ea819'>
         <Heading fontSize='17px' p='10px' color='#fff'>Best value</Heading>
     </Box>:null
    }
-    <Box>
+   <Box p='15px'>
+     <Box>
         <Heading fontSize='15px' mt='20px'>{type}</Heading>
         <Heading mt='13px'>{rs}</Heading>
         <Text
@@ -46,6 +48,8 @@ return <Box  border={type=='Premium'?'2px solid #4ea819':'none'} p='15px' boxSha
            }
         </Box>
     </Box>
+   </Box>
+
 </Box>
 
 }
