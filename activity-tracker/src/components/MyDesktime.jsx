@@ -65,9 +65,7 @@ const MyDesktime = () => {
 
   return (
     <ChakraProvider>
-      <Box color="#333C43" w="90%" m="auto" p="30px" bg="#EBECEC">
         <Timer />
-      <Timer />
       <Box color="#333C43" w="90%" m="auto" p="30px" bg="#EBECEC">
         <Flex
           flexDirection={["column", "column", "column", "row"]}
@@ -151,34 +149,9 @@ const MyDesktime = () => {
             </Text>
           </Box>
           <Box textAlign="left" p="15px" bg="white" height="167px">
-            <Text m="0 !important">LEFT TIME</Text>
-          </Box>
-          <Box textAlign="left" p="15px" bg="white" height="167px">
             <Flex alignItems="center" gap="7px">
               <Text pb="1.5px" m="0 !important">
                 PRODUCTIVE TIME
-              </Text>
-              <Tooltip
-                color="blackAlpha.700"
-                hasArrow
-                borderRadius="3px"
-                label="Search places"
-                bg="white"
-                p="8px 15px"
-                boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px"
-                placement="top"
-              >
-                <Text as="span">
-                  <IoInformationCircleSharp color="#C2CAD7" fontSize="20px" />
-                </Text>
-              </Tooltip>
-            </Flex>
-          </Box>
-          <Box textAlign="left" p="15px" bg="white" height="167px">
-            <Flex alignItems="center" gap="7px">
-              <Text pb="1.5px" m="0 !important">
-                PRODUCTIVE TIME
-                DESKTIME TIME{" "}
               </Text>
               <Tooltip
                 color="blackAlpha.700"
@@ -205,9 +178,6 @@ const MyDesktime = () => {
               <Text pb="1.5px" m="0 !important">
 
                 DESKTIME TIME{" "}
-
-                TIME AT WORK
-
               </Text>
               <Tooltip
                 color="blackAlpha.700"

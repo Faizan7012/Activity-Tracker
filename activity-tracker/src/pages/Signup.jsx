@@ -57,7 +57,7 @@ const Signup = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("hello");
-    dispatch({type: login, payload: {email,name,password,}});
+    dispatch({type: login, payload: {email,displayName:name,password,}});
   };
 
   useEffect(() => {

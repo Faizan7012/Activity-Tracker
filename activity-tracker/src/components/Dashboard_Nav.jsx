@@ -107,7 +107,10 @@ function Dashboard_Nav() {
               fontWeight={"600"}
               color={"#3B4248"}
             >
-              nilesh
+              {
+                InfoData.displayName
+
+              }
             </Text>
             <Text
               textAlign="right"
@@ -121,7 +124,7 @@ function Dashboard_Nav() {
             </Text>
           </Flex>
           <Flex>
-             {/* <Avatar src={InfoData}  /> */}
+             <Avatar src={InfoData.photoURL}  /> 
           </Flex>
         </Flex>
       </Flex>
