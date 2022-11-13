@@ -1,4 +1,17 @@
 import {
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+  useDisclosure,
+  Input,
+  InputGroup,
+  InputLeftAddon,
+} from "@chakra-ui/react";
+import {
   Button,
   ChakraProvider,
   Flex,
@@ -7,25 +20,106 @@ import {
   Text,
   VStack,
   Image,
+  Divider,
+  Box,
+  SimpleGrid,
+  Avatar,
+  Skeleton,
 } from "@chakra-ui/react";
+import { async } from "@firebase/util";
+import axios from "axios";
 import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 import { BiEdit } from "react-icons/bi";
 import { BsTrash } from "react-icons/bs";
+import Model2 from "../Model2";
 
 function Project(props) {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [project, setProject] = useState("");
+  const [mystate, setmystate] = useState(false);
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const handleCreate = async () => {
+    setLoading(true);
+    onClose();
+    const d = new Date();
+    let day = d.getDate();
+    let month = d.getMonth();
+    let year = d.getFullYear();
+    let obj = {
+      projectName: project,
+      projectDate: `${year}-${month}-${day}`,
+    };
+
+    let res = await axios.post(
+      `https://upset-teal-duck.cyclic.app/project`,
+      obj
+    );
+    let createdData = await res.data;
+    setProject("");
+    setData(createdData);
+    setLoading(false);
+  };
+
+  const handlesetProject = (val) => {
+    setProject(val);
+  };
+
+  const handleUpdate = (id, date) => {
+    setLoading(true);
+    onClose();
+    let newData = {
+      projectName: project,
+      projectDate: date,
+    };
+    console.log(id, "dfsdf");
+    axios
+      .patch(`https://upset-teal-duck.cyclic.app/project/${id}`, newData)
+      .then((res) => {
+        setData(res.data);
+        setLoading(false);
+      });
+
+    setProject("");
+  };
+
+  const handledelete = (id) => {
+    setLoading(true);
+    axios
+      .delete(`https://upset-teal-duck.cyclic.app/project/${id}`)
+      .then((res) => {
+        setData(res.data);
+        setLoading(false);
+      });
+  };
+
+  const handleOpen2 = (el) => {
+    setProject(el.projectName);
+    onOpen();
+    console.log(el);
+  };
+
+  useEffect(() => {
+    setLoading(true);
+    axios
+      .get("https://upset-teal-duck.cyclic.app/project")
+      .then((res) => setData(res.data));
+    setLoading(false);
+  }, []);
+
   return (
     <ChakraProvider>
-      <VStack mb='50px'>
+      <VStack mb="50px">
         <Flex w="90%" px="12px" justifyContent={"space-between"}>
           <Text color="#333c43" fontSize={"26px"}>
             Projects
           </Text>
           <Button
-            //
-            // onClick={HandleProject}
+            onClick={onOpen}
             cursor={"pointer"}
             borderRadius={"6px"}
-            // border="0.1px solid black"
             fontWeight={"600"}
             padding="10px 18px"
             fontSize="12px"
@@ -37,11 +131,64 @@ function Project(props) {
           >
             NEW PROJECT
           </Button>
+
+          <Modal isOpen={isOpen} onClose={onClose}>
+            <ModalOverlay />
+            <ModalContent>
+              <ModalHeader fontSize="22px" color="#fff" background="#4ea819">
+                Create a Project
+              </ModalHeader>
+              <ModalCloseButton />
+              <ModalBody>
+                <Text> Project Name</Text>
+                <Input
+                  value={project}
+                  onChange={(e) => setProject(e.target.value)}
+                />
+                <Text mt="15px">Project hour rate</Text>
+                <InputGroup>
+                  <InputLeftAddon bg="#ebecec" children="INR" />
+                  <Input type="number" />
+                </InputGroup>
+                <Text mt="15px"> Estimate costs</Text>
+                <InputGroup>
+                  <InputLeftAddon bg="#ebecec" children="INR" />
+                  <Input type="number" />
+                </InputGroup>
+                <Text mt="15px"> Estimate time</Text>
+
+                <InputGroup>
+                  <InputLeftAddon bg="#ebecec" children="h" />
+                  <Input type="text" />
+                </InputGroup>
+              </ModalBody>
+
+              <ModalFooter>
+                <Button
+                  border="1px solid grey"
+                  bg="#fff"
+                  color="black"
+                  mr={3}
+                  onClick={onClose}
+                >
+                  CANCEL
+                </Button>
+                <Button
+                  _hover={{
+                    bg: "#4ea819",
+                  }}
+                  onClick={handleCreate}
+                  color="white"
+                  background="#4ea819"
+                >
+                  CREATE
+                </Button>
+              </ModalFooter>
+            </ModalContent>
+          </Modal>
         </Flex>
         <Grid w="90%" gap="20px" templateColumns="repeat(3, 1fr)">
-          <GridItem
-          //   border="1px solid green"
-          >
+          <GridItem>
             <Flex
               margin={"15px"}
               paddingLeft="8px"
@@ -63,13 +210,11 @@ function Project(props) {
                 fontSize={"26px"}
                 color={"#4ea819"}
               >
-                2
+                {data.length}
               </Text>
             </Flex>
           </GridItem>
-          <GridItem
-          //   border="1px solid green"
-          >
+          <GridItem>
             <Flex
               margin={"15px"}
               paddingLeft="8px"
@@ -91,13 +236,11 @@ function Project(props) {
                 fontSize={"26px"}
                 color={"#4ea819"}
               >
-                2
+                {data.length}
               </Text>
             </Flex>
           </GridItem>
-          <GridItem
-          //   border="1px solid green"
-          >
+          <GridItem>
             <Flex
               margin={"15px"}
               paddingLeft="8px"
@@ -119,48 +262,76 @@ function Project(props) {
                 fontSize={"26px"}
                 color={"#4ea819"}
               >
-                2
+                {data.length}
               </Text>
             </Flex>
           </GridItem>
         </Grid>
-        <Flex
-          w="86%"
-          padding="0 10px 0 10px"
-        >
-          <Flex
-            w="100%"
-            padding="10 0 10 0"
-            alignItems={"center"}
-            justifyContent={"space-between"}
 
-            // border="1px solid green"
-          >
-            <Flex>Project </Flex>
-            <Flex>Date</Flex>
-            <Flex>
-              <Image
-                w="70px"
-                h="50px"
-                mixBlendMode='multiply'
-                src="https://i.ibb.co/H7DQjXv/a-t-logo-1.png"
-              />
-            </Flex>
-            <Flex>Index + 1</Flex>
-            <Flex
-              height={"20px"}
-              gap="25px"
-              // border="1px solid brown"
-            >
-              <Flex>
-                <BiEdit />
-              </Flex>
-              <Flex>
-                <BsTrash />
-              </Flex>
-            </Flex>
-          </Flex>
-        </Flex>
+        {loading ? (
+          <Box mt="70px" width={"85%"}>
+            <Skeleton
+              m="auto"
+              mt="20px"
+              width={["90%", "90%", "90%", "100%"]}
+              height="30px"
+            />
+            <Skeleton
+              m="auto"
+              mt="20px"
+              width={["90%", "90%", "90%", "100%"]}
+              height="30px"
+            />
+            <Skeleton
+              m="auto"
+              mt="20px"
+              width={["90%", "90%", "90%", "100%"]}
+              height="30px"
+            />
+          </Box>
+        ) : (
+          data?.map((el, i) => (
+            <Box padding="0 10px 0 10px" w="86%" m="auto" key={el._id}>
+              <Grid>
+                <Grid
+                  templateColumns="repeat(5,1fr)"
+                  w="100%"
+                  alignItems={"center"}
+                >
+                  <GridItem>
+                    <Text fontWeight={"500"} textAlign={"left"}>
+                      {el.projectName}
+                    </Text>
+                  </GridItem>
+                  <GridItem>{el.projectDate}</GridItem>
+                  <GridItem>
+                    <Avatar
+                      mixBlendMode="multiply"
+                      src="https://i.ibb.co/H7DQjXv/a-t-logo-1.png"
+                    />
+                  </GridItem>
+                  <GridItem>{i + 1}</GridItem>
+                  <GridItem>
+                    <Flex justifyContent={"right"} height={"20px"} gap="25px">
+                      <Flex>
+                        <Model2
+                          handlesetProject={handlesetProject}
+                          project={project}
+                          handleUpdate={handleUpdate}
+                          el={el}
+                        />
+                      </Flex>
+                      <Flex>
+                        <BsTrash onClick={() => handledelete(el._id)} />
+                      </Flex>
+                    </Flex>
+                  </GridItem>
+                </Grid>
+              </Grid>
+              <Divider mt="12px" borderTop="1px solid grey" />
+            </Box>
+          ))
+        )}
       </VStack>
     </ChakraProvider>
   );

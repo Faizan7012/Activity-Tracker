@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import MyDesktime from "../components/MyDesktime";
 import Productivity from "../components/Productivity";
 import Sidebar from "../components/Sidebar/SideBar";
+
 import Project_Descrip from "../components/Demo_Component/Project_Descrip"
 import Project from "../components/Demo_Component/Project"
 import Timer from "../components/Timer";
@@ -12,7 +13,7 @@ export default function Projects (){
 
     return (
         <ChakraProvider>
-             {/* <Box> */}
+        
             <Flex bg="#EBECEC" >
                 
                 <Sidebar  />
@@ -27,8 +28,6 @@ export default function Projects (){
                 </Box>
 
             </Flex>
-
-        {/* </Box> */}
         </ChakraProvider>
        
     )
