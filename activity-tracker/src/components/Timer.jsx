@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { HiOutlineArrowsExpand } from "react-icons/hi";
 import { BsFillPauseFill } from "react-icons/bs";
 import { BsFillPlayFill } from "react-icons/bs";
+
 import {
   Button,
   Flex,
@@ -21,21 +22,27 @@ import {
   ModalCloseButton,
 } from "@chakra-ui/react";
 import Draggable, { DraggableCore } from "react-draggable";
+import { useRef } from "react";
+import useTimer from "./useTimer";
+
+function secondsToHms(d) {
+  var h = Math.floor(d / 3600);
+  var m = Math.floor(d % 3600 / 60);
+  var s = Math.floor(d % 3600 % 60);
+  var hDisplay = h<=9?'0'+h:h
+  var mDisplay = m<=9?'0'+m:m
+  var sDisplay = s<=9?'0'+s:s
+  return {hDisplay,mDisplay,sDisplay}
+}
+
 function Timer() {
-  const [time, setTime] = useState(false);
   const { isOpen, onOpen, onClose } = useDisclosure();
-
-  const startTimer = () => {};
-
-  const handleClick = () => {
-    if (time) {
-    }
-    setTime(!time);
-  };
+  const {timer,start,stop,time} = useTimer(0);
+  const {hDisplay,mDisplay,sDisplay} = secondsToHms(timer);
 
   return (
     <>
-      ḥ{" "}
+      {/* <Button >Open Modal</Button> */}
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
@@ -70,7 +77,8 @@ function Timer() {
           </ModalFooter>
         </ModalContent>
       </Modal>
-      <Flex mt="50px" justify={"center"} className="mydiv">
+
+      <Flex justify={"center"} className="mydiv">
         <Draggable>
           <Flex
             // cursor="move"
@@ -93,16 +101,18 @@ function Timer() {
               <BsFillPauseFill
                 fontSize={"25px"}
                 color="#4ea819"
-                onClick={handleClick}
+                onClick={stop}
               />
             ) : (
               <BsFillPlayFill
                 fontSize={"25px"}
                 color="#4ea819"
-                onClick={handleClick}
+                onClick={start}
               />
             )}
-            <Text color="white">00:00:00</Text>
+            <Text color="white">
+              {hDisplay}:{mDisplay}:{sDisplay}
+            </Text>
           </Flex>
         </Draggable>
       </Flex>
@@ -111,3 +121,4 @@ function Timer() {
 }
 
 export default Timer;
+

@@ -4,21 +4,31 @@ import Footer from "../components/Footer";
 import MyDesktime from "../components/MyDesktime";
 import Productivity from "../components/Productivity";
 import Sidebar from "../components/Sidebar/SideBar";
-import Project_Descrip from "../components/Demo_Component/Project_Descrip";
-import Project from "../components/Demo_Component/Project";
 
-export default function Projects() {
-  return (
-    <ChakraProvider>
-      <Flex bg="#EBECEC">
-        <Sidebar />
-        <Box w="85%">
-          <Dashboard_Nav />
-          <Project_Descrip />
-          <Project />
-          <Footer />
-        </Box>
-      </Flex>
-    </ChakraProvider>
-  );
+import Project_Descrip from "../components/Demo_Component/Project_Descrip"
+import Project from "../components/Demo_Component/Project"
+import Timer from "../components/Timer";
+
+export default function Projects (){
+
+    return (
+        <ChakraProvider>
+        
+            <Flex bg="#EBECEC" >
+                
+                <Sidebar  />
+                
+               
+                <Box w="85%">
+                    <Dashboard_Nav />
+                    <Timer  />
+                    <Project_Descrip/>
+                    <Project/>
+                    <Footer/>
+                </Box>
+
+            </Flex>
+        </ChakraProvider>
+       
+    )
 }

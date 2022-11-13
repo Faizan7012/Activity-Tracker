@@ -2,9 +2,12 @@ import {applyMiddleware, combineReducers, legacy_createStore as createStore} fro
 import { blogReducer } from "./blog/reducer";
 import thunk from 'redux-thunk';
 import { authReducer } from "./auth/authReducer";
+import { lsReducer } from "./desktime/red";
+
 const rootReducer = combineReducers({
     blogs:blogReducer,
-    auth: authReducer
+    auth: authReducer,
+    ls: lsReducer
 })
 
 export const store = createStore(rootReducer,applyMiddleware(thunk));
