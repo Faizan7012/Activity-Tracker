@@ -6,6 +6,7 @@ import Productivity from "../components/Productivity";
 import Sidebar from "../components/Sidebar/SideBar";
 import Project_Descrip from "../components/Demo_Component/Project_Descrip"
 import Project from "../components/Demo_Component/Project"
+import Timer from "../components/Timer";
 
 export default function Projects (){
 
@@ -19,6 +20,7 @@ export default function Projects (){
                
                 <Box w="85%">
                     <Dashboard_Nav />
+                    <Timer  />
                     <Project_Descrip/>
                     <Project/>
                     <Footer/>

@@ -19,7 +19,9 @@ export default function DashboardPage (){
                     <Dashboard_Nav />
                     <MyDesktime />
                     <Productivity />
+                    {/* <Box w="50%" m='auto'> */}
                     <Footer/>
+                    {/* </Box> */}
                 </Box>
 
             </Flex>

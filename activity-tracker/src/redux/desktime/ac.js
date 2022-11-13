@@ -1,0 +1,1 @@
+export const onlsChange = (payload) => ({type, payload});
