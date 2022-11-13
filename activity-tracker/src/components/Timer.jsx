@@ -25,13 +25,17 @@ function Timer() {
   const [time, setTime] = useState(false);
   const { isOpen, onOpen, onClose } = useDisclosure();
 
+  const startTimer = () => {};
+
   const handleClick = () => {
+    if (time) {
+    }
     setTime(!time);
   };
 
   return (
     <>
-      {/* <Button >Open Modal</Button> */}
+      ḥ{" "}
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
@@ -66,11 +70,10 @@ function Timer() {
           </ModalFooter>
         </ModalContent>
       </Modal>
-
       <Flex mt="50px" justify={"center"} className="mydiv">
         <Draggable>
           <Flex
-            cursor="move"
+            // cursor="move"
             w="170px"
             className="mydivheader"
             draggable="auto"
