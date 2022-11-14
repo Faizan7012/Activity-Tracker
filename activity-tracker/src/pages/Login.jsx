@@ -43,6 +43,9 @@ const [password, setPassword] = useState("");
   const authData = useSelector(store => store.auth);
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  useEffect(()=>{
+    document.title = 'Login | Activity Tracker';
+  })
 
     function signIn(val){
         const provider = new val();

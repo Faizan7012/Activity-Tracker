@@ -34,8 +34,12 @@ import Navbar from "../components/Navbar";
 import Carousel from "../components/Carousel";
 import Footer from "../components/Footer";
 import { ChakraProvider } from "@chakra-ui/react";
+import { useEffect } from "react";
 
 function Home() {
+  useEffect(()=>{
+    document.title = 'Home | Activity Tracker';
+  })
   return (
     <ChakraProvider>
       <Box>

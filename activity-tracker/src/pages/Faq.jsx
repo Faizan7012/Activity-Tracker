@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./About.css"
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -14,6 +14,11 @@ import {  HStack,
   ChakraProvider,
   Flex,} from "@chakra-ui/react";
 export const Faq = () => {
+
+  useEffect(()=>{
+    document.title = 'FAQ | Activity Tracker';
+  })
+
   return (
     <> 
       {" "}

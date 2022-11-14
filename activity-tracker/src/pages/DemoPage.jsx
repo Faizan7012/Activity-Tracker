@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import BottomUp from "../components/Demo_Component/BottomUp";
 import Cards from "../components/Demo_Component/Cards";
 import Header_Section from "../components/Demo_Component/Header_Section";
@@ -13,6 +13,12 @@ import Carousel from "../components/Carousel";
 import Footer from "../components/Footer";
 
 function DemoPage(props) {
+
+  useEffect(()=>{
+    document.title = 'Demo | Activity Tracker';
+  })
+
+
   return (
     <ChakraProvider>
       <Navbar />

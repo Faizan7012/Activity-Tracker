@@ -61,6 +61,8 @@ const Signup = () => {
   };
 
   useEffect(() => {
+    document.title = 'Signup | Activity Tracker';
+
     if (authData !== "") navigate("/");
   }, [authData]);
 

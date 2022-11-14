@@ -4,7 +4,7 @@ import { Box, Button, Center,Stack, ChakraProvider, Heading, SimpleGrid, Text, A
    AccordionButton,
    AccordionPanel,
    Divider, } from "@chakra-ui/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import PriceBox from "../components/pricing/priceBox";
 import { pfData } from "../components/pricing/data";
@@ -20,6 +20,9 @@ const [state,setState] = useState('Premium')
 const handleState = (val)=>{
    setState(val)
 }
+useEffect(()=>{
+  document.title = 'Pricing | Activity Tracker';
+})
     return<ChakraProvider>
     <Navbar />
     <Box fontFamily='Source Sans Pro,sans-serif' w={['90%','90%','90%','80%']} pt='130px'  m='auto'>

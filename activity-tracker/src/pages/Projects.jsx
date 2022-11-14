@@ -8,9 +8,12 @@ import Sidebar from "../components/Sidebar/SideBar";
 import Project_Descrip from "../components/Demo_Component/Project_Descrip"
 import Project from "../components/Demo_Component/Project"
 import Timer from "../components/Timer";
+import { useEffect } from "react";
 
 export default function Projects (){
-
+    useEffect(()=>{
+        document.title = 'Project | Activity Tracker';
+      })
     return (
         <ChakraProvider>
         

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 // import styles from "../css/About.module.css";
 
@@ -19,6 +19,9 @@ import {
   Flex,
 } from "@chakra-ui/react";
 export default function Box1() {
+  useEffect(()=>{
+    document.title = 'About | Activity Tracker';
+  })
   return (
     <>
       {" "}
