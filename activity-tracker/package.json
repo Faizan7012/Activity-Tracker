@@ -26,6 +26,7 @@
     "redux": "^4.2.0",
     "redux-thunk": "^2.4.2",
     "slick-carousel": "^1.8.1",
+    "vercel": "^28.4.17",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -52,5 +53,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage":"https://github.com/Faizan7012/frightening-river-6696/tree/main/activity-tracker"
+  "homepage": "."
 }
