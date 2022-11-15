@@ -11,7 +11,7 @@ const [searchParams, setSearchParam] = useSearchParams();
     <Heading fontSize={['17px','22px','auto']} mb='20px' >
     Activity Tracker blog
     </Heading>
-    <Text mb='20px'>
+    <Text mb='20px' p='10px'>
     You can read our Case studies and latest news in the productivity industry
     </Text>
     <Flex m='auto' alignItems='center' flexDirection={['column','column','row','row']} justifyContent='center' gap='15px' mb='50px'>
