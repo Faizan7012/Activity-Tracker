@@ -88,7 +88,7 @@
  <h4>Footer</h4>
 <p></p>
  <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
-  <img style="width: 100%;" src="https://im5.ezgif.com/tmp/ezgif-5-1889395df9.gif" alt="">
+  <img style="width: 100%;" src="https://i.imgur.com/hudQ8mi.gif" alt="">
  </div>
 
 
