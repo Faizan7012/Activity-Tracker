@@ -90,6 +90,13 @@
  <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
   <img style="width: 100%;" src="https://i.imgur.com/hudQ8mi.gif" alt="">
  </div>
+  
+  <h4>Responsive</h4>
+<p></p>
+ <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
+  <img style="width: 100%;" src="https://i.imgur.com/XHAHast.gif" alt="">
+ </div>
+  
 
 
 
