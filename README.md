@@ -41,7 +41,7 @@
 <h2>Project Duration</h2>
 <p> 5 DAYS</p>  
 
-<h2>ScreenShots<h2>
+<h2>Project Slideshows<h2>
 <h4>Landing Page</h4>
 <p></p>
  <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
