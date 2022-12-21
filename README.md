@@ -27,13 +27,13 @@
 Clone the project
 
 ```bash
-  git clone https://github.com/Faizan7012/busy-plough-6714.git
+  git clone https://github.com/Faizan7012/Activity-Tracker.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd medshoppe
+  cd activity-tracker
 ```
 
 Install dependencies
