@@ -1,26 +1,97 @@
+
+
+<h1 align="center"> Hi,<img style="width: 35px;" src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" alt=""> There</h1>
+
 # Activity Tracker
 
 >DeskTime computer tracking software lets you track employee activity on PC and Mac by noting every website, program, and application that's being used and categorizing them as productive or unproductive
 
-## Built With
+<h2 align="left"><i>Tech Stack Used</i></h2>
+<div align="left">
+<img alt="HTML5" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"/>
+<img alt="CSS3" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"/> 
+<img alt="JavaScript" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
+<img alt="react" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+<img alt="redux" src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white" />
+<img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" /> 
+<img src="https://img.shields.io/badge/MongoDB-2e542d?style=for-the-badge&logo=mongodb&logoColor=white" />
+<img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge" />
+<img alit="chakra" src="https://img.shields.io/badge/chakra-%234ED1C5.svg?style=for-the-badge&logo=chakraui&logoColor=white" />  
+</div>
 
-- React.js
-- Redux
-- Node.js
-- Express
-- Mongo DB
-- Cyclic
-- Chakra UI
+<h2 align="left"><i>Deployed link</i></h2>
+  <a href="https://activity-tracker-orpin.vercel.app" target="_blank">
+  <img alt="Versel" src="https://console.dev/img/favicons/vercel.com.png"/>
+  </a>
+<h3 align="left"><a href="https://activity-tracker-orpin.vercel.app" target="_blank">Activity Tracker</a></h3>
 
-## Live Demo 
+<h1>Contributors</h1>
+    <ul>
+         <li><a href="https://github.com/Faizan7012" target="_blank">@Faizan Alam</a></li>
+        <li><a href="https://github.com/shubhojeet1" target="_blank">@Shubhojeet Chatterjee</a></li>
+        <li> <a href="https://github.com/adityabarshilia" target="_blank">@adityabarshilia</a> </li>
+        <li><a href="https://github.com/nileshsingh72" target="_blank">@nileshsingh72</a></li>
+      </ul>
+<h2>Project Outcome</h2>
+<p>Gained great experience of ReactJs, Express, Node, Google Auth and Chakra UI</p>
+<p>Learned Team collaboration,</p>
+<p>Learn how to lead a team,</p>
+<p>Project presentation skill improved.</p>
 
-[Vercel link available here](https://activity-tracker-orpin.vercel.app/)
+<h2>Project Duration</h2>
+<p> 5 DAYS</p>  
 
-## Screenshots
+<h2>ScreenShots<h2>
+<h4>Landing Page</h4>
+<p></p>
+ <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
+  <img style="width: 100%;" src="https://i.ibb.co/9r3gB6x/Screenshot-2022-12-21-at-2-28-48-PM.png" alt="">
+ </div>
+ 
+ <h4>SignUp & LogIn Page</h4>
+<p></p>
+ <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
+  <img style="width: 100%;" src="https://i.ibb.co/D1WGfb0/Screenshot-2022-12-21-at-2-45-48-PM.png" alt="">
+ </div>
 
-![App Screenshot]()
-![App Screenshot]()
+ 
+ <h4>Womens Page</h4>
+<p></p>
+ <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
+  <img style="width: 100%;" src="https://i.ibb.co/r2xy1MQ/Screenshot-2022-12-21-at-2-40-02-PM.png" alt="">
+ </div>
+ 
+ <h4>Mens Page</h4>
+<p></p>
+ <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
+  <img style="width: 100%;" src="https://i.ibb.co/Jvmr97n/Screenshot-2022-12-21-at-2-41-58-PM.png" alt="">
+ </div>
+ <h4>Kids Page</h4>
+<p></p>
+ <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
+  <img style="width: 100%;" src="https://i.ibb.co/9ZHjwKv/Screenshot-2022-12-21-at-2-43-48-PM.png" alt="">
+ </div>
+ 
+  <h4>Payment Page</h4>
+<p></p>
+ <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
+  <img style="width: 100%;" src="https://i.ibb.co/YPp28cg/Screenshot-2022-12-21-at-2-47-57-PM.png" alt="">
+ </div>
+  <h4>Checkout Page</h4>
+<p></p>
+ <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
+  <img style="width: 100%;" src="https://i.ibb.co/q51Lthb/Screenshot-2022-12-21-at-2-47-30-PM.png" alt="">
+ </div>
+ 
+ <h4>Footer</h4>
+<p></p>
+ <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
+  <img style="width: 100%;" src="https://i.ibb.co/zF6nk6D/Screenshot-2022-12-21-at-2-50-32-PM.png" alt="">
+ </div>
 
+
+
+<h1 align="center"> Thank You 😊!!!</h1>
 
 ## Run Locally
 
@@ -50,30 +121,5 @@ Start the server
 
 
 
-### Prerequisites
-React.js, React-Router-Dom, Axios, Redux, Nodejs, Express, Mongo DB, Api, Chakra UI.
-
-### Setup
-VS code,
- GitHub, Mongo DB, Cyclic
-
-
-## Authors
-
-👤 **Faizan Alam**
-
-- GitHub: [@Faizan7012](https://github.com/Faizan7012)
-
-👤 **Aditya Barshilla**
-
-- GitHub: [@adityabarshilia](https://github.com/adityabarshilia)
-
-👤 **Nilesh Singh Chauhan**
-
-- GitHub: [@nileshsingh72](https://github.com/nileshsingh72)
-
-👤 **Shubhojeet Chatterjee**
-
-- GitHub: [@shubhojeet1](https://github.com/shubhojeet1)
 
 
