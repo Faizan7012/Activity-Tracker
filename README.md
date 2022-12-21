@@ -121,7 +121,10 @@ Start the server
   npm run start
 ```
 
-<h1 align="center"> Thank You 😊!!!</h1>
+<p align="center">
+  <a href="https://activity-tracker-orpin.vercel.app">
+    <img src="https://readme-typing-svg.demolab.com/?lines=Thank You! ; .....Please do rate our Project 😊 👨🏻‍💻;&font=Fira%20Code&center=true&width=440&height=45&color=#37bcf7&vCenter=true&size=22&pause=1000"></a>
+</p>
 
 
 
