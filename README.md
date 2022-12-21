@@ -51,14 +51,14 @@
  <h4>SignUp & LogIn Page</h4>
 <p></p>
  <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
-  <img style="width: 100%;" src="" alt="">
+  <img style="width: 100%;" src="https://i.imgur.com/HiErnqP.gif" alt="">
  </div>
 
  
- <h4>Womens Page</h4>
+ <h4>Pricing Page</h4>
 <p></p>
  <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
-  <img style="width: 100%;" src="" alt="">
+  <img style="width: 100%;" src="https://im2.ezgif.com/tmp/ezgif-2-159842f6a2.gif" alt="">
  </div>
  
  <h4>Mens Page</h4>
