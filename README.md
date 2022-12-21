@@ -65,24 +65,24 @@
  <h4>Pricing Page</h4>
 <p></p>
  <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
-  <img style="width: 100%;" src="https://im2.ezgif.com/tmp/ezgif-2-159842f6a2.gif" alt="">
+  <img style="width: 100%;" src="https://i.imgur.com/mZBpGaQ.gif" alt="">
  </div>
  
  <h4>About Page</h4>
 <p></p>
  <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
-  <img style="width: 100%;" src="https://im5.ezgif.com/tmp/ezgif-5-52c804cf6c.gif" alt="">
+  <img style="width: 100%;" src="https://i.imgur.com/G2v7YTU.gif" alt="">
  </div>
  <h4>Blog Page</h4>
 <p></p>
  <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
-  <img style="width: 100%;" src="https://im5.ezgif.com/tmp/ezgif-5-0e65dd15b2.gif" alt="">
+  <img style="width: 100%;" src="https://i.imgur.com/pjQlANE.gif" alt="">
  </div>
  
   <h4>Dashboard Page</h4>
 <p></p>
  <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
-  <img style="width: 100%;" src="https://im5.ezgif.com/tmp/ezgif-5-f86adf2115.gif" alt="">
+  <img style="width: 100%;" src="https://i.imgur.com/khcODap.gif" alt="">
  </div>
  
  <h4>Footer</h4>
