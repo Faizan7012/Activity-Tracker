@@ -61,32 +61,27 @@
   <img style="width: 100%;" src="https://im2.ezgif.com/tmp/ezgif-2-159842f6a2.gif" alt="">
  </div>
  
- <h4>Mens Page</h4>
+ <h4>About Page</h4>
 <p></p>
  <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
-  <img style="width: 100%;" src="" alt="">
+  <img style="width: 100%;" src="https://im5.ezgif.com/tmp/ezgif-5-52c804cf6c.gif" alt="">
  </div>
- <h4>Kids Page</h4>
+ <h4>Blog Page</h4>
 <p></p>
  <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
-  <img style="width: 100%;" src="" alt="">
+  <img style="width: 100%;" src="https://im5.ezgif.com/tmp/ezgif-5-0e65dd15b2.gif" alt="">
  </div>
  
-  <h4>Payment Page</h4>
+  <h4>Dashboard Page</h4>
 <p></p>
  <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
-  <img style="width: 100%;" src="" alt="">
- </div>
-  <h4>Checkout Page</h4>
-<p></p>
- <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
-  <img style="width: 100%;" src="" alt="">
+  <img style="width: 100%;" src="https://im5.ezgif.com/tmp/ezgif-5-f86adf2115.gif" alt="">
  </div>
  
  <h4>Footer</h4>
 <p></p>
  <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px " >
-  <img style="width: 100%;" src="" alt="">
+  <img style="width: 100%;" src="https://im5.ezgif.com/tmp/ezgif-5-1889395df9.gif" alt="">
  </div>
 
 
