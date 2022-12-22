@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { lsChangeAr, lsChangeDp, lsChangeTT } from "../redux/desktime/actype";
 
+// A custom hook that starts or stop a timer (for time tracking)
 
 function useTimer(initialState) {
   const dispatch = useDispatch();

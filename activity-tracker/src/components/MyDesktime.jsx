@@ -8,7 +8,7 @@ import {
   Tooltip,
   Input,
 } from "@chakra-ui/react";
-import { IoCalendarSharp, IoInformationCircleSharp } from "react-icons/io5";
+import { IoInformationCircleSharp } from "react-icons/io5";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import { BsFillQuestionCircleFill } from "react-icons/bs";
 import Timer from "./Timer";
@@ -23,20 +23,29 @@ function secondsToHms(d) {
     <Box>
       {h != "0" ? (
         <Text color="#4EA819" fontSize="20px">
-          <Text color="#4EA819" fontSize="30px" as="span">{h}</Text> h
+          <Text color="#4EA819" fontSize="30px" as="span">
+            {h}
+          </Text>{" "}
+          h
         </Text>
       ) : (
         ""
       )}
       {m != "0" || h != "0" ? (
         <Text color="#4EA819" fontSize="20px">
-          <Text color="#4EA819" fontSize="30px" as="span">{m}</Text> m
+          <Text color="#4EA819" fontSize="30px" as="span">
+            {m}
+          </Text>{" "}
+          m
         </Text>
       ) : (
         ""
       )}
       <Text color="#4EA819" fontSize="20px">
-        <Text color="#4EA819" fontSize="30px" as="span">{s}</Text> s
+        <Text color="#4EA819" fontSize="30px" as="span">
+          {s}
+        </Text>{" "}
+        s
       </Text>
     </Box>
   );
@@ -65,7 +74,7 @@ const MyDesktime = () => {
 
   return (
     <ChakraProvider>
-        <Timer />
+      <Timer />
       <Box color="#333C43" w="90%" m="auto" p="30px" bg="#EBECEC">
         <Flex
           flexDirection={["column", "column", "column", "row"]}
@@ -126,7 +135,7 @@ const MyDesktime = () => {
         >
           <Box textAlign="left" p="15px" bg="white" height="167px">
             <Text m="0 !important">ARRIVAL TIME</Text>
-            <Text color="#4EA819" fontSize="30px" >
+            <Text color="#4EA819" fontSize="30px">
               {!status.arrival.hours
                 ? null
                 : status.arrival.hours +
@@ -138,7 +147,7 @@ const MyDesktime = () => {
           </Box>
           <Box textAlign="left" p="15px" bg="white" height="167px">
             <Text m="0 !important">LEFT TIME</Text>
-            <Text color="#4EA819" fontSize="30px" >
+            <Text color="#4EA819" fontSize="30px">
               {!status.departure.hours
                 ? null
                 : status.departure.hours +
@@ -171,12 +180,10 @@ const MyDesktime = () => {
             <Text>
               {status.totalTime === 0 ? null : secondsToHms(status.totalTime)}
             </Text>
-
           </Box>
           <Box textAlign="left" p="15px" bg="white" height="167px">
             <Flex alignItems="center" gap="7px">
               <Text pb="1.5px" m="0 !important">
-
                 DESKTIME TIME{" "}
               </Text>
               <Tooltip
@@ -197,13 +204,10 @@ const MyDesktime = () => {
             <Text>
               {status.totalTime === 0 ? null : secondsToHms(status.totalTime)}
             </Text>
-
-
           </Box>
           <Box textAlign="left" p="15px" bg="white" height="167px">
             <Flex alignItems="center" gap="7px">
               <Text pb="1.5px" m="0 !important">
-
                 TIME AT WORK
               </Text>
               <Tooltip
@@ -228,7 +232,6 @@ const MyDesktime = () => {
           <Box textAlign="left" p="15px" bg="white" height="167px">
             <Flex alignItems="center" gap="7px">
               <Text pb="1.5px" m="0 !important">
-
                 UNPRODUCTIVE TIME{" "}
               </Text>
               <Tooltip
