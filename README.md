@@ -136,6 +136,6 @@ Start the server
 </p>
 
 <p align="center">
-<img align="center" src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=40&pause=1000&color=F79912&vCenter=true&width=500&lines=Please do rate our Project 😊%2CI'm++😊"/></p>
+<img align="center" src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=F79912&vCenter=true&width=500&lines=Please do rate our Project 😊%2C++"/></p>
 
 
