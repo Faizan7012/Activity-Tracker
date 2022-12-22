@@ -13,11 +13,9 @@ import Carousel from "../components/Carousel";
 import Footer from "../components/Footer";
 
 function DemoPage(props) {
-
-  useEffect(()=>{
-    document.title = 'Demo | Activity Tracker';
-  })
-
+  useEffect(() => {
+    document.title = "Demo | Activity Tracker";
+  });
 
   return (
     <ChakraProvider>

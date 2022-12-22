@@ -29,7 +29,6 @@ import {
 
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
-import { onLogin } from "../redux/auth/authAction";
 import { login } from "../redux/auth/authType";
 import { useEffect } from "react";
 import { useState } from "react";

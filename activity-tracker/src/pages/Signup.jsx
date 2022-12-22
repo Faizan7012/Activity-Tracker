@@ -5,7 +5,6 @@ import {
   Text,
   FormControl,
   FormLabel,
-  FormHelperText,
   Link,
   Heading,
   Flex,
@@ -113,7 +112,6 @@ const Signup = () => {
             isRequired
           />
           <Input
-          // onClick={handleSubmit}
             mb="15px"
             fontSize="14px"
             color="white"

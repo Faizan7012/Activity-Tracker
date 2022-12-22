@@ -37,16 +37,15 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { useEffect } from "react";
 
 function Home() {
-  useEffect(()=>{
-    document.title = 'Home | Activity Tracker';
-  })
+  useEffect(() => {
+    document.title = "Home | Activity Tracker";
+  });
   return (
     <ChakraProvider>
       <Box>
         <Navbar />
         <Box
           p="130px 0 40px 0"
-          // h="670px"
           bgSize="cover"
           bg='url("https://desktime.com/static/web/_common/intro-background.png") no-repeat bottom'
         >
@@ -116,27 +115,22 @@ function Home() {
           </Flex>
           <Flex p="25px 0" justifyContent="center">
             <Image
-              // h="94px"
               w="16%"
               src="https://desktime.com/static/web/clients/customer-sixt-logo-white.svg"
             />
             <Image
-              // h="94px"
               w="16%"
               src="https://desktime.com/static/web/clients/customer-mapon-logo-white.svg"
             />
             <Image
-              // h="94px"
               w="16%"
               src="https://desktime.com/static/web/clients/customer-montway-logo-white.svg"
             />
             <Image
-              // h="94px"
               w="16%"
               src="https://desktime.com/static/web/clients/customer-onthemap-logo-white.svg"
             />
             <Image
-              // h="94px"
               w="158px"
               src="https://desktime.com/static/web/clients/customer-printful-logo-white.svg"
             />
@@ -212,13 +206,6 @@ function Home() {
             </Grid>
           </Stack>
           <Box w={["50%", "50%", "50%", "30%"]} borderRadius="3px">
-            {/* <Image
-            w="125px"
-            h="125px"
-            position="relative"
-            top="300px"
-            src="https://images.g2crowd.com/uploads/report_medal/image/1003078/medal.svg"
-          /> */}
             <Image
               w="100%"
               borderRadius="3px"
@@ -308,16 +295,6 @@ function Home() {
             </Text>
           </Box>
         </Flex>
-
-        {/* <CCard
-          name="Barrett Kuethen"
-          role="Operations Manager at Amtec"
-          company="Amtec"
-          img="https://desktime.com/static/web/testimonial-images/amtec.png"
-          desc="DeskTime has been an invaluable tool not only for managing our growing
-          team across the globe but also for raising employees’ awareness and
-          increasing their engagement."
-        /> */}
 
         <Box bg="#F5F5F6" p="70px 0">
           <Heading
