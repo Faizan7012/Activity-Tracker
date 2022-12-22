@@ -77,7 +77,8 @@ const Signup = () => {
         Start tracking your productivity in less than a minute!
       </Text>
       <VStack m="30px auto 50px auto" w="350px">
-        <FormControl>
+        <form onSubmit={(e) => handleSubmit(e)}>
+        <FormControl >
           <FormLabel color="blackAlpha.800" fontSize="14px">
             First and last name
           </FormLabel>
@@ -87,6 +88,7 @@ const Signup = () => {
             mb="15px"
             type="text"
             placeholder="Type in your first and last name"
+            isRequired
           />
           <FormLabel color="blackAlpha.800" fontSize="14px">
             Email
@@ -97,6 +99,7 @@ const Signup = () => {
             mb="15px"
             type="email"
             placeholder="Type in your email address"
+            isRequired
           />
           <FormLabel color="blackAlpha.800" fontSize="14px">
             Password
@@ -107,9 +110,10 @@ const Signup = () => {
             mb="15px"
             type="password"
             placeholder="Type in your password"
+            isRequired
           />
           <Input
-          onClick={handleSubmit}
+          // onClick={handleSubmit}
             mb="15px"
             fontSize="14px"
             color="white"
@@ -121,6 +125,7 @@ const Signup = () => {
             _hover={{ bg: "#327c04" }}
           />
         </FormControl>
+        </form>
         <Text mb="16px !important">
           Try free for 14 days. No credit card required. By signing up, you
           agree to our{" "}

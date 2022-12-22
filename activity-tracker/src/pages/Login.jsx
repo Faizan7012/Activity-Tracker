@@ -5,7 +5,6 @@ import {
   Text,
   FormControl,
   FormLabel,
-  FormHelperText,
   Link,
   Heading,
   Flex,
@@ -85,6 +84,7 @@ const [password, setPassword] = useState("");
         <Heading mb="24px" as="h1" fontSize="36px" color="#475056">
           Log in to DeskTime
         </Heading>
+        <form onSubmit={handleSubmit}>
         <FormControl>
           <FormLabel color="blackAlpha.800" fontSize="14px">
             Email
@@ -95,6 +95,7 @@ const [password, setPassword] = useState("");
             mb="15px"
             type="email"
             placeholder="Type in your email address"
+            isRequired
           />
           <FormLabel color="blackAlpha.800" fontSize="14px">
             Password
@@ -105,9 +106,9 @@ const [password, setPassword] = useState("");
             mb="15px"
             type="password"
             placeholder="Type in your password"
+            isRequired
           />
           <Input
-           onClick={handleSubmit}
             mb="15px"
             fontSize="14px"
             color="white"
@@ -119,6 +120,7 @@ const [password, setPassword] = useState("");
             _hover={{ bg: "#327c04" }}
           />
         </FormControl>
+        </form>
         <Link
           textDecoration="underline"
           fontWeight="bold"
