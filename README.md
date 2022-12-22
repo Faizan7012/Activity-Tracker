@@ -106,25 +106,25 @@
 
 Clone the project
 
-```bash
+```bash or zsh
   git clone https://github.com/Faizan7012/Activity-Tracker.git
 ```
 
 Go to the project directory
 
-```bash
+```bash or zsh
   cd activity-tracker
 ```
 
 Install dependencies
 
-```bash
+```bash or zsh
   npm install
 ```
 
 Start the server
 
-```bash
+```bash or zsh
   npm run start
 ```
 
