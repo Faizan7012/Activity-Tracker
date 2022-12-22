@@ -44,8 +44,6 @@ function Cards(props) {
       <Box
         w={"80%"}
         marginTop="100px"
-        // border="1px solid red"
-        // marginBottom="60px"
         m={"auto"}
       >
         <Grid

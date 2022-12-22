@@ -1,9 +1,8 @@
 import React from "react";
-import { Box, Flex, Button, Text, Heading, VStack } from "@chakra-ui/react";
-function Header_Section(props) {
+import { Box, Flex, Button, Text } from "@chakra-ui/react";
+function Header_Section() {
   return (
     <Box
-      // border="1px solid black"
       backgroundImage="url(
         https://desktime.com/static/web/_common/intro-background.png
       )"
@@ -25,11 +24,9 @@ function Header_Section(props) {
           justify="center"
           px="25px"
           alignItems={"center"}
-          // border="2px solid brown"
         >
           <Flex
             flexDirection={"column"}
-            // border="1px solid red"
             alignItems="center"
             justify="center"
             gap={"20px"}
@@ -93,11 +90,7 @@ function Header_Section(props) {
             </Flex>
           </Flex>
         </Flex>
-        <Flex
-          w={["100%", "100%", "100%", "50%"]}
-          justify={"center"}
-          // border={"1px solid red"}
-        >
+        <Flex w={["100%", "100%", "100%", "50%"]} justify={"center"}>
           <img
             src="https://desktime.com/static/web/demo/demo-of-desktime.png"
             alt=""
@@ -108,6 +101,5 @@ function Header_Section(props) {
     </Box>
   );
 }
-//checked
 
 export default Header_Section;

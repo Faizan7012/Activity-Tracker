@@ -2,17 +2,10 @@ import { Text, Flex, Button } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
 
-function BottomMost(props) {
+function BottomMost() {
   return (
     <Flex bg={"#4ea819"} mt="50px" py="70px" mb="100px">
-      {/* <Flex w="80%" m="auto"> */}
-      <Flex
-        w="60%"
-        m="auto"
-        // border={"1px solid red"}
-        flexDirection={"column"}
-        justifyContent={"center"}
-      >
+      <Flex w="60%" m="auto" flexDirection={"column"} justifyContent={"center"}>
         <Text
           fontSize={{ base: "24px", md: "24px", lg: "36px" }}
           fontWeight={"700"}
@@ -43,7 +36,6 @@ function BottomMost(props) {
         </Flex>
       </Flex>
     </Flex>
-    // </Flex>
   );
 }
 

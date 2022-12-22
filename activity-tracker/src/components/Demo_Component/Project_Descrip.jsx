@@ -15,14 +15,9 @@ function Project_Descrip() {
         lg: "row",
       }}
     >
-      <Flex
-      
-        gap="20px"
-        w={["100%", "100%", "100%", "50%"]}
-      >
+      <Flex gap="20px" w={["100%", "100%", "100%", "50%"]}>
         <Flex flexDirection={"column"}>
           <Text
-           
             fontFamily={"Source Sans Pro,sans-serif"}
             color={"#475056"}
             marginBottom="10px"
@@ -81,7 +76,6 @@ function Project_Descrip() {
               fontWeight={"500"}
               borderRadius="5px"
               color={"white"}
-              
               background={"#4ea819"}
             >
               GOT IT{" "}
@@ -92,7 +86,6 @@ function Project_Descrip() {
               fontWeight={"500"}
               borderRadius="5px"
               color={"#475056"}
-             
               background={"#fff"}
             >
               READ MORE

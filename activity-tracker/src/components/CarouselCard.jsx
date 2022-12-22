@@ -10,11 +10,11 @@ const CCard = ({ name, role, company, img, desc }) => {
       w="90%"
       h="456px"
       padding="16px"
-      m='20px'
+      m="20px"
     >
       <Flex justifyContent="flex-start" alignItems="center" gap="20px">
-      <Avatar name={name} src={img} />
-          <Stack textAlign="left">
+        <Avatar name={name} src={img} />
+        <Stack textAlign="left">
           <Text color="#333C43" fontSize="20px" fontWeight="bold">
             {name}
           </Text>
