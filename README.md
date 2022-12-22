@@ -9,7 +9,7 @@
 
 <p align="center">
   <a href="https://activity-tracker-orpin.vercel.app">
-    <img src="https://readme-typing-svg.demolab.com/?lines=Activity Tracker! ; .....You can track your daily life activity 👨🏻‍💻; Through%20this%20App%20%20!&font=Fira%20Code&center=true&width=440&height=45&color=#37bcf7&vCenter=true&size=22&pause=1000"></a>
+    <img src="https://readme-typing-svg.demolab.com/?lines=Activity Tracker!; .....You can track your daily life activity 👨🏻‍💻; Through%20this%20App%20%20!&font=Fira%20Code&center=true&width=440&height=45&color=#37bcf7&vCenter=true&size=22&pause=1000"></a>
 </p>
 
 <h2 align="left"><i>Tech Stack Used</i></h2>
