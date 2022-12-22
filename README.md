@@ -132,8 +132,10 @@ Start the server
 
 <p align="center">
   <a href="https://activity-tracker-orpin.vercel.app">
-    <img src="https://readme-typing-svg.demolab.com/?lines=Thank You! ; .....Please do rate our Project 😊 👨🏻‍💻;&font=Fira%20Code&center=true&width=440&height=45&color=#37bcf7&vCenter=true&size=22&pause=1000"></a>
+    <img src="https://readme-typing-svg.demolab.com/?lines=Thank You!  👨🏻‍💻;&font=Fira%20Code&center=true&width=440&height=45&color=#37bcf7&vCenter=true&size=22&pause=1000"></a>
 </p>
 
+<p align="center">
+<img align="center" src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=40&pause=1000&color=F79912&vCenter=true&width=500&lines=Please do rate our Project 😊%2CI'm++😊"/></p>
 
 
