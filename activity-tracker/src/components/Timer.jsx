@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { HiOutlineArrowsExpand } from "react-icons/hi";
 import { BsFillPauseFill } from "react-icons/bs";
 import { BsFillPlayFill } from "react-icons/bs";
@@ -25,6 +25,8 @@ import Draggable, { DraggableCore } from "react-draggable";
 import { useRef } from "react";
 import useTimer from "./useTimer";
 
+
+//function that converts seconds to hour, min and seconds accordingly
 function secondsToHms(d) {
   var h = Math.floor(d / 3600);
   var m = Math.floor(d % 3600 / 60);

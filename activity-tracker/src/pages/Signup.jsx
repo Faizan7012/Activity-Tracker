@@ -5,35 +5,25 @@ import {
   Text,
   FormControl,
   FormLabel,
-  FormHelperText,
   Link,
   Heading,
   Flex,
+  useToast
 } from "@chakra-ui/react";
 
 import { BsGithub } from "react-icons/bs";
-
-import {authentication} from '../components/AuthConfig';
-import {
-  signInWithPopup,
-  FacebookAuthProvider,
-  GoogleAuthProvider,
-  GithubAuthProvider,
-  TwitterAuthProvider,
-} from "firebase/auth";
-
 import { useDispatch, useSelector } from "react-redux";
-import { login } from "../redux/auth/authType";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-
 import { ChakraProvider } from "@chakra-ui/react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { useState } from "react";
+import { signupAPI } from "../redux/Auth/auth.action";
 
 
 const Signup = () => {
+  const toast = useToast();
   const authData = useSelector((store) => store.auth);
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -42,29 +32,42 @@ const Signup = () => {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
 
-  function signIn(val){
-    const provider = new val();
-     signInWithPopup(authentication,provider)
-     .then((res)=>{
-        console.log(res)
-        dispatch({type: login, payload: res.user});
-     })
-     .catch((err)=>{
-      console.log(err.message);
-     })
-   }
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("hello");
-    dispatch({type: login, payload: {email,displayName:name,password,}});
-  };
+        // console.log(signup)
+        dispatch(signupAPI({username: name, email, password})).then((res)=>{
+            setEmail("")
+            setName("")
+            setPassword("")
+            console.log(res);
+            
+            toast(
+              {
+                title: 'Account created.',
+                description: "We've created your account for you.",
+                status: 'success',
+                duration: 3000,
+                isClosable: true,
+              }
+            )
+
+            navigate("/login");
+  }).catch((e) => {
+    return toast(
+      {
+        title: "Error occured",
+        description: `${e.message}`,
+        status: 'error',
+        duration: 3000,
+        isClosable: true,
+      }
+    )
+  })
+}
 
   useEffect(() => {
     document.title = 'Signup | Activity Tracker';
-
-    if (authData !== "") navigate("/");
-  }, [authData]);
+  }, []);
 
 
   return (
@@ -77,7 +80,8 @@ const Signup = () => {
         Start tracking your productivity in less than a minute!
       </Text>
       <VStack m="30px auto 50px auto" w="350px">
-        <FormControl>
+        <form onSubmit={(e) => handleSubmit(e)}>
+        <FormControl >
           <FormLabel color="blackAlpha.800" fontSize="14px">
             First and last name
           </FormLabel>
@@ -87,6 +91,7 @@ const Signup = () => {
             mb="15px"
             type="text"
             placeholder="Type in your first and last name"
+            isRequired
           />
           <FormLabel color="blackAlpha.800" fontSize="14px">
             Email
@@ -97,6 +102,7 @@ const Signup = () => {
             mb="15px"
             type="email"
             placeholder="Type in your email address"
+            isRequired
           />
           <FormLabel color="blackAlpha.800" fontSize="14px">
             Password
@@ -107,9 +113,9 @@ const Signup = () => {
             mb="15px"
             type="password"
             placeholder="Type in your password"
+            isRequired
           />
           <Input
-          onClick={handleSubmit}
             mb="15px"
             fontSize="14px"
             color="white"
@@ -121,6 +127,7 @@ const Signup = () => {
             _hover={{ bg: "#327c04" }}
           />
         </FormControl>
+        </form>
         <Text mb="16px !important">
           Try free for 14 days. No credit card required. By signing up, you
           agree to our{" "}
@@ -138,23 +145,23 @@ const Signup = () => {
           </Text>
           <Flex gap="10px">
             <Link
-              onClick={() => signIn(FacebookAuthProvider)}
+            
               className="authlinks"
               bgColor="#1877f2"
               backgroundImage='url("https://desktime.com/assets/img/bs4/icons/social/logo-facebook-white.svg")'
             ></Link>
-            <Link onClick={() => signIn(TwitterAuthProvider)}
+            <Link 
               className="authlinks"
               bgColor="#1da1f2"
               backgroundImage='url("https://desktime.com/assets/img/bs4/icons/social/logo-twitter-white.svg")'
             ></Link>
-            <Link onClick={() => signIn(GoogleAuthProvider)}
+            <Link 
               className="authlinks"
               bgColor="#f5f5f6"
               border="1px solid #d6d8d9"
               backgroundImage='url("https://desktime.com/assets/img/bs4/icons/social/logo-google-color.svg")'
             ></Link>
-            <Link onClick={() => signIn(GithubAuthProvider)} className="authlinks" bgColor="black">
+            <Link className="authlinks" bgColor="black">
               <Flex h="100%" justifyContent="center" alignItems="center">
                 <BsGithub className="apple" color="white" />
               </Flex>

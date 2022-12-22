@@ -17,20 +17,15 @@ import { IoEarth } from "react-icons/io5";
 import {
   ChevronDownIcon,
   ChevronUpIcon,
-  ChevronRightIcon,
 } from "@chakra-ui/icons";
 
 import { Link as RouterLink } from "react-router-dom";
 import BurgerMenu from "./BurgerMenu";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
-
-// let authData = JSON.parse(localStorage.getItem("firebaseauth"))||"";
 
 function Navbar() {
-
-  const authData = useSelector(store => store.auth);
-  // const dispatch = useDispatch();
+  const {isAuth} = useSelector((store) => store.auth);
 
   return (
     <Box
@@ -58,7 +53,7 @@ function Navbar() {
         <Flex
           justifyContent="center"
           alignItems="center"
-          gap={["10px","10px","10px","20px"]}
+          gap={["10px", "10px", "10px", "20px"]}
           zIndex="100"
           display={["none", "none", "flex", "flex"]}
         >
@@ -92,15 +87,12 @@ function Navbar() {
             About us
           </Link>
 
-          
-
           <Link
             as={RouterLink}
             to="/faq"
             className="un"
             _hover={{ textDecoration: "none" }}
           >
-
             FAQ
           </Link>
 
@@ -109,71 +101,72 @@ function Navbar() {
             to="/blog"
             className="un"
             _hover={{ textDecoration: "none" }}
+          ></Link>
+
+          <Link
+            as={RouterLink}
+            to="/blog"
+            className="un"
+            _hover={{ textDecoration: "none" }}
           >
-          </Link>
-
-          <Link as={RouterLink} to='/blog' className="un" _hover={{ textDecoration: "none" }}>
-
             Blog
           </Link>
 
-          {authData === "" ? ( 
-           <>
-           <Button
-            borderRadius="3px"
-            fontSize="13px"
-            colorScheme="teal"
-            size="md"
-            variant="outline"
-            _hover={{ bg: "#efefed" }}
-          >
-              <Link
-              color="black"
-              _hover={{ textDecoration: "none" }}
-              as={RouterLink}
-              to="/login"
-            >
-              LOGIN
-            </Link>
-          </Button>
-          <Button
-            fontSize="13px"
-            borderRadius="3px"
-            bg="#4ea819"
-            color="white"
-            size="md"
-            _hover={{ bg: "#327c04" }}
-          >
-            <Link
-              _hover={{ textDecoration: "none" }}
-              as={RouterLink}
-              to="/signup"
-            >
-              SIGN UP
-            </Link>
-          </Button>
-           </> 
-          ): (
+          {!isAuth ? (
+            <>
+              <Button
+                borderRadius="3px"
+                fontSize="13px"
+                colorScheme="teal"
+                size="md"
+                variant="outline"
+                _hover={{ bg: "#efefed" }}
+              >
+                <Link
+                  color="black"
+                  _hover={{ textDecoration: "none" }}
+                  as={RouterLink}
+                  to="/login"
+                >
+                  LOGIN
+                </Link>
+              </Button>
+              <Button
+                fontSize="13px"
+                borderRadius="3px"
+                bg="#4ea819"
+                color="white"
+                size="md"
+                _hover={{ bg: "#327c04" }}
+              >
+                <Link
+                  _hover={{ textDecoration: "none" }}
+                  as={RouterLink}
+                  to="/signup"
+                >
+                  SIGN UP
+                </Link>
+              </Button>
+            </>
+          ) : (
             <Button
-            fontSize="13px"
-            borderRadius="3px"
-            bg="#4ea819"
-            color="white"
-            size="md"
-            _hover={{ bg: "#327c04" }}
-          >
-            <Link
-              _hover={{ textDecoration: "none" }}
-              as={RouterLink}
-              to="/dashboard/my"
+              fontSize="13px"
+              borderRadius="3px"
+              bg="#4ea819"
+              color="white"
+              size="md"
+              _hover={{ bg: "#327c04" }}
             >
-              MY DESKTIME
-            </Link>
-          </Button>
+              <Link
+                _hover={{ textDecoration: "none" }}
+                as={RouterLink}
+                to="/dashboard/my"
+              >
+                MY DESKTIME
+              </Link>
+            </Button>
           )}
 
-
-          
           <HStack>
             <IoEarth />
             <Box color="#555E63" marginLeft="3px !important" as="span">

@@ -6,6 +6,7 @@ import { AiFillRightSquare, AiFillLeftSquare } from "react-icons/ai";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+// React slick carousel
 const Carousel = () => {
   const [sliderRef, setSliderRef] = useState(null);
 
@@ -110,7 +111,5 @@ const Carousel = () => {
     </div>
   );
 };
-
-// adadaddsdsef
 
 export default Carousel;

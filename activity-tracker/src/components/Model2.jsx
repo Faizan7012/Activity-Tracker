@@ -14,7 +14,6 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { BiEdit } from "react-icons/bi";
-import { useEffect } from "react";
 
 function Model2({ project, handlesetProject, handleUpdate, el }) {
   const { isOpen, onOpen, onClose } = useDisclosure();

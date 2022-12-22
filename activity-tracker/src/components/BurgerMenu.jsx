@@ -24,14 +24,12 @@ import { IoEarth } from "react-icons/io5";
 import { Link as RouterLink } from "react-router-dom";
 
 import { useRef } from "react";
-import { useDispatch, useSelector } from "react-redux";
-
-// let authData = JSON.parse(localStorage.getItem("firebaseauth"))||"";
+import { useSelector } from "react-redux";
 
 const BurgerMenu = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef();
-  const authData = useSelector(store => store.auth);
+  const authData = useSelector((store) => store.auth);
 
   return (
     <Box display={["flex", "flex", "none", "none"]}>
@@ -115,59 +113,61 @@ const BurgerMenu = () => {
 
             <Divider orientation="horizontal" />
 
-            { authData === "" ? <>
-            <Button
-              borderRadius="3px"
-              fontSize="16px"
-              colorScheme="teal"
-              size="md"
-              variant="outline"
-              _hover={{ bg: "#efefed" }}
-            >
-              <Link
-                color="black"
-                _hover={{ textDecoration: "none" }}
-                as={RouterLink}
-                to="/login"
-              >
-                LOGIN
-              </Link>
-            </Button>
-            <Button
-              fontSize="16px"
-              borderRadius="3px"
-              bg="#4ea819"
-              color="white"
-              size="md"
-              _hover={{ bg: "#327c04" }}
-            >
-              <Link
-                _hover={{ textDecoration: "none" }}
-                as={RouterLink}
-                to="/signup"
-              >
-                SIGN UP
-              </Link>
-            </Button>
-            </> : (
+            {authData === "" ? (
+              <>
+                <Button
+                  borderRadius="3px"
+                  fontSize="16px"
+                  colorScheme="teal"
+                  size="md"
+                  variant="outline"
+                  _hover={{ bg: "#efefed" }}
+                >
+                  <Link
+                    color="black"
+                    _hover={{ textDecoration: "none" }}
+                    as={RouterLink}
+                    to="/login"
+                  >
+                    LOGIN
+                  </Link>
+                </Button>
+                <Button
+                  fontSize="16px"
+                  borderRadius="3px"
+                  bg="#4ea819"
+                  color="white"
+                  size="md"
+                  _hover={{ bg: "#327c04" }}
+                >
+                  <Link
+                    _hover={{ textDecoration: "none" }}
+                    as={RouterLink}
+                    to="/signup"
+                  >
+                    SIGN UP
+                  </Link>
+                </Button>
+              </>
+            ) : (
               <Button
-              fontSize="16px"
-              borderRadius="3px"
-              bg="#4ea819"
-              color="white"
-              size="md"
-              _hover={{ bg: "#327c04" }}
-            >
-              <Link
-                _hover={{ textDecoration: "none" }}
-                as={RouterLink}
-                to="/dashboard"
+                fontSize="16px"
+                borderRadius="3px"
+                bg="#4ea819"
+                color="white"
+                size="md"
+                _hover={{ bg: "#327c04" }}
               >
-                MY DESKTIME
-              </Link>
-            </Button>
-            ) }
-            
+                <Link
+                  _hover={{ textDecoration: "none" }}
+                  as={RouterLink}
+                  to="/dashboard"
+                >
+                  MY DESKTIME
+                </Link>
+              </Button>
+            )}
+
             <HStack>
               <IoEarth />
               <Box color="#555E63" marginLeft="3px !important" as="span">

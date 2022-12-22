@@ -1,17 +1,16 @@
 import React from "react";
-import { Box, Heading, Flex, Button, Text } from "@chakra-ui/react";
+import { Heading, Flex, Button, Text } from "@chakra-ui/react";
+
 function SingleCard(props) {
   const { img, heading, text, buttonText } = props;
 
   return (
     <Flex
       px={"10px"}
-      // border="2px solid red"
       height={["300px", "250px", "250px", "325px"]}
       m="auto"
       flexDirection={"column"}
       justifyContent={"space-between"}
-      // alignContent={"space-between"}
     >
       <Flex justify="center">
         {" "}

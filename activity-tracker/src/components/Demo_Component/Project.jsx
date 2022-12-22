@@ -10,8 +10,6 @@ import {
   Input,
   InputGroup,
   InputLeftAddon,
-} from "@chakra-ui/react";
-import {
   Button,
   ChakraProvider,
   Flex,
@@ -19,23 +17,20 @@ import {
   GridItem,
   Text,
   VStack,
-  Image,
   Divider,
   Box,
-  SimpleGrid,
   Avatar,
   Skeleton,
 } from "@chakra-ui/react";
-import { async } from "@firebase/util";
+
 import axios from "axios";
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import { BiEdit } from "react-icons/bi";
 import { BsTrash } from "react-icons/bs";
 import Model2 from "../Model2";
 
-function Project(props) {
+function Project() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [project, setProject] = useState("");
   const [mystate, setmystate] = useState(false);

@@ -1,27 +1,22 @@
 import React from "react";
 import { Container, Flex, Button } from "@chakra-ui/react";
-function BottomUp(props) {
+
+function BottomUp() {
   return (
     <Flex my={70}>
       <Flex
         w="80%"
         flexDirection={["column", "column", "column", "row"]}
         m="auto"
-        // border={"1px solid black"}
       >
         <Flex
           width={["100%", "100%", "100%", "50%"]}
           justify={"center"}
           alignItems={"center"}
-          // border="1px solid red"
         >
           <img src="https://desktime.com/static/web/demo/notebook.png" alt="" />
         </Flex>
-        <Flex
-          width={["100%", "100%", "100%", "50%"]}
-          // border="1px solid red"
-          alignItems={"center"}
-        >
+        <Flex width={["100%", "100%", "100%", "50%"]} alignItems={"center"}>
           <Flex flexDirection={"column"}>
             <Container
               fontSize={["26px", "30px", "33px", "36px"]}

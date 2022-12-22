@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Flex, Text, Button, Stack } from "@chakra-ui/react";
-function YoutubePlayer1(props) {
+
+function YoutubePlayer1() {
   return (
     <Flex boxShadow={"0 0 .75rem rgba(0,0,0,.12)"} w="100%">
       <Flex
@@ -12,15 +13,10 @@ function YoutubePlayer1(props) {
           "column-reverse",
           "row",
         ]}
-        // border={"1px solid green"}
         m="auto"
         alignItems={"center"}
       >
-        <Flex
-          w={["100%", "100%", "100%", "50%"]}
-
-          // border="1px solid red"
-        >
+        <Flex w={["100%", "100%", "100%", "50%"]}>
           <Flex
             px={["25", "25", "20", "25"]}
             justifyContent="space-between"
@@ -40,7 +36,6 @@ function YoutubePlayer1(props) {
               <Text
                 color={"#475056"}
                 fontWeight={"400"}
-                // fontSize={["17px", "17px", "17px", "17px"]}
                 lineHeight={"28px"}
                 textAlign={"left"}
                 marginBottom="-5px"
@@ -53,7 +48,6 @@ function YoutubePlayer1(props) {
               <Text
                 color={"#475056"}
                 fontWeight={"400"}
-                // fontSize={["17px", "17px", "17px", "17px"]}
                 lineHeight={"28px"}
                 textAlign={"left"}
                 marginBottom="-5px"
@@ -63,55 +57,29 @@ function YoutubePlayer1(props) {
                 what and for how long.
               </Text>
               <Stack spacing={"10px"}>
-                <Flex
-                  // border={"1px solid brown"}
-
-                  gap={3}
-                  alignItems={"center"}
-                >
+                <Flex gap={3} alignItems={"center"}>
                   <img
                     width="5%"
                     height="40%"
                     src="https://i.ibb.co/s9kPpwq/svgcheck.png"
                     alt=""
                   />
-                  <Text
-                    // border="1px solid brown"
-                    color={"#475056"}
-                    fontWeight={"400"}
-                    // fontSize={["17px", "17px", "17px", "17px"]}
-                    textAlign={"left"}
-                  >
+                  <Text color={"#475056"} fontWeight={"400"} textAlign={"left"}>
                     Keep track of processes and goals.
                   </Text>
                 </Flex>
-                <Flex
-                  // border={"1px solid brown"}
-
-                  gap={3}
-                  alignItems={"center"}
-                >
+                <Flex gap={3} alignItems={"center"}>
                   <img
                     width="5%"
                     height="40%"
                     src="https://i.ibb.co/s9kPpwq/svgcheck.png"
                     alt=""
                   />
-                  <Text
-                    color={"#475056"}
-                    fontWeight={"400"}
-                    // fontSize={["17px", "17px", "17px", "17px"]}
-                    textAlign={"left"}
-                  >
+                  <Text color={"#475056"} fontWeight={"400"} textAlign={"left"}>
                     Set Automatic time & project tracking.
                   </Text>
                 </Flex>
-                <Flex
-                  // border={"1px solid brown"}
-
-                  gap={3}
-                  alignItems={"center"}
-                >
+                <Flex gap={3} alignItems={"center"}>
                   <img
                     width="5%"
                     height="40%"
@@ -165,13 +133,10 @@ function YoutubePlayer1(props) {
           py="60px"
           alignItems={"center"}
           justifyContent={"center"}
-          // border={"1px solid red"}
         >
           <Box
             as="iframe"
-            // margin="auto"
             width={["90%", "90%", "80%", "90%"]}
-            // width={["350px", "470px", "470px", "520px"]}
             height={["315px", "315px", "315px", "315px"]}
             allowFullScreen={true}
             border="none"
