@@ -11,7 +11,6 @@ import {
   useToast
 } from "@chakra-ui/react";
 
-import {authentication} from '../components/AuthConfig';
 
 import { BsGithub } from "react-icons/bs";
 
@@ -19,17 +18,10 @@ import { ChakraProvider } from "@chakra-ui/react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-import {
-  signInWithPopup,
-  FacebookAuthProvider,
-  GoogleAuthProvider,
-  GithubAuthProvider,
-  TwitterAuthProvider,
-} from "firebase/auth";
 
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
-import { login } from "../redux/auth/authType";
+import { loginAPI } from "../redux/Auth/auth.action"
 import { useEffect } from "react";
 import { useState } from "react";
 
@@ -38,43 +30,42 @@ const toast = useToast()
 const [email, setEmail] = useState("");
 const [password, setPassword] = useState("");
 
-  const authData = useSelector(store => store.auth);
+  const {data} = useSelector(store => store.auth);
   const dispatch = useDispatch();
   const navigate = useNavigate();
   useEffect(()=>{
     document.title = 'Login | Activity Tracker';
   })
 
-    function signIn(val){
-        const provider = new val();
-         signInWithPopup(authentication,provider)
-         .then((res)=>{
-            console.log(res)
-            dispatch({type: login, payload: res.user});
-            return toast({
-              title: 'Account created.',
-              description: "We've created your account for you.",
-              status: 'success',
-              duration: 9000,
-              isClosable: true,
-    })
-         })
-         .catch((err)=>{
-          console.log(err.message);
-         })
-       }
-
-       const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log("hello")
-        dispatch({type: login, payload: {email, password}});
-       }
-
-       useEffect(() => {
-        if(authData !== "") navigate("/");
-       }, [authData]);
-
-       console.log(email, password)
+  const handleSubmit = (e) => {
+    e.preventDefault();
+        // console.log(signup)
+        dispatch(loginAPI({email, password})).then((res)=>{
+            setEmail("")
+            setPassword("")
+            console.log(res);
+            toast(
+              {
+                title: 'Login Succesfull',
+                description: "Welcome to Activity Tracker",
+                status: 'success',
+                duration: 3000,
+                isClosable: true,
+              }
+            )
+            navigate("/");
+  }).catch((e) => {
+    return toast(
+      {
+        title: "Error occured",
+        description: `${e.message}`,
+        status: 'error',
+        duration: 3000,
+        isClosable: true,
+      }
+    )
+  })
+}
 
   return (
     <ChakraProvider>
@@ -143,23 +134,23 @@ const [password, setPassword] = useState("");
           </Text>
           <Flex gap="10px">
             <Link
-              onClick={() => signIn(FacebookAuthProvider)}
+              
               className="authlinks"
               bgColor="#1877f2"
               backgroundImage='url("https://desktime.com/assets/img/bs4/icons/social/logo-facebook-white.svg")'
             ></Link>
-            <Link onClick={() => signIn(TwitterAuthProvider)}
+            <Link 
               className="authlinks"
               bgColor="#1da1f2"
               backgroundImage='url("https://desktime.com/assets/img/bs4/icons/social/logo-twitter-white.svg")'
             ></Link>
-            <Link onClick={() => signIn(GoogleAuthProvider)}
+            <Link 
               className="authlinks"
               bgColor="#f5f5f6"
               border="1px solid #d6d8d9"
               backgroundImage='url("https://desktime.com/assets/img/bs4/icons/social/logo-google-color.svg")'
             ></Link>
-            <Link onClick={() => signIn(GithubAuthProvider)} className="authlinks" bgColor="black">
+            <Link className="authlinks" bgColor="black">
               <Flex h="100%" justifyContent="center" alignItems="center">
                 <BsGithub className="apple" color="white" />
               </Flex>

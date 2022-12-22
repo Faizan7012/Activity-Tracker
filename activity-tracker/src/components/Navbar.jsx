@@ -25,7 +25,7 @@ import { useSelector } from "react-redux";
 
 
 function Navbar() {
-  const authData = useSelector((store) => store.auth);
+  const {isAuth} = useSelector((store) => store.auth);
 
   return (
     <Box
@@ -112,7 +112,7 @@ function Navbar() {
             Blog
           </Link>
 
-          {authData === "" ? (
+          {!isAuth ? (
             <>
               <Button
                 borderRadius="3px"

@@ -1,12 +1,14 @@
-import { Avatar, Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Text, Link } from "@chakra-ui/react";
 import React from "react";
 import { HiMenu } from "react-icons/hi";
 import { AiOutlineSearch } from "react-icons/ai";
 import { MdNotifications } from "react-icons/md";
-
-const InfoData = JSON.parse(localStorage.getItem("firebaseauth")) || "";
+import { useSelector } from "react-redux";
+import { colors } from "./Colors";
 
 function Dashboard_Nav() {
+  const { data } = useSelector((store) => store.auth);
+
   return (
     <Flex m="auto" flexDirection={"column"}>
       <Flex justify={"center"} alignItems="center" p="14px" bg="#4EA819">
@@ -82,7 +84,7 @@ function Dashboard_Nav() {
                 fontWeight={"600"}
                 color={"#3B4248"}
               >
-                {InfoData.displayName}
+                {data.username}
               </Text>
               <Text
                 textAlign="right"
@@ -94,7 +96,18 @@ function Dashboard_Nav() {
               </Text>
             </Flex>
             <Flex>
-              <Avatar src={InfoData.photoURL} />
+              <Flex
+                fontSize="20px"
+                borderRadius="50%"
+                w="50px"
+                h="50px"
+                alignItems="center"
+                bg={colors[data?.username[0].toLowerCase()]}
+                color="white"
+                justifyContent="center"
+              >
+                <Text>{data?.username[0].toUpperCase()}</Text>
+              </Flex>
             </Flex>
           </Flex>
         </Flex>

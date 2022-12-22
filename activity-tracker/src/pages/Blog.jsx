@@ -52,7 +52,7 @@ function Blog() {
     ) {
       axios
         .get(
-          `https://mock-api-heroku.herokuapp.com/blog?_page=${page}&_limit=${limit}`
+          `https://upset-teal-duck.cyclic.app/blog?_page=${page}&_limit=${limit}`
         )
         .then((res) => {
           setTotalPage(res.headers["x-total-count"]);
@@ -64,7 +64,7 @@ function Blog() {
     } else {
       axios
         .get(
-          `https://mock-api-heroku.herokuapp.com/blog?category=${filterBy}&_page=${page}&_limit=${limit}`
+          `https://upset-teal-duck.cyclic.app/blog?category=${filterBy}&_page=${page}&_limit=${limit}`
         )
         .then((res) => {
           setTotalPage(res.headers["x-total-count"]);
