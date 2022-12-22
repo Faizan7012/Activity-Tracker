@@ -28,7 +28,7 @@
 
 <h2 align="left"><i>Deployed link</i></h2>
   <a href="https://activity-tracker-orpin.vercel.app" target="_blank">
-  <img style="width: 105px; " alt="Versel" src="https://im5.ezgif.com/tmp/ezgif-5-e065c5c545.png"/>
+  <img style="width: 105px; " alt="Versel" src="https://i.ibb.co/bRP7XGL/output-onlinepngtools.png"/>
   </a>
 <h3 align="left"><a href="https://activity-tracker-orpin.vercel.app" target="_blank">Activity Tracker</a></h3>
 
