@@ -42,7 +42,7 @@
         <li><a href="https://github.com/nileshsingh72" target="_blank">@nileshsingh72</a></li>
       </ul>
 <h2>Project Outcome</h2>
-<p>Gained great experience of ReactJs, Express, Node, Google Auth and Chakra UI</p>
+<p>Gained great experience of ReactJs, Express, Mongodb, Node, Google Auth and Chakra UI</p>
 <p>Learned Team collaboration,</p>
 <p>Learn how to lead a team,</p>
 <p>Project presentation skill improved.</p>
