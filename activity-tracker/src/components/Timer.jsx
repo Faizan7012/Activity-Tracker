@@ -18,11 +18,9 @@ import {
   ModalContent,
   ModalHeader,
   ModalFooter,
-  ModalBody,
   ModalCloseButton,
 } from "@chakra-ui/react";
-import Draggable, { DraggableCore } from "react-draggable";
-import { useRef } from "react";
+import Draggable from "react-draggable";
 import useTimer from "./useTimer";
 
 

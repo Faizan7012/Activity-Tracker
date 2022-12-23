@@ -1,0 +1,19 @@
+.otherPageLink a{
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: 400;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.current{
+    background-color: #006600;
+    color: #FFFFFF;
+  }
+  .navLink{
+    color : #70707B
+  }
+.navLink:hover{
+    background-color: gray;
+    color:white
+}

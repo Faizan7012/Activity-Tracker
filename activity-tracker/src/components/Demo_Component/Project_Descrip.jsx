@@ -1,7 +1,7 @@
 import { Button, Flex, Image, Text } from "@chakra-ui/react";
 import React from "react";
 
-function Project_Descrip() {
+function Projectdesc() {
   return (
     <Flex
       padding="20px"
@@ -107,4 +107,4 @@ function Project_Descrip() {
   );
 }
 
-export default Project_Descrip;
+export default Projectdesc;
