@@ -19,11 +19,8 @@ function AllRoutes() {
       <Route path="/pricing" element={<Pricing />}></Route>
       <Route path="/features" element={<div>Feature</div>}></Route>
       <Route path="/aboutus" element={<AboutDeskTime />}></Route>
-
       <Route path="/faq" element={<Faq />}></Route>
-
       <Route path="/blog" element={<Blog />}></Route>
-
       <Route path="/login" element={<Login />}></Route>
       <Route path="/signup" element={<Signup />}></Route>
       <Route path="/dashboard/my" element={<DashboardPage />}></Route>

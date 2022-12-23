@@ -1,30 +1,33 @@
-import { Box, ChakraProvider, Flex } from "@chakra-ui/react";
-import Dashboard_Nav from "../components/Dashboard_Nav";
 import Footer from "../components/Footer";
-import Sidebar from "../components/Sidebar/SideBar";
-
-import Project_Descrip from "../components/Demo_Component/Project_Descrip";
 import Project from "../components/Demo_Component/Project";
 import Timer from "../components/Timer";
+import { Box, ChakraProvider, Flex , useDisclosure } from "@chakra-ui/react";
 import { useEffect } from "react";
-
-export default function Projects() {
+import {Sidebar} from '../components/sidebar&navbar/Sidebar'
+import Navbar from '../components/sidebar&navbar/Navbar'
+import Projectdesc from "../components/Demo_Component/project_descrip";
+function Projects(){
+  const { isOpen,onOpen, onClose } = useDisclosure();
   useEffect(() => {
-    document.title = "Project | Activity Tracker";
+    document.title = "Projects | Activity Tracker";
   });
-  return (
-    <ChakraProvider>
-      <Flex bg="#EBECEC">
-        <Sidebar />
+    return <ChakraProvider>
 
-        <Box w="85%">
-          <Dashboard_Nav />
-          <Timer />
-          <Project_Descrip />
-          <Project />
-          <Footer />
-        </Box>
-      </Flex>
-    </ChakraProvider>
-  );
+             <Flex w='100%' bg="#EBECEC">
+             <Sidebar isOpen={isOpen} onOpen={onOpen} onClose={onClose}/>
+             <Box w={['100%','100%','100%','80%']} ml={['0px','0px','0px','20%']} mb='60px'>
+             <Navbar onOpen={onOpen}/>
+             <Box w='90%' m='auto'>
+             <Timer />
+             <Projectdesc />
+             <Project />
+             <Footer />
+
+             </Box>
+             </Box>
+           </Flex>
+
+      </ChakraProvider>
 }
+
+export default Projects ;
