@@ -1,4 +1,4 @@
-import { AUTH_ERROR, AUTH_LOADING, AUTH_LOGOUT, AUTH_SIGNIN_SUCCESS } from "./auth.types";
+import { AUTH_ERROR, AUTH_LOADING, AUTH_LOGOUT, AUTH_SIGNIN_SUCCESS, AUTH_SIGNUP_SUCCESS } from "./auth.types";
 import axios from 'axios';
 const host = 'https://upset-teal-duck.cyclic.app/';
 export const loginAPI = (data) => async (dispatch) => {
@@ -22,6 +22,7 @@ export const signupAPI = (data) => async (dispatch) => {
         return res.data;
     }
     catch (e) {
+        dispatch({ type: AUTH_ERROR });
         return e.response.data;
     }
 }
