@@ -10,7 +10,6 @@ import {
   Flex,
   Heading,
   Image,
-  Input,
   Text,
 } from "@chakra-ui/react";
 import { bgImage } from "../assets/images";

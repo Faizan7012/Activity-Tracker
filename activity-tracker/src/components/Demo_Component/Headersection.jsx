@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Flex, Button, Text } from "@chakra-ui/react";
-function Header_Section() {
+function Headersection() {
   return (
     <Box
       backgroundImage="url(
@@ -102,4 +102,4 @@ function Header_Section() {
   );
 }
 
-export default Header_Section;
+export default Headersection;

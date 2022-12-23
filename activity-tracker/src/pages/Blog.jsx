@@ -16,7 +16,6 @@ import FooterBlogger from "../components/Blog/footerBloggerDiv";
 import Blogs from "../components/Blog/Blogs";
 import TopSec from "../components/Blog/TopSection";
 function getPageFromUrl(value) {
-  console.log("value", value);
   if (value <= 0 || value === undefined) {
     value = 1;
   }
@@ -33,7 +32,7 @@ function Blog() {
   const value3 = getPageFromUrl(searchParams.get("page"));
   const [page, setPage] = useState(value3);
   const [totalPage, setTotalPage] = useState(0);
-  const [limit, setLimit] = useState(6);
+  const limit = 6 ;
 
   useEffect(() => {
     window.scroll({
@@ -45,8 +44,8 @@ function Blog() {
     document.title = "Blog | Activity Tracker";
     dispatch(getBlogloading());
     if (
-      filterBy == "all" ||
-      filterBy == "All Categories" ||
+      filterBy === "all" ||
+      filterBy === "All Categories" ||
       filterBy == null ||
       filterBy === undefined
     ) {

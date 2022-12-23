@@ -33,7 +33,6 @@ import Model2 from "../Model2";
 function Project() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [project, setProject] = useState("");
-  const [mystate, setmystate] = useState(false);
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   const handleCreate = async () => {
@@ -90,11 +89,11 @@ function Project() {
       });
   };
 
-  const handleOpen2 = (el) => {
-    setProject(el.projectName);
-    onOpen();
-    console.log(el);
-  };
+  // const handleOpen2 = (el) => {
+  //   setProject(el.projectName);
+  //   onOpen();
+  //   console.log(el);
+  // };
 
   useEffect(() => {
     setLoading(true);

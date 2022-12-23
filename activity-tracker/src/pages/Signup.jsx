@@ -13,7 +13,7 @@ import {
 } from "@chakra-ui/react";
 
 import { BsGithub } from "react-icons/bs";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
@@ -23,7 +23,6 @@ import { signupAPI } from "../redux/Auth/auth.action";
 
 const Signup = () => {
   const toast = useToast();
-  const authData = useSelector((store) => store.auth);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 

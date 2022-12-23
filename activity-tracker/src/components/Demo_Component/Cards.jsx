@@ -3,11 +3,7 @@ import { Box } from "@chakra-ui/react";
 import {
   Grid,
   GridItem,
-  Text,
-  VStack,
-  Heading,
-  Button,
-  Container,
+ 
 } from "@chakra-ui/react";
 import SingleCard from "./SingleCard";
 

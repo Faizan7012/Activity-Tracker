@@ -1,4 +1,4 @@
-import { Flex, Box, Image, Text, Link, Stack, Avatar } from "@chakra-ui/react";
+import { Flex, Box, Text, Link, Stack, Avatar } from "@chakra-ui/react";
 
 const CCard = ({ name, role, company, img, desc }) => {
   return (

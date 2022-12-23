@@ -1,4 +1,4 @@
-import {Box,Image,Heading,Flex,Text,Badge} from '@chakra-ui/react';
+import {Box,Image,Heading,Flex,Text} from '@chakra-ui/react';
 import AuthorDiv from './AuthorDiv';
 
 

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import BottomUp from "../components/Demo_Component/BottomUp";
 import Cards from "../components/Demo_Component/Cards";
-import Header_Section from "../components/Demo_Component/Header_Section";
+import Headersection from "../components/Demo_Component/Headersection";
 import Reviews from "../components/Demo_Component/Reviews";
 import YoutubePlayer1 from "../components/Demo_Component/YoutubePlayer1";
 import YoutubePlayer2 from "../components/Demo_Component/YoutubePlayer2";
@@ -20,7 +20,7 @@ function DemoPage(props) {
   return (
     <ChakraProvider>
       <Navbar />
-      <Header_Section />
+      <Headersection />
       <Cards />
       <YoutubePlayer1 />
       <YoutubePlayer2 />
