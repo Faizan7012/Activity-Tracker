@@ -93,8 +93,8 @@ const Carousel = () => {
   return (
     <div className="content">
       <div className="controls">
-        <AiFillLeftSquare onClick={sliderRef?.slickPrev} className="ctrbtn" />
-        <AiFillRightSquare onClick={sliderRef?.slickNext} className="ctrbtn" />
+        <AiFillLeftSquare onClick={sliderRef?.slickPrev} className="ctrbtn leftar" />
+        <AiFillRightSquare onClick={sliderRef?.slickNext} className="ctrbtn rightar" />
       </div>
       <Slider className="slidercomp" ref={setSliderRef} {...sliderSettings}>
         {Cards.map((el) => (

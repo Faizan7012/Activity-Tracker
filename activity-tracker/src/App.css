@@ -94,12 +94,6 @@
 .content {
   width: 90%;
   margin: auto;
-  /* border: 1px solid; */
-  /* padding-left: 40px; */
-}
-
-.slick-list {
-  padding-left: 20px !important;
 }
 
 .controls {
@@ -109,11 +103,10 @@
   display: flex;
   justify-content: space-between;
   z-index: 8;
-  /* right: 14px; */
-  /* border: 1px solid; */
 }
 
 .ctrbtn {
+  position: absolute;
   width: 32px;
   height: 32px;
   color: #4ea819;
@@ -121,20 +114,17 @@
   transition: 0.3s;
 }
 
+.leftar{
+  left: -20px;
+}
+
+.rightar{
+  right: -20px;
+}
+
 .ctrbtn:hover {
   color: #255c06;
 }
-
-/* .lbtn{
-  position: relative;
-  bottom: 270px;
-  right: 25px;
-}
-
-.rbtn{
-  position: relative;
-  bottom: -258px;
-} */
 
 .blog_page_skeleton {
   width: 80%;
