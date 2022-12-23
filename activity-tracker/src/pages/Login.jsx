@@ -8,13 +8,12 @@ import {
   Link,
   Heading,
   Flex,
-  useToast
+  useToast,
+  Button
 } from "@chakra-ui/react";
 
 
 import { BsGithub } from "react-icons/bs";
-
-import { ChakraProvider } from "@chakra-ui/react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -29,6 +28,7 @@ const Login = () => {
 const toast = useToast()
 const [email, setEmail] = useState("");
 const [password, setPassword] = useState("");
+const [loading, setLoading] = useState(false);
 
   const {data} = useSelector(store => store.auth);
   const dispatch = useDispatch();
@@ -39,28 +39,45 @@ const [password, setPassword] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-        // console.log(signup)
+        setLoading(true);
         dispatch(loginAPI({email, password})).then((res)=>{
             setEmail("")
             setPassword("")
             console.log(res);
-            toast(
-              {
-                title: 'Login Succesfull',
-                description: "Welcome to Activity Tracker",
-                status: 'success',
+
+            if (res.status) {
+              setLoading(false);
+              navigate("/");
+              return toast(
+                {
+                  title: 'Login Succesfull',
+                  description: "Welcome to Activity Tracker",
+                  status: 'success',
+                  duration: 3000,
+                  position: "top",
+                  isClosable: true,
+                }
+              )
+            } else {
+              setLoading(false);
+              return toast({
+                title: "Error occured",
+                description: `${res.message}`,
+                status: "error",
                 duration: 3000,
+                position: "top",
                 isClosable: true,
-              }
-            )
-            navigate("/");
+              });
+            }
   }).catch((e) => {
+    setLoading(false);
     return toast(
       {
         title: "Error occured",
         description: `${e.message}`,
         status: 'error',
         duration: 3000,
+        position: "top",
         isClosable: true,
       }
     )
@@ -68,7 +85,7 @@ const [password, setPassword] = useState("");
 }
 
   return (
-    <ChakraProvider>
+    <>
       <Navbar />
       <VStack p="150px 25px 40px 25px" m="auto" w="400px">
         <Heading mb="24px" as="h1" fontSize="36px" color="#475056">
@@ -98,17 +115,18 @@ const [password, setPassword] = useState("");
             placeholder="Type in your password"
             isRequired
           />
-          <Input
+          <Button
+            isLoading={loading}
+            w="100%"
             mb="15px"
             fontSize="14px"
             color="white"
             type="submit"
             cursor="pointer"
-            value="LOGIN"
             bg="#4ea819"
             fontWeight="500"
             _hover={{ bg: "#327c04" }}
-          />
+          >LOGIN</Button>
         </FormControl>
         </form>
         <Link
@@ -159,7 +177,7 @@ const [password, setPassword] = useState("");
         </Box>
       </VStack>
       <Footer />
-    </ChakraProvider>
+    </>
   );
 };
 
