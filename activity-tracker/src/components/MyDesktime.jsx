@@ -21,7 +21,7 @@ function secondsToHms(d) {
 
   let ans = (
     <Box>
-      {h != "0" ? (
+      {h !== "0" ? (
         <Text color="#4EA819" fontSize="20px">
           <Text color="#4EA819" fontSize="30px" as="span">
             {h}
@@ -31,7 +31,7 @@ function secondsToHms(d) {
       ) : (
         ""
       )}
-      {m != "0" || h != "0" ? (
+      {m !== "0" || h !== "0" ? (
         <Text color="#4EA819" fontSize="20px">
           <Text color="#4EA819" fontSize="30px" as="span">
             {m}

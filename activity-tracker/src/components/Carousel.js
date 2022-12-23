@@ -80,7 +80,7 @@ const Carousel = () => {
       img: "https://desktime.com/static/web/testimonial-images/gotham-management-inc.png",
       desc: "DeskTime has really helped us get a real-time snapshot of how and where our team spends their time. It’s helped us invest in better tools, boost productivity and improve our efficiency. It has also helped us identify some key employees who were previously flying under the radar – they've now quickly become great assets and given more freedom to work on complex projects outside their scope.",
     },
-    ,
+
     {
       name: "Zack Thompson",
       role: "CEO",

@@ -19,7 +19,7 @@ import Footer from "../components/Footer";
 
 
 import { useNavigate } from 'react-router-dom';
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { loginAPI } from "../redux/Auth/auth.action"
 import { useEffect } from "react";
 import { useState } from "react";
@@ -30,7 +30,6 @@ const [email, setEmail] = useState("");
 const [password, setPassword] = useState("");
 const [loading, setLoading] = useState(false);
 
-  const {data} = useSelector(store => store.auth);
   const dispatch = useDispatch();
   const navigate = useNavigate();
   useEffect(()=>{

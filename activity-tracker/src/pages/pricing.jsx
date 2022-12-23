@@ -67,11 +67,11 @@ function Pricing() {
             p="20px 30px"
             _hover="none"
             textTransform="unset"
-            border={filter == "Annual" ? "1px solid gray" : "1px solid #262c30"}
+            border={filter === "Annual" ? "1px solid gray" : "1px solid #262c30"}
             borderRadius="3px 0px 0px 3px"
-            color={filter == "Monthly" ? "white" : "#333c43"}
+            color={filter === "Monthly" ? "white" : "#333c43"}
             onClick={() => setFilter("Monthly")}
-            bg={filter == "Monthly" ? "#333c43" : "white"}
+            bg={filter === "Monthly" ? "#333c43" : "white"}
           >
             Monthly
           </Button>
@@ -80,12 +80,12 @@ function Pricing() {
             _hover="none"
             textTransform="unset"
             border={
-              filter == "Monthly" ? "1px solid gray" : "1px solid #262c30"
+              filter === "Monthly" ? "1px solid gray" : "1px solid #262c30"
             }
             borderRadius="0px 3px 3px 0px"
-            color={filter == "Annual" ? "white" : "#333c43"}
+            color={filter === "Annual" ? "white" : "#333c43"}
             onClick={() => setFilter("Annual")}
-            bg={filter == "Annual" ? "#333c43" : "white"}
+            bg={filter === "Annual" ? "#333c43" : "white"}
           >
             Annual
           </Button>
@@ -109,7 +109,7 @@ function Pricing() {
                 state={state}
                 handleState={handleState}
                 type={ele.type}
-                rs={filter == "Monthly" ? ele.rs : rupee[index]}
+                rs={filter === "Monthly" ? ele.rs : rupee[index]}
                 tx={ele.tx}
                 data={ele.ft}
               />

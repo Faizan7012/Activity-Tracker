@@ -1,9 +1,9 @@
-import {Box,SimpleGrid,Heading,Text,Input,Button,Flex,Skeleton} from '@chakra-ui/react';
+import {Box,SimpleGrid,Heading,Text,Input,Button,Flex} from '@chakra-ui/react';
 import { useState } from 'react';
 import {useSearchParams} from 'react-router-dom';
 const filter = ['All Categories','Management','Work/Life','Trends','DeskTime','Workspace'];
 export default function TopSec({handleFilter}){
-const [searchParams, setSearchParam] = useSearchParams();
+const searchParams = useSearchParams();
   const value3 = searchParams.get("filterBy")
     const [value,setValue] = useState('')
     return <Box mb='90px'>
@@ -48,10 +48,10 @@ const [searchParams, setSearchParam] = useSearchParams();
         filter.map((ele)=>{
           return <Text key={ele}
            _hover={{color:'#4ea819',_after:{w:'100%'}}}
-           color={value3=='all'&&ele=='All Categories' || ele==value3?'#4ea819':'black'}
+           color={(value3==='all'&&ele==='All Categories') || ele===value3?'#4ea819':'black'}
             onClick={()=>handleFilter(ele)}
             pb='10px'
-           borderBottom={value3=='all'&&ele=='All Categories' || ele==value3?'2px solid #4EA819':'none'}
+           borderBottom={(value3==='all'&&ele==='All Categories') || ele===value3?'2px solid #4EA819':'none'}
            transition='0.3'
             >
               {ele}
