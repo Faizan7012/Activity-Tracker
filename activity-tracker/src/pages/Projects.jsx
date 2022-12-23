@@ -5,7 +5,7 @@ import { Box, ChakraProvider, Flex , useDisclosure } from "@chakra-ui/react";
 import { useEffect } from "react";
 import {Sidebar} from '../components/sidebar&navbar/Sidebar'
 import Navbar from '../components/sidebar&navbar/Navbar'
-import Projectdesc from "../components/Demo_Component/project_descrip";
+import Projectdesc from "../components/Demo_Component/Projectdescrip";
 function Projects(){
   const { isOpen,onOpen, onClose } = useDisclosure();
   useEffect(() => {
