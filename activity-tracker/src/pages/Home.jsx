@@ -201,7 +201,8 @@ function Home() {
               </Box>
             </Grid>
           </Stack>
-          <Box w={["50%", "50%", "50%", "30%"]} borderRadius="3px">
+          <Box position="relative" w={["50%", "50%", "50%", "27%"]} borderRadius="3px">
+            <Image top="100px" left="-50px" position="absolute" w="125px" h="135px" src="https://images.g2crowd.com/uploads/report_medal/image/1003081/medal.svg" />
             <Image
               w="100%"
               borderRadius="3px"

@@ -46,10 +46,10 @@ export const pfData = [
 ];
 
 export const images = [
-  "https://desktime.com/static/web/pricing/awards/g2-leader-summer-2022.png",
-  "https://desktime.com/static/web/pricing/awards/g2-leader-europe-summer-2022.png",
-  "https://desktime.com/static/web/pricing/awards/g2-leader-asia-summer-2022.png",
-  "https://desktime.com/static/web/pricing/awards/softwaresuggest-award.png",
-  "https://desktime.com/static/web/pricing/awards/software-advice.png",
-  "https://desktime.com/static/web/pricing/awards/30daymoneyback-award.png",
+  "https://desktime.com/static/web/_common/awards/g2-leader-summer-2022.png",
+  "https://desktime.com/static/web/_common/awards/g2-leader-europe-summer-2022.png",
+  "https://desktime.com/static/web/_common/awards/g2-leader-asia-summer-2022.png",
+  "https://desktime.com/static/web/_common/awards/capterra-badge.png",
+  "https://desktime.com/static/web/_common/awards/softwareadvice-badge-2022.png",
+  "https://desktime.com/static/web/_common/awards/30daymoneyback-award.png",
 ];
