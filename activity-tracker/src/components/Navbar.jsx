@@ -65,11 +65,7 @@ function Navbar() {
           >
             Demo
           </Link>
-
-          <Link className="un" _hover={{ textDecoration: "none" }}>
-            Features
-          </Link>
-          <Link
+           <Link
             className="un"
             _hover={{ textDecoration: "none" }}
             as={RouterLink}

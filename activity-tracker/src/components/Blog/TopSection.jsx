@@ -3,7 +3,7 @@ import { useState } from 'react';
 import {useSearchParams} from 'react-router-dom';
 const filter = ['All Categories','Management','Work/Life','Trends','DeskTime','Workspace'];
 export default function TopSec({handleFilter}){
-const searchParams = useSearchParams();
+const [searchParams , setSearchParams] = useSearchParams();
   const value3 = searchParams.get("filterBy")
     const [value,setValue] = useState('')
     return <Box mb='90px'>
@@ -45,7 +45,7 @@ const searchParams = useSearchParams();
     <SimpleGrid w='80%' m='auto' columns={['2','2','3','6']} spacing='10px' mt='30px' justifyContent='center'>
        {
   
-        filter.map((ele)=>{
+        filter?.map((ele)=>{
           return <Text key={ele}
            _hover={{color:'#4ea819',_after:{w:'100%'}}}
            color={(value3==='all'&&ele==='All Categories') || ele===value3?'#4ea819':'black'}
