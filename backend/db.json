@@ -1,0 +1,607 @@
+[
+  {
+    "id": 1,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/10/expert-power-1024x708.png",
+    "title": "What is expert power, and how to develop it",
+    "desc": "We’re here to talk about what is expert power, what it takes to gain it and why that’s important, as well as walk you through some steps on how to develop it.",
+    "authImg": "https://secure.gravatar.com/avatar/d41d27aa9e3a277348f922dd41a33e02?s=40&d=mm&r=g",
+    "author": "Zane Franke",
+    "date": "28.10.2022",
+    "category": "Management"
+  },
+  {
+    "id": 2,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/10/invisible-workload-1024x708.png",
+    "title": "Invisible labor – how to expose and dispose of invisible workload",
+    "desc": "Back in 1987 sociologist Arlene Daniels coined the term “invisible labor”, and since then we have become increasingly aware of its various forms and ramifications. In some industries workers spend up to 33% of their daily work time doing invisible labor.",
+    "authImg": "https://secure.gravatar.com/avatar/e6ad0251371c0442a9e4e03484e65e81?s=40&d=mm&r=g",
+    "author": "Rudolfs Millins",
+    "date": "18.10.2022",
+    "category": "Management"
+  },
+  {
+    "id": 3,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/10/KPI-1024x708.png",
+    "title": "The ultimate list of KPI examples and how to successfully implement them",
+    "desc": "How can a business measure if it’s moving into the right direction? By using the wide variety of KPIs – key performance indicators.",
+    "authImg": "https://secure.gravatar.com/avatar/d41d27aa9e3a277348f922dd41a33e02?s=40&d=mm&r=g",
+    "author": "Zane Franke",
+    "date": "7.10.2022",
+    "category": "Management"
+  },
+  {
+    "id": 4,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/09/recesion_support-1-1024x708.png",
+    "title": "5 ways to support your employees during a recession",
+    "desc": "Recession isn’t easy for anyone – be it managers or employees.How do you support your workers during an economic downturn? By implementing some of these 5 tactics – take a look.",
+    "authImg": "https://secure.gravatar.com/avatar/6918dea4a96f0306babb83deeae137b0?s=40&d=mm&r=g",
+    "author": "Aiva Strelca",
+    "date": "26.09.2022",
+    "category": "Management"
+  },
+  {
+    "id": 5,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/09/Parasite_employee-1-1024x708.png",
+    "title": "What are parasite employees & how to deal with them?",
+    "desc": "Do you know what’s a parasite employee? What indicates your office may have one and how do you deal with such a worker?",
+    "authImg": "https://secure.gravatar.com/avatar/6918dea4a96f0306babb83deeae137b0?s=40&d=mm&r=g",
+    "author": "Aiva Strelca",
+    "date": "19.09.2022",
+    "category": "Management"
+  },
+  {
+    "id": 6,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/08/project-time-management-1024x708.png",
+    "title": "Why is project time management important + ways to improve it",
+    "desc": "Excellent project time management is one of the most crucial ingredients that ensure project success. Of course, there’s also precise project cost…",
+    "authImg": "https://secure.gravatar.com/avatar/6918dea4a96f0306babb83deeae137b0?s=40&d=mm&r=g",
+    "author": "Aiva Strelca",
+    "date": "24.08.2022",
+    "category": "Management"
+  },
+  {
+    "id": 7,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/08/pick-chart-1-1024x708.png",
+    "title": "What is a PICK chart and how to use it for better project management?",
+    "desc": "It’s not an easy matter to come up with creative solutions and transformative ideas – but there’s a tool, which can make it less daunting. It’s called PICK charts. ",
+    "authImg": "https://secure.gravatar.com/avatar/229e885a23fab4329b6cf6a376c141ee?s=40&d=mm&r=g",
+    "author": "Krista Krumina",
+    "date": "18.8.2022",
+    "category": "Management"
+  },
+  {
+    "id": 8,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/08/12-tools-1024x708.png",
+    "title": "12 employee monitoring software options to choose from",
+    "desc": "With the trend towards remote and hybrid work showing no signs of slowing down, employers all over the world are looking into employee monitoring software options. Check out our guide to help you pick the best one for you and your team!",
+    "authImg": "https://secure.gravatar.com/avatar/49eb79d59d9c58cddc369d67ab69dc22?s=40&d=mm&r=g",
+    "author": "Līva Spandega",
+    "date": "10.08.2022",
+    "category": "Management"
+  },
+  {
+    "id": 9,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/07/sandbagging-1024x708.png",
+    "title": "What is sandbagging in business?",
+    "desc": "Have you heard of sandbagging? It’s a practice of intentionally lowering expectations to deliver a seemingly greater result.Read this article to learn how sandbagging is manifested in the business world, why people adopt this practice, and how you can spot a sandbag.",
+    "authImg": "https://secure.gravatar.com/avatar/6918dea4a96f0306babb83deeae137b0?s=40&d=mm&r=g",
+    "author": "Aiva Strelca",
+    "date": "22.07.2022",
+    "category": "Management"
+  },
+  {
+    "id": 10,
+    "img": "https://desktime.com/blog/wp-content/uploads/2014/01/how-office-security-can-boost-productivity-1024x708.png",
+    "title": "How Office Security Can Boost Productivity",
+    "desc": "At first glance, it might seem like workplace security measures would hinder productivity. After all, security measures block access to certain websites,…",
+    "authImg": "https://secure.gravatar.com/avatar/6918dea4a96f0306babb83deeae137b0?s=40&d=mm&r=g",
+    "author": "Aiva Strelca",
+    "date": "14.01.2014",
+    "category": "Management"
+  },
+  {
+    "id": 11,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/07/employee-accountability-software-1024x708.png",
+    "title": "7 employee accountability software options for your team",
+    "desc": "With the increasing popularity of remote and hybrid work environments, managers now have to figure out how to keep track of their team – a task that employee accountability software is made for.",
+    "authImg": "https://secure.gravatar.com/avatar/49eb79d59d9c58cddc369d67ab69dc22?s=40&d=mm&r=g",
+    "author": "Līva Spandega",
+    "date": "7.07.2022",
+    "category": "Management"
+  },
+  {
+    "id": 12,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/06/team-1024x708.png",
+    "title": "How to adapt your ways of working to get the best out of your team",
+    "desc": "There is no right or wrong way to working, as long as things are getting done. Learn how to adjust your ways of working to boost your team’s performance.",
+    "authImg": "https://secure.gravatar.com/avatar/229e885a23fab4329b6cf6a376c141ee?s=40&d=mm&r=g",
+    "author": "Krista Krumina",
+    "date": "16.06.2022",
+    "category": "Management"
+  },
+  {
+    "id": 13,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/10/manifestation-1024x708.png",
+    "title": "What is a manifestation, and does it work?",
+    "desc": "Before hiring a sensei to help you transform your life, let’s explore what a manifestation is, what manifesting can look like, and whether it works or not.",
+    "authImg": "https://secure.gravatar.com/avatar/6918dea4a96f0306babb83deeae137b0?s=40&d=mm&r=g",
+    "author": "Aiva Strelca",
+    "date": "26.10.2022",
+    "category": "Work/Life"
+  },
+  {
+    "id": 14,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/10/proactive-1024x708.png",
+    "title": "Why being proactive matters + 20 ideas on how to be proactive at work",
+    "desc": "Being proactive is one of the best ways to improve your work life. But how to actually achieve it?In this article, we’ll look at what proactivity means, why being proactive is important, and provide some examples of how to be proactive at work.",
+    "authImg": "https://secure.gravatar.com/avatar/d41d27aa9e3a277348f922dd41a33e02?s=40&d=mm&r=g",
+    "author": "Zane Franke",
+    "date": "21.10.2022",
+    "category": "Work/Life"
+  },
+  {
+    "id": 15,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/09/time_vs_energy-1024x708.png",
+    "title": "Managing time vs. energy – can both work together to boost productivity?",
+    "desc": "Planning out your workday to the minute sounds good, but you also need mental energy to complete your tasks. That’s where energy management comes in. ",
+    "authImg": "https://secure.gravatar.com/avatar/d41d27aa9e3a277348f922dd41a33e02?s=40&d=mm&r=g",
+    "author": "Zane Franke",
+    "date": "16.09.2022",
+    "category": "Work/Life"
+  },
+  {
+    "id": 16,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/08/menstrual-leave-1024x708.png",
+    "title": "The pros and cons of offering paid menstrual leave",
+    "desc": "Paid menstrual leave. What is it? Is it common? Should companies consider offering it? Read more to find answers to all of these questions.",
+    "authImg": "https://secure.gravatar.com/avatar/d41d27aa9e3a277348f922dd41a33e02?s=40&d=mm&r=g",
+    "author": "Zane Franke",
+    "date": "31.08.2022",
+    "category": "Work/Life"
+  },
+  {
+    "id": 17,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/07/unmotivated-1024x708.png",
+    "title": "Feeling unmotivated at work? Here are the most common reasons why & what to do",
+    "desc": "Feeling unmotivated at work? We’ve all been there. Here’s why you feel this way & what you can do to regain your motivation.",
+    "authImg": "https://secure.gravatar.com/avatar/229e885a23fab4329b6cf6a376c141ee?s=40&d=mm&r=g",
+    "author": "Krista Krumina",
+    "date": "20.07.2022",
+    "category": "Work/Life"
+  },
+  {
+    "id": 18,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/07/4day-workweek-1024x708.png",
+    "title": "How to implement a 4-day work week (by someone who’s actually done it)",
+    "desc": "Moving to a 4-day work week can be a challenge if you’re not prepared. From reducing your workload to planning your day off – here’s how to do it right!",
+    "authImg": "https://secure.gravatar.com/avatar/229e885a23fab4329b6cf6a376c141ee?s=40&d=mm&r=g",
+    "author": "Krista Krumina",
+    "date": "11.07.2022",
+    "category": "Work/Life"
+  },
+  {
+    "id": 19,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/07/disconnect-1024x708.png",
+    "title": "How to fully disconnect from work when you’re on vacation",
+    "desc": "Let’s talk about vacations and how to disconnect from work when you’re on one. More people than ever are feeling burnt out…",
+    "authImg": "https://secure.gravatar.com/avatar/17a01547506e289b02ed7f689b82b628?s=40&d=mm&r=g",
+    "author": "Viesturs Abelis",
+    "date": "5.07.2022",
+    "category": "Work/Life"
+  },
+  {
+    "id": 20,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/06/elevator-pitch-1024x708.png",
+    "title": "How to write a good elevator pitch for a job interview + examples",
+    "desc": "This article has everything you need to know to craft the perfect elevator pitch that will land your dream job.",
+    "authImg": "https://secure.gravatar.com/avatar/d41d27aa9e3a277348f922dd41a33e02?s=40&d=mm&r=g",
+    "author": "Zane Franke",
+    "date": "22.06.2022",
+    "category": "Work/Life"
+  },
+  {
+    "id": 21,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/06/more-rest-day-1024x708.png",
+    "title": "Covid-19 has shown us a better way to work – here’s how",
+    "desc": "DeskTime examinated 167 global companies with a total of 1555 employees and found that employers have started to respect their staff’s need for more rest days.",
+    "authImg": "https://secure.gravatar.com/avatar/229e885a23fab4329b6cf6a376c141ee?s=40&d=mm&r=g",
+    "author": "Krista Krumina",
+    "date": "13.06.2022",
+    "category": "Work/Life"
+  },
+  {
+    "id": 22,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/04/hate-work-1024x708.png",
+    "title": "What to do if you don’t want to work: Common reasons and coping strategies",
+    "desc": "If you’ve found yourself googling “what to do if you don’t want to work” or something else along those lines, know – you’re not alone.",
+    "authImg": "https://secure.gravatar.com/avatar/6918dea4a96f0306babb83deeae137b0?s=40&d=mm&r=g",
+    "author": "Aiva Strelca",
+    "date": "18.03.2022",
+    "category": "Work/Life"
+  },
+  {
+    "id": 23,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/02/sommelier-1024x708.png",
+    "title": "Split shifts are the key to higher productivity, according to this sommelier",
+    "desc": "We tend to think that working 8 hours in a row is the way it’s supposed to be. But is it, really? This sommelier is sharing his experience with split shifts.",
+    "authImg": "https://secure.gravatar.com/avatar/229e885a23fab4329b6cf6a376c141ee?s=40&d=mm&r=g",
+    "author": "Krista Krumina",
+    "date": "28.02.2022",
+    "category": "Work/Life"
+  },
+  {
+    "id": 24,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/02/invoice_software-1024x708.png",
+    "title": "10 best invoice tracking software for businesses and freelancers",
+    "desc": "If you’re looking for the best invoice management and payment tracking software, then look no further. In this post, we’ve listed 10 free and paid tools for creating and tracking your invoices with ease. By using these tools, you’re guaranteed to save time and money when collecting payments from your clients.",
+    "authImg": "https://secure.gravatar.com/avatar/e12669ed9e17f212edfd8862ee4d30c5?s=40&d=mm&r=g",
+    "author": "Yulia Gavrilova",
+    "date": "8.02.2022",
+    "category": "Work/Life"
+  },
+  {
+    "id": 25,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/11/career-advice-1024x708.png",
+    "title": "Outdated career advice that is no longer relevant",
+    "desc": "Today’s work environment is radically different from what it was even a mere five years ago, thanks to Covid. Being old-fashioned has its charms, but it probably won’t do you any favors in today’s job market. To help you, we have collated a list of career advice tips that most likely no longer hold true.",
+    "authImg": "https://secure.gravatar.com/avatar/0d52bb462f2b62bf3a375169f2dd16e7?s=40&d=mm&r=g",
+    "author": "Julia Gifford",
+    "date": "31.10.2022",
+    "category": "Trends"
+  },
+  {
+    "id": 26,
+    "img": "https://desktime.com/blog/wp-content/uploads/2017/10/halloween-1024x708.png",
+    "title": "11 of the scariest things a boss can say that are guaranteed to leave you shaking",
+    "desc": "Here are some of the most terrifying things a boss can say that’s actually going to leave you quaking in your boots. The good news is you don’t have to be helpless – here’s what you can do.",
+    "authImg": "https://secure.gravatar.com/avatar/0d52bb462f2b62bf3a375169f2dd16e7?s=40&d=mm&r=g",
+    "author": "Julia Gifford",
+    "date": "31.10.2022",
+    "category": "Trends"
+  },
+  {
+    "id": 27,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/10/manifestation-1024x708.png",
+    "title": "What is a manifestation, and does it work?",
+    "desc": "Before hiring a sensei to help you transform your life, let’s explore what a manifestation is, what manifesting can look like, and whether it works or not.",
+    "authImg": "https://secure.gravatar.com/avatar/6918dea4a96f0306babb83deeae137b0?s=40&d=mm&r=g",
+    "author": "Aiva Strelca",
+    "date": "26.10.2022",
+    "category": "Trends"
+  },
+  {
+    "id": 28,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/09/quiet_quitting-1024x708.png",
+    "title": "Quiet quitting – what it is and how it exposes broken work culture",
+    "desc": "Quiet quitting has become a popular topic of discussion among Millennial and Gen Z workers on TikTok, but it is more than…",
+    "authImg": "https://secure.gravatar.com/avatar/d41d27aa9e3a277348f922dd41a33e02?s=40&d=mm&r=g",
+    "author": "Zane Franke",
+    "date": "9.09.2022",
+    "category": "Trends"
+  },
+  {
+    "id": 29,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/09/employee_attitude-1024x708.png",
+    "title": "Survey reveals employees are fine with monitoring – as long as they can see the data",
+    "desc": "Employee monitoring has been a touchy subject over recent years. As people switched to working from home during the pandemic, companies and…",
+    "authImg": "https://secure.gravatar.com/avatar/17a01547506e289b02ed7f689b82b628?s=40&d=mm&r=g",
+    "author": "Viesturs Abelis",
+    "date": "5.09.2022",
+    "category": "Trends"
+  },
+  {
+    "id": 30,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/08/menstrual-leave-1024x708.png",
+    "title": "The pros and cons of offering paid menstrual leave",
+    "desc": "Paid menstrual leave. What is it? Is it common? Should companies consider offering it? Read more to find answers to all of these questions.",
+    "authImg": "https://secure.gravatar.com/avatar/d41d27aa9e3a277348f922dd41a33e02?s=40&d=mm&r=g",
+    "author": "Zane Franke",
+    "date": "31.08.2022",
+    "category": "Trends"
+  },
+  {
+    "id": 31,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/08/productive-unproductive-months-1024x708.png",
+    "title": "July is the most productive month of the year in the US, according to study",
+    "desc": "With an average employee efficiency of 86.23%, July is the most productive month of the year in the US. Whereas the least productive month is June.",
+    "authImg": "https://secure.gravatar.com/avatar/229e885a23fab4329b6cf6a376c141ee?s=40&d=mm&r=g",
+    "author": "Krista Krumina",
+    "date": "22.08.2022",
+    "category": "Trends"
+  },
+  {
+    "id": 32,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/07/4day-workweek-1024x708.png",
+    "title": "How to implement a 4-day work week (by someone who’s actually done it)",
+    "desc": "Moving to a 4-day work week can be a challenge if you’re not prepared. From reducing your workload to planning your day off – here’s how to do it right!",
+    "authImg": "https://secure.gravatar.com/avatar/229e885a23fab4329b6cf6a376c141ee?s=40&d=mm&r=g",
+    "author": "Krista Krumina",
+    "date": "11.07.2022",
+    "category": "Trends"
+  },
+  {
+    "id": 33,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/06/more-rest-day-1024x708.png",
+    "title": "Covid-19 has shown us a better way to work – here’s how",
+    "desc": "DeskTime examinated 167 global companies with a total of 1555 employees and found that employers have started to respect their staff’s need for more rest days.",
+    "authImg": "https://secure.gravatar.com/avatar/229e885a23fab4329b6cf6a376c141ee?s=40&d=mm&r=g",
+    "author": "Krista Krumina",
+    "date": "13.06.2022",
+    "category": "Trends"
+  },
+  {
+    "id": 34,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/06/digital-nomads-1024x708.png",
+    "title": "The pros and cons of hiring digital nomads",
+    "desc": "What are the opportunities and challenges of hiring digital nomads for your company? Have a read and you’ll find out!",
+    "authImg": "https://secure.gravatar.com/avatar/229e885a23fab4329b6cf6a376c141ee?s=40&d=mm&r=g",
+    "author": "Krista Krumina",
+    "date": "9.06.2022",
+    "category": "Trends"
+  },
+  {
+    "id": 35,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/06/billing-1024x708.png",
+    "title": "Monthly vs. Annual billing – what’s the difference?",
+    "desc": "Monthly and annual billing plans are common in SaaS businesses. Most companies will let you choose between being billed annually vs. monthly depending on your needs and preferences. But what are the differences between the two? Let’s find out.",
+    "authImg": "https://secure.gravatar.com/avatar/49eb79d59d9c58cddc369d67ab69dc22?s=40&d=mm&r=g",
+    "author": "Līva Spandega",
+    "date": "8.06.2022",
+    "category": "Trends"
+  },
+  {
+    "id": 36,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/04/most_used_apps_and_websites-1024x708.png",
+    "title": "From YouTube to Slack – here are the most-used unproductive apps at work in 2021",
+    "desc": "Which are the most-used apps that have nothing to do with work yet steal hundreds of hours every year? We decided to find out.",
+    "authImg": "https://secure.gravatar.com/avatar/229e885a23fab4329b6cf6a376c141ee?s=40&d=mm&r=g",
+    "author": "Krista Krumina",
+    "date": "28.04.2022",
+    "category": "Trends"
+  },
+  {
+    "id": 37,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/08/productive-unproductive-months-1024x708.png",
+    "title": "July is the most productive month of the year in the US, according to study",
+    "desc": "With an average employee efficiency of 86.23%, July is the most productive month of the year in the US. Whereas the least productive month is June.",
+    "authImg": "https://secure.gravatar.com/avatar/229e885a23fab4329b6cf6a376c141ee?s=40&d=mm&r=g",
+    "author": "Krista Krumina",
+    "date": "22.08.2022",
+    "category": "DeskTime"
+  },
+  {
+    "id": 38,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/05/employee-attendance-1024x707.png",
+    "title": "How an employee attendance tracker can help you keep your team organized",
+    "desc": "If you’re a team manager, keeping an eye out on what everyone is doing and when can become tricky, but luckily, there’s…",
+    "authImg": "https://secure.gravatar.com/avatar/49eb79d59d9c58cddc369d67ab69dc22?s=40&d=mm&r=g",
+    "author": "Līva Spandega",
+    "date": "25.05.2022",
+    "category": "DeskTime"
+  },
+  {
+    "id": 39,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/04/most_used_apps_and_websites-1024x708.png",
+    "title": "From YouTube to Slack – here are the most-used unproductive apps at work in 2021",
+    "desc": "Which are the most-used apps that have nothing to do with work yet steal hundreds of hours every year? We decided to find out.",
+    "authImg": "https://secure.gravatar.com/avatar/229e885a23fab4329b6cf6a376c141ee?s=40&d=mm&r=g",
+    "author": "Krista Krumina",
+    "date": "28.04.2022",
+    "category": "DeskTime"
+  },
+  {
+    "id": 40,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/04/hr-1024x707.png",
+    "title": "Best practices for workforce management",
+    "desc": "In this article, we’ll talk about best practices for workforce management and what tools you can use to manage your workforce. ",
+    "authImg": "https://secure.gravatar.com/avatar/e12669ed9e17f212edfd8862ee4d30c5?s=40&d=mm&r=g",
+    "author": "Yulia Gavrilova",
+    "date": "25.04.2022",
+    "category": "DeskTime"
+  },
+  {
+    "id": 41,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/04/steals-time-1024x707.png",
+    "title": "How to protect your time from the office time goblin?",
+    "desc": "In this post, we will talk about the types of employees that make everyone unproductive and give you some tips on how to protect your time.",
+    "authImg": "https://secure.gravatar.com/avatar/e12669ed9e17f212edfd8862ee4d30c5?s=40&d=mm&r=g",
+    "author": "Yulia Gavrilova",
+    "date": "19.04.2022",
+    "category": "DeskTime"
+  },
+  {
+    "id": 42,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/04/2021-review-1024x708.png",
+    "title": "DeskTime’s year in review: 2021 at a glance",
+    "desc": "Last year DeskTime was acknowledged by more than 380k users and 16.7k companies worldwide. Thank you for trusting us! Whatever the year 2022 brings, we can promise – DeskTime is here to help!",
+    "authImg": "https://secure.gravatar.com/avatar/f644ecf43b55c25f1b7326f6023a5b6d?s=40&d=mm&r=g",
+    "author": "Sintija Pētersone",
+    "date": "1.04.2022",
+    "category": "DeskTime"
+  },
+  {
+    "id": 43,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/03/work_schedule_apps-1024x708.png",
+    "title": "6 best work schedule apps for 2022",
+    "desc": "Work schedule apps can reduce the burden of shift planning for managers and enable teams to cooperate in one digital workspace to plan their work schedules. In this post, we’ve selected six work scheduling apps that you can use to manage your team’s schedule.",
+    "authImg": "https://secure.gravatar.com/avatar/e12669ed9e17f212edfd8862ee4d30c5?s=40&d=mm&r=g",
+    "author": "Yulia Gavrilova",
+    "date": "10.03.2022",
+    "category": "DeskTime"
+  },
+  {
+    "id": 44,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/03/booking-t-1024x708.png",
+    "title": "Introducing Booking – our new take on workspace management software",
+    "desc": "Workspace management software is the future of any modern business. That’s where coworking booking software comes in. So, without further ado, here’s what you need to know about DeskTime’s latest feature – Booking. ",
+    "authImg": "https://secure.gravatar.com/avatar/f644ecf43b55c25f1b7326f6023a5b6d?s=40&d=mm&r=g",
+    "author": "Sintija Pētersone",
+    "date": "2.03.2022",
+    "category": "DeskTime"
+  },
+  {
+    "id": 45,
+    "img": "https://desktime.com/blog/wp-content/uploads/2021/11/webtimer-1024x708.png",
+    "title": "DeskTime introduces a new feature – web-based time tracking",
+    "desc": "Using web-based time tracking is the best way to track your everyday activities and maintain a healthy work-life balance. Give it a try!",
+    "authImg": "https://secure.gravatar.com/avatar/f644ecf43b55c25f1b7326f6023a5b6d?s=40&d=mm&r=g",
+    "author": "Sintija Pētersone",
+    "date": "18.01.2022",
+    "category": "DeskTime"
+  },
+  {
+    "id": 46,
+    "img": "https://desktime.com/blog/wp-content/uploads/2021/12/productivity-experiments-1024x708.png",
+    "title": "DeskTime’s productivity research: an overview of our finds throughout the years",
+    "desc": "DeskTime loves productivity research and experiments. Over the years we’ve organized quite a few studies and published our finds.",
+    "authImg": "https://secure.gravatar.com/avatar/6918dea4a96f0306babb83deeae137b0?s=40&d=mm&r=g",
+    "author": "Aiva Strelca",
+    "date": "13.12.2021",
+    "category": "DeskTime"
+  },
+  {
+    "id": 47,
+    "img": "https://desktime.com/blog/wp-content/uploads/2021/11/per-user-pricing-1-1024x708.png",
+    "title": "We’re switching to per-user pricing",
+    "desc": "DeskTime introduces the per-user pricing model to new and existing users. It’s just as simple as it sounds – a single user now pays a fixed monthly price.",
+    "authImg": "https://secure.gravatar.com/avatar/f644ecf43b55c25f1b7326f6023a5b6d?s=40&d=mm&r=g",
+    "author": "Sintija Pētersone",
+    "date": "12.11.2021",
+    "category": "DeskTime"
+  },
+  {
+    "id": 48,
+    "img": "https://desktime.com/blog/wp-content/uploads/2021/08/spain-1024x708.png",
+    "title": "DeskTime localizes system in Spanish for better time management",
+    "desc": "This article discusses why system localization is important for better time management, and how to find and use the Spanish language on our website.",
+    "authImg": "https://secure.gravatar.com/avatar/f644ecf43b55c25f1b7326f6023a5b6d?s=40&d=mm&r=g",
+    "author": "Sintija Pētersone",
+    "date": "13.09.2021",
+    "category": "DeskTime"
+  },
+  {
+    "id": 49,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/10/employee-benefits-1024x708.png",
+    "title": "How to attract new employees using employee benefits",
+    "desc": "When employees are making decisions about job opportunities, competitive employee benefit plans are always an important factor in the decision.",
+    "authImg": "https://secure.gravatar.com/avatar/17a01547506e289b02ed7f689b82b628?s=40&d=mm&r=g",
+    "author": "Viesturs Abelis",
+    "date": "24.10.2022",
+    "category": "Workspace"
+  },
+  {
+    "id": 50,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/10/context-switching-1024x708.png",
+    "title": "How to avoid the negative effects of context switching",
+    "desc": "Context switching is hurting your productivity. And it’s not your fault. At least, not entirely. In today’s office environment, a never-ending flow…",
+    "authImg": "https://secure.gravatar.com/avatar/17a01547506e289b02ed7f689b82b628?s=40&d=mm&r=g",
+    "author": "Viesturs Abelis",
+    "date": "13.10.2022",
+    "category": "Workspace"
+  },
+  {
+    "id": 51,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/08/fallen-a-victim-1024x708.png",
+    "title": "Cancel culture in the workplace & what to do if you’ve fallen victim",
+    "desc": "Cancel culture has made its way into the workplace.  For those unfamiliar with the term, canceling someone typically consists of a group…",
+    "authImg": "https://secure.gravatar.com/avatar/17a01547506e289b02ed7f689b82b628?s=40&d=mm&r=g",
+    "author": "Viesturs Abelis",
+    "date": "15.08.2022",
+    "category": "Workspace"
+  },
+  {
+    "id": 52,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/07/desk-setup-1024x708.png",
+    "title": "10 home office desk setup ideas for maximizing your productivity",
+    "desc": "A desk is not just a surface that holds your laptop and your favorite coffee mug. Here are 10 home office desk setup ideas for higher productivity.",
+    "authImg": "https://secure.gravatar.com/avatar/d41d27aa9e3a277348f922dd41a33e02?s=40&d=mm&r=g",
+    "author": "Zane Franke",
+    "date": "29.07.2022",
+    "category": "Workspace"
+  },
+  {
+    "id": 53,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/06/gitlab-1024x707.png",
+    "title": "Easy-to-use beginner GitLab tips and tricks",
+    "desc": "Learning new hacks for the tools you use daily is always helpful – that’s why this time we’re diving into GitLab tips and tricks.",
+    "authImg": "https://secure.gravatar.com/avatar/6918dea4a96f0306babb83deeae137b0?s=40&d=mm&r=g",
+    "author": "Aiva Strelca",
+    "date": "28.06.2022",
+    "category": "Workspace"
+  },
+  {
+    "id": 54,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/05/google-calendar-1024x708.png",
+    "title": "Google Calendar tips and tricks to up your time management game",
+    "desc": "This brief yet informative article explains how the tool can assist you in taking your time management game to the next level.",
+    "authImg": "https://secure.gravatar.com/avatar/6918dea4a96f0306babb83deeae137b0?s=40&d=mm&r=g",
+    "author": "Aiva Strelca",
+    "date": "1.06.2022",
+    "category": "Workspace"
+  },
+
+  {
+    "id": 55,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/04/steals-time-1024x707.png",
+    "title": "How to protect your time from the office time goblin?",
+    "desc": "In this post, we will talk about the types of employees that make everyone unproductive and give you some tips on how to protect your time.",
+    "authImg": "https://secure.gravatar.com/avatar/e12669ed9e17f212edfd8862ee4d30c5?s=40&d=mm&r=g",
+    "author": "Yulia Gavrilova",
+    "date": "19.04.2022",
+    "category": "Workspace"
+  },
+
+  {
+    "id": 56,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/03/burnout_assistance-1024x707.png",
+    "title": "Remote working burnout: 7 ways to offer effective assistance to your team",
+    "desc": "Remote working burnout is an issue that many managers have dealt with lately. How to prevent your remote team from this state of exhaustion? Read the article and you’ll find out.",
+    "authImg": "https://secure.gravatar.com/avatar/6918dea4a96f0306babb83deeae137b0?s=40&d=mm&r=g",
+    "author": "Aiva Strelca",
+    "date": "21.03.2022",
+    "category": "Workspace"
+  },
+
+  {
+    "id": 57,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/03/payment-1024x708.png",
+    "title": "How to write a payment request email (+ templates included)",
+    "desc": "Payment reminders and request emails almost never come easy. But to make this process less burdensome for you, we’ve put together a little how-to piece. Read on!",
+    "authImg": "https://secure.gravatar.com/avatar/6918dea4a96f0306babb83deeae137b0?s=40&d=mm&r=g",
+    "author": "Aiva Strelca",
+    "date": "18.03.2022",
+    "category": "Workspace"
+  },
+  {
+    "id": 58,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/03/work_schedule_apps-1024x708.png",
+    "title": "6 best work schedule apps for 2022",
+    "desc": "Work schedule apps can reduce the burden of shift planning for managers and enable teams to cooperate in one digital workspace to plan their work schedules. In this post, we’ve selected six work scheduling apps that you can use to manage your team’s schedule.",
+    "authImg": "https://secure.gravatar.com/avatar/e12669ed9e17f212edfd8862ee4d30c5?s=40&d=mm&r=g",
+    "author": "Yulia Gavrilova",
+    "date": "10.03.2022",
+    "category": "Workspace"
+  },
+
+  {
+    "id": 59,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/03/booking-t-1024x708.png",
+    "title": "Introducing Booking – our new take on workspace management software",
+    "desc": "Workspace management software is the future of any modern business. That’s where coworking booking software comes in. So, without further ado, here’s what you need to know about DeskTime’s latest feature – Booking. ",
+    "authImg": "https://secure.gravatar.com/avatar/f644ecf43b55c25f1b7326f6023a5b6d?s=40&d=mm&r=g",
+    "author": "Sintija Pētersone",
+    "date": "2.03.2022",
+    "category": "Workspace"
+  },
+
+  {
+    "id": 60,
+    "img": "https://desktime.com/blog/wp-content/uploads/2022/02/appreciated-1-1-1024x708.png",
+    "title": "Recognition ideas for remote employees to ensure they feel appreciated",
+    "desc": "Making remote employees feel valued and appreciated is not an easy task to deal with. To help you in the process, here are several remote employee recognition ideas you can try out.",
+    "authImg": "https://secure.gravatar.com/avatar/f644ecf43b55c25f1b7326f6023a5b6d?s=40&d=mm&r=g",
+    "author": "Sintija Pētersone",
+    "date": "22.02.2022",
+    "category": "Workspace"
+  }
+]
