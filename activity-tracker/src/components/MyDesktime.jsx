@@ -3,24 +3,27 @@ import {
   Flex,
   Box,
   Text,
-  Heading,
   SimpleGrid,
   Tooltip,
   Input,
+  Select
 } from "@chakra-ui/react";
 import { IoInformationCircleSharp } from "react-icons/io5";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import { BsFillQuestionCircleFill } from "react-icons/bs";
 import Timer from "./Timer";
 import { useSelector } from "react-redux";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 function secondsToHms(d) {
   var h = Math.floor(d / 3600);
   var m = Math.floor((d % 3600) / 60);
   var s = Math.floor((d % 3600) % 60);
+  
 
   let ans = (
-    <Box>
+    <Flex gap="5px">
       {h !== "0" ? (
         <Text color="#4EA819" fontSize="20px">
           <Text color="#4EA819" fontSize="30px" as="span">
@@ -47,13 +50,16 @@ function secondsToHms(d) {
         </Text>{" "}
         s
       </Text>
-    </Box>
+    </Flex>
   );
 
   return ans;
 }
 
 const MyDesktime = () => {
+  const authData = useSelector(store => store.auth.data);
+  const [projectID, setProjectID] = useState("");
+  const [data, setData] = useState([]);
   const months = [
     "January",
     "February",
@@ -68,20 +74,36 @@ const MyDesktime = () => {
     "November",
     "December",
   ];
+
+  useEffect(() => {
+    axios
+      .get("https://upset-teal-duck.cyclic.app/project", {
+        headers: {token: authData.token}
+      })
+      .then((res) => { 
+        setData(res.data.data)});
+  }, []);
+
+
   const d = new Date();
   const status = useSelector((store) => store.ls);
-  console.log(status);
-
   return (
     <ChakraProvider>
-      <Timer />
+      <Timer projectID={projectID} token={authData.token} />
       <Box color="#333C43" w="90%" m="auto" p="30px" bg="#EBECEC">
         <Flex
           flexDirection={["column", "column", "column", "row"]}
           gap="30px"
           justifyContent="space-between"
         >
-          <Heading fontWeight="500">My DeskTime</Heading>
+          <Select onChange={(e) => {
+            const a = e.target.value.split(",");
+            setProjectID(a[1])
+          }} placeholder='Select option'>
+            {
+              data?.map(el => (<option key={el._id} value={`${el.projectName},${el._id}`}>{el.projectName}</option>))
+            }
+          </Select>
           <Flex
             justifyContent="center"
             gap={["5px", "5px", "10px", "15px"]}

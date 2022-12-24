@@ -28,13 +28,16 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { BsTrash } from "react-icons/bs";
+import { useSelector } from "react-redux";
 import Model2 from "../Model2";
 
 function Project() {
+  const authData = useSelector(store => store.auth.data);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [project, setProject] = useState("");
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
+
   const handleCreate = async () => {
     setLoading(true);
     onClose();
@@ -49,11 +52,14 @@ function Project() {
 
     let res = await axios.post(
       `https://upset-teal-duck.cyclic.app/project`,
-      obj
+      obj,
+      {
+        headers: {token: authData.token}
+      }
     );
     let createdData = await res.data;
     setProject("");
-    setData(createdData);
+    createdData.status ? setData(createdData.data) : console.log(createdData);
     setLoading(false);
   };
 
@@ -70,7 +76,9 @@ function Project() {
     };
     console.log(id, "dfsdf");
     axios
-      .patch(`https://upset-teal-duck.cyclic.app/project/${id}`, newData)
+      .patch(`https://upset-teal-duck.cyclic.app/project/${id}`, newData, {
+        headers: {token: authData.token}
+      })
       .then((res) => {
         setData(res.data);
         setLoading(false);
@@ -82,7 +90,9 @@ function Project() {
   const handledelete = (id) => {
     setLoading(true);
     axios
-      .delete(`https://upset-teal-duck.cyclic.app/project/${id}`)
+      .delete(`https://upset-teal-duck.cyclic.app/project/${id}`,{
+        headers: {token: authData.token}
+      })
       .then((res) => {
         setData(res.data);
         setLoading(false);
@@ -97,10 +107,13 @@ function Project() {
 
   useEffect(() => {
     setLoading(true);
-    axios
-      .get("https://upset-teal-duck.cyclic.app/project")
-      .then((res) => setData(res.data));
-    setLoading(false);
+    axios.get("https://upset-teal-duck.cyclic.app/project",{
+        headers: {token: authData.token}
+      })
+      .then((res) => { 
+        res.data.status ? setData(res.data.data) : console.log(res.data);
+        setLoading(false);
+      })
   }, []);
 
   return (
@@ -204,7 +217,7 @@ function Project() {
                 fontSize={"26px"}
                 color={"#4ea819"}
               >
-                {data.length}
+                {data?.length}
               </Text>
             </Flex>
           </GridItem>
@@ -230,7 +243,7 @@ function Project() {
                 fontSize={"26px"}
                 color={"#4ea819"}
               >
-                {data.length}
+                {data?.length}
               </Text>
             </Flex>
           </GridItem>
@@ -256,7 +269,7 @@ function Project() {
                 fontSize={"26px"}
                 color={"#4ea819"}
               >
-                {data.length}
+                {data?.length}
               </Text>
             </Flex>
           </GridItem>
@@ -316,7 +329,7 @@ function Project() {
                         />
                       </Flex>
                       <Flex>
-                        <BsTrash onClick={() => handledelete(el._id)} />
+                        <BsTrash cursor="pointer" onClick={() => handledelete(el._id)} />
                       </Flex>
                     </Flex>
                   </GridItem>

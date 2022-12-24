@@ -1,6 +1,6 @@
 import { Box, Button, Flex, Input,  Text } from "@chakra-ui/react";
 import {AiOutlineMenu} from 'react-icons/ai'
-import {FcSearch} from 'react-icons/fc'
+import {BsSearch} from 'react-icons/bs'
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import { colors } from "../Colors";
@@ -20,7 +20,7 @@ function Navbar({onOpen}){
          <Flex w={['240px','300px','400px','400px']}>
          <Input value={value} onChange={(e)=>setValue(e.target.value)} bg='white' borderRadius= '5px 0px 0px 5px' type='text' />
           <Button bg='white' _hover={{bg:'white'}} borderRadius= '0px 5px 5px 0px'>
-          <FcSearch fontSize='30px'/>
+          <BsSearch color="#006600" fontSize='24px'/>
          </Button>
          </Flex>
          <Flex display={['none','flex','flex','flex']} alignItems='center' gap='20px'>
