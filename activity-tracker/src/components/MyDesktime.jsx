@@ -3,7 +3,6 @@ import {
   Flex,
   Box,
   Text,
-  Heading,
   SimpleGrid,
   Tooltip,
   Input,
@@ -24,7 +23,7 @@ function secondsToHms(d) {
   
 
   let ans = (
-    <Box>
+    <Flex gap="5px">
       {h !== "0" ? (
         <Text color="#4EA819" fontSize="20px">
           <Text color="#4EA819" fontSize="30px" as="span">
@@ -51,7 +50,7 @@ function secondsToHms(d) {
         </Text>{" "}
         s
       </Text>
-    </Box>
+    </Flex>
   );
 
   return ans;
@@ -59,7 +58,7 @@ function secondsToHms(d) {
 
 const MyDesktime = () => {
   const authData = useSelector(store => store.auth.data);
-  const [project, setProject] = useState("");
+  const [projectID, setProjectID] = useState("");
   const [data, setData] = useState([]);
   const months = [
     "January",
@@ -82,24 +81,27 @@ const MyDesktime = () => {
         headers: {token: authData.token}
       })
       .then((res) => { 
-        console.log(res.data.data);
         setData(res.data.data)});
   }, []);
+
 
   const d = new Date();
   const status = useSelector((store) => store.ls);
   return (
     <ChakraProvider>
-      <Timer />
+      <Timer projectID={projectID} token={authData.token} />
       <Box color="#333C43" w="90%" m="auto" p="30px" bg="#EBECEC">
         <Flex
           flexDirection={["column", "column", "column", "row"]}
           gap="30px"
           justifyContent="space-between"
         >
-          <Select value={project} onChange={(e) => setProject(e.target.value)} placeholder='Select option'>
+          <Select onChange={(e) => {
+            const a = e.target.value.split(",");
+            setProjectID(a[1])
+          }} placeholder='Select option'>
             {
-              data?.map(el => (<option key={el._id} value={el.projectName}>{el.projectName}</option>))
+              data?.map(el => (<option key={el._id} value={`${el.projectName},${el._id}`}>{el.projectName}</option>))
             }
           </Select>
           <Flex

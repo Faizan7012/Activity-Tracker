@@ -329,7 +329,7 @@ function Project() {
                         />
                       </Flex>
                       <Flex>
-                        <BsTrash onClick={() => handledelete(el._id)} />
+                        <BsTrash cursor="pointer" onClick={() => handledelete(el._id)} />
                       </Flex>
                     </Flex>
                   </GridItem>

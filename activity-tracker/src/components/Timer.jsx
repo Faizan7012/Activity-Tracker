@@ -35,9 +35,9 @@ function secondsToHms(d) {
   return {hDisplay,mDisplay,sDisplay}
 }
 
-function Timer() {
+function Timer({projectID, token}) {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const {timer,start,stop,time} = useTimer(0);
+  const {timer,start,stop,time} = useTimer(0,projectID,token);
   const {hDisplay,mDisplay,sDisplay} = secondsToHms(timer);
 
   return (
