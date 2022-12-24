@@ -29,7 +29,8 @@ import { useSelector } from "react-redux";
 const BurgerMenu = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef();
-  const authData = useSelector((store) => store.auth);
+  const {isAuth} = useSelector((store) => store.auth);
+  
 
   return (
     <Box display={["flex", "flex", "none", "none"]}>
@@ -66,12 +67,6 @@ const BurgerMenu = () => {
               _hover={{ textDecoration: "none" }}
             >
               Demo
-            </Link>
-
-            <Divider orientation="horizontal" />
-
-            <Link className="un" _hover={{ textDecoration: "none" }}>
-              Features
             </Link>
             <Divider orientation="horizontal" />
             <Link
@@ -113,7 +108,7 @@ const BurgerMenu = () => {
 
             <Divider orientation="horizontal" />
 
-            {authData === "" ? (
+            {!isAuth ? (
               <>
                 <Button
                   borderRadius="3px"
@@ -161,7 +156,7 @@ const BurgerMenu = () => {
                 <Link
                   _hover={{ textDecoration: "none" }}
                   as={RouterLink}
-                  to="/dashboard"
+                  to="/dashboard/my"
                 >
                   MY DESKTIME
                 </Link>
