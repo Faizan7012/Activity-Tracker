@@ -7,17 +7,21 @@ import {
   SimpleGrid,
   Tooltip,
   Input,
+  Select
 } from "@chakra-ui/react";
 import { IoInformationCircleSharp } from "react-icons/io5";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import { BsFillQuestionCircleFill } from "react-icons/bs";
 import Timer from "./Timer";
 import { useSelector } from "react-redux";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 function secondsToHms(d) {
   var h = Math.floor(d / 3600);
   var m = Math.floor((d % 3600) / 60);
   var s = Math.floor((d % 3600) % 60);
+  
 
   let ans = (
     <Box>
@@ -54,6 +58,9 @@ function secondsToHms(d) {
 }
 
 const MyDesktime = () => {
+  const authData = useSelector(store => store.auth.data);
+  const [project, setProject] = useState("");
+  const [data, setData] = useState([]);
   const months = [
     "January",
     "February",
@@ -68,10 +75,19 @@ const MyDesktime = () => {
     "November",
     "December",
   ];
+
+  useEffect(() => {
+    axios
+      .get("https://upset-teal-duck.cyclic.app/project", {
+        headers: {token: authData.token}
+      })
+      .then((res) => { 
+        console.log(res.data.data);
+        setData(res.data.data)});
+  }, []);
+
   const d = new Date();
   const status = useSelector((store) => store.ls);
-  console.log(status);
-
   return (
     <ChakraProvider>
       <Timer />
@@ -81,7 +97,11 @@ const MyDesktime = () => {
           gap="30px"
           justifyContent="space-between"
         >
-          <Heading fontWeight="500">My DeskTime</Heading>
+          <Select value={project} onChange={(e) => setProject(e.target.value)} placeholder='Select option'>
+            {
+              data?.map(el => (<option key={el._id} value={el.projectName}>{el.projectName}</option>))
+            }
+          </Select>
           <Flex
             justifyContent="center"
             gap={["5px", "5px", "10px", "15px"]}
